@@ -232,6 +232,139 @@
 
     </div>
 </main>
+<script>
+    // 1. Data Structure Placeholder (You will fill these with 60+ questions each)
+    const questionsData = {
+        unit1: [
+            { 
+                q: "Which property of water allows it to move upward through a plant's xylem?", 
+                options: ["Cohesion and Adhesion", "High Specific Heat", "Low Density of Ice", "Nonpolar Covalent Bonding"], 
+                correct: "Cohesion and Adhesion", 
+                exp: "Cohesion allows water molecules to stick to each other, while adhesion allows them to stick to the xylem walls." 
+            },
+            // Add more questions here...
+        ],
+        unit2: [], unit3: [], unit4: [], unit5: [], unit6: [], unit7: [], unit8: []
+    };
 
+    // 2. Global State
+    let currentPool = [];    // The 10 random questions for the session
+    let currentIndex = 0;
+    let score = 0;
+    let answered = false;    // Prevents double-scoring the same question
+
+    // 3. Select DOM Elements
+    const unitTitleDisp = document.getElementById('unit-title');
+    const scoreDisp = document.getElementById('score-counter');
+    const qNumDisp = document.getElementById('question-number');
+    const qTextDisp = document.getElementById('question-text');
+    const optionsCont = document.querySelector('.options-list');
+    const expBox = document.getElementById('explanation-box');
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+
+    // 4. Shuffle Utility (Fisher-Yates)
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // 5. Initialize a Unit
+    function startUnit(unitKey, displayTitle) {
+        if (!questionsData[unitKey] || questionsData[unitKey].length === 0) {
+            alert("Question bank for this unit is currently empty!");
+            return;
+        }
+
+        // Shuffle all questions and pick the first 10
+        const fullBank = [...questionsData[unitKey]];
+        currentPool = shuffle(fullBank).slice(0, 10);
+        
+        currentIndex = 0;
+        score = 0;
+        unitTitleDisp.innerHTML = `<strong>${displayTitle}</strong>`;
+        
+        loadQuestion();
+    }
+
+    // 6. Load Question to UI
+    function loadQuestion() {
+        answered = false;
+        const data = currentPool[currentIndex];
+        
+        // Update UI
+        scoreDisp.innerText = `Score: ${score}/10`;
+        qNumDisp.innerText = `Question ${currentIndex + 1} of 10`;
+        qTextDisp.innerText = data.q;
+        expBox.style.display = 'none';
+        expBox.innerHTML = `<strong>Explanation:</strong> ${data.exp}`;
+        
+        // Clear and Shuffled Options
+        optionsCont.innerHTML = "";
+        const shuffledOptions = shuffle([...data.options]);
+
+        shuffledOptions.forEach(opt => {
+            const div = document.createElement('div');
+            div.className = 'option-item';
+            div.innerText = opt;
+            div.onclick = () => handleAnswer(div, opt, data.correct);
+            optionsCont.appendChild(div);
+        });
+
+        // Toggle Nav Buttons
+        prevBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
+        nextBtn.innerText = currentIndex === 9 ? "Finish Unit" : "Next Question";
+    }
+
+    // 7. Handle Selection
+    function handleAnswer(element, selected, correct) {
+        if (answered) return; // Prevent clicking multiple answers
+        answered = true;
+
+        if (selected === correct) {
+            score++;
+            element.style.backgroundColor = "#d4edda"; // Green
+            element.style.borderColor = "#28a745";
+        } else {
+            element.style.backgroundColor = "#f8d7da"; // Red
+            element.style.borderColor = "#dc3545";
+            // Highlight the correct one
+            Array.from(optionsCont.children).forEach(child => {
+                if (child.innerText === correct) child.style.borderColor = "#28a745";
+            });
+        }
+
+        scoreDisp.innerText = `Score: ${score}/10`;
+        expBox.style.display = 'block';
+    }
+
+    // 8. Event Listeners for Nav
+    nextBtn.onclick = () => {
+        if (currentIndex < 9) {
+            currentIndex++;
+            loadQuestion();
+        } else {
+            alert(`Unit Complete! Your final score: ${score}/10`);
+        }
+    };
+
+    prevBtn.onclick = () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            loadQuestion();
+        }
+    };
+
+    // 9. Attach Sidebar Listeners
+    document.querySelectorAll('.unit-btn').forEach((btn, index) => {
+        btn.onclick = () => {
+            const unitKey = `unit${index + 1}`;
+            startUnit(unitKey, btn.innerText);
+        };
+    });
+</script>
 </body>
 </html>
