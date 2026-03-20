@@ -233,6 +233,441 @@
     </div>
 </main>
 <script>
+    const unit1 = [
+    // --- Topic 1.1: Structure of Water and Hydrogen Bonding ---
+    {
+        q: "Which of the following best explains why water has a high specific heat?",
+        options: ["Hydrogen bonds between water molecules require significant energy to break before the temperature rises.", "Water molecules are held together by strong ionic bonds.", "The nonpolar nature of water prevents it from absorbing heat.", "Water is a small molecule that lacks kinetic energy."],
+        correct: "Hydrogen bonds between water molecules require significant energy to break before the temperature rises.",
+        exp: "High specific heat is a result of hydrogen bonding. Energy must first be used to break these bonds before the molecules can move faster (increase temperature)."
+    },
+    {
+        q: "What property of water allows a water strider to walk on the surface of a pond?",
+        options: ["Adhesion", "Surface tension resulting from cohesion", "High heat of vaporization", "Low density of ice"],
+        correct: "Surface tension resulting from cohesion",
+        exp: "Cohesion (hydrogen bonding between water molecules) creates surface tension, allowing the surface to resist external force."
+    },
+    {
+        q: "How does the polarity of water contribute to its role as a universal solvent?",
+        options: ["Water can form ionic bonds with any substance.", "The partial charges on water molecules allow them to surround and isolate charged ions or polar molecules.", "Water is nonpolar, allowing it to dissolve lipids.", "Water's covalent bonds are easily broken to react with solutes."],
+        correct: "The partial charges on water molecules allow them to surround and isolate charged ions or polar molecules.",
+        exp: "The $\delta+$ on Hydrogen and $\delta-$ on Oxygen allow water to form hydration shells around solutes."
+    },
+    {
+        q: "In a plant, water moves from roots to leaves through xylem. Which property involves water sticking to the xylem walls?",
+        options: ["Cohesion", "Adhesion", "Evaporative cooling", "Hydrophobicity"],
+        correct: "Adhesion",
+        exp: "Adhesion is the attraction between different types of molecules (water and the cell wall)."
+    },
+    {
+        q: "Why does ice float on liquid water?",
+        options: ["Ice is denser than liquid water.", "Hydrogen bonds in ice create a crystalline lattice that keeps molecules further apart than in liquid water.", "Liquid water contains more hydrogen bonds than ice.", "The covalent bonds in ice are longer than in liquid water."],
+        correct: "Hydrogen bonds in ice create a crystalline lattice that keeps molecules further apart than in liquid water.",
+        exp: "In ice, each molecule is hydrogen-bonded to four others in a fixed lattice, decreasing density."
+    },
+    {
+        q: "Which of the following is responsible for water’s ability to moderate coastal climates?",
+        options: ["High heat of vaporization", "High specific heat", "Low density of ice", "Adhesion"],
+        correct: "High specific heat",
+        exp: "Water absorbs and releases large amounts of heat with minimal change in its own temperature."
+    },
+    {
+        q: "Which bond is broken when water evaporates?",
+        options: ["Nonpolar covalent bond", "Polar covalent bond", "Hydrogen bond", "Ionic bond"],
+        correct: "Hydrogen bond",
+        exp: "Evaporation involves molecules escaping the liquid phase by breaking the intermolecular hydrogen bonds, not the intramolecular covalent bonds."
+    },
+    {
+        q: "A dehydration synthesis reaction involves the removal of which of the following to join monomers?",
+        options: ["A hydrogen atom and a hydroxyl group", "Two oxygen atoms", "A carbon atom", "A phosphate group"],
+        correct: "A hydrogen atom and a hydroxyl group",
+        exp: "One monomer loses an $-H$ and the other loses an $-OH$, forming $H_2O$ as a byproduct."
+    },
+    {
+        q: "Which functional group is most responsible for the polar nature of the water molecule?",
+        options: ["Methyl", "Hydroxyl", "Carboxyl", "Phosphate"],
+        correct: "Hydroxyl",
+        exp: "While water isn't a hydroxyl group itself, the $O-H$ bond within water creates the dipole moment due to oxygen's electronegativity."
+    },
+    {
+        q: "Sweating has a cooling effect on the body because of:",
+        options: ["Cohesion", "High heat of vaporization", "Surface tension", "Density differences"],
+        correct: "High heat of vaporization",
+        exp: "As the hottest water molecules evaporate, they take significant heat energy with them, cooling the surface."
+    },
+
+    // --- Topic 1.2: Elements of Life ---
+    {
+        q: "Which element is found in all nucleic acids and all proteins?",
+        options: ["Phosphorus", "Sulfur", "Nitrogen", "Magnesium"],
+        correct: "Nitrogen",
+        exp: "Nitrogen is a key component of the nitrogenous bases in nucleic acids and the amine group in amino acids."
+    },
+    {
+        q: "Phosphorus is a limiting nutrient for many organisms. In which macromolecule is it essential?",
+        options: ["Carbohydrates", "Proteins", "Nucleic acids", "Triglycerides"],
+        correct: "Nucleic acids",
+        exp: "The sugar-phosphate backbone of DNA and RNA requires phosphorus."
+    },
+    {
+        q: "Which element is unique to proteins and not typically found in carbohydrates or lipids?",
+        options: ["Carbon", "Hydrogen", "Sulfur", "Oxygen"],
+        correct: "Sulfur",
+        exp: "Sulfur is found in the R-groups of certain amino acids (like cysteine) but not in carbs or most lipids."
+    },
+    {
+        q: "Carbon is considered the 'backbone' of life. Why?",
+        options: ["It can form four covalent bonds, allowing for complex, branching molecules.", "It is the most abundant element in the atmosphere.", "It forms strong ionic bonds with water.", "It is the only element that can form double bonds."],
+        correct: "It can form four covalent bonds, allowing for complex, branching molecules.",
+        exp: "Carbon's tetravalence allows it to build the diverse skeletons of all organic molecules."
+    },
+    {
+        q: "Which of the following are the primary elements that make up 96% of living matter?",
+        options: ["C, H, O, N", "C, P, S, Ca", "C, H, O, P", "N, P, S, Mg"],
+        correct: "C, H, O, N",
+        exp: "Carbon, Hydrogen, Oxygen, and Nitrogen are the core building blocks of life."
+    },
+    {
+        q: "A researcher identifies a molecule with a 1:2:1 ratio of C, H, and O. What is it?",
+        options: ["A lipid", "A protein", "A carbohydrate", "A nucleic acid"],
+        correct: "A carbohydrate",
+        exp: "Carbohydrates typically follow the empirical formula $CH_2O$."
+    },
+    {
+        q: "If a soil is deficient in Nitrogen, which of the following would a plant have the most trouble synthesizing?",
+        options: ["Glucose", "Cellulose", "Enzymes", "Starch"],
+        correct: "Enzymes",
+        exp: "Enzymes are proteins, which require nitrogen for their amino acid building blocks."
+    },
+    {
+        q: "Which element is a key component of the 'head' of a phospholipid but absent in a triglyceride?",
+        options: ["Carbon", "Hydrogen", "Oxygen", "Phosphorus"],
+        correct: "Phosphorus",
+        exp: "Phospholipids contain a phosphate group ($PO_4^{3-}$), whereas triglycerides are strictly glycerol and three fatty acids."
+    },
+    {
+        q: "Chlorophyll contains which metallic element at its center?",
+        options: ["Iron", "Magnesium", "Calcium", "Sodium"],
+        correct: "Magnesium",
+        exp: "Magnesium is the central atom in the chlorophyll porphyrin ring, vital for light absorption."
+    },
+    {
+        q: "Trace elements like Iron (Fe) are needed by the body primarily for:",
+        options: ["Building bone density", "Energy storage", "Oxygen transport in blood", "Synthesizing lipids"],
+        correct: "Oxygen transport in blood",
+        exp: "Iron is the central component of hemoglobin."
+    },
+
+    // --- Topic 1.3: Introduction to Biological Macromolecules ---
+    {
+        q: "What is the primary goal of a hydrolysis reaction?",
+        options: ["To join two monomers by removing water.", "To break a polymer into monomers by adding water.", "To create a peptide bond.", "To synthesize ATP from ADP."],
+        correct: "To break a polymer into monomers by adding water.",
+        exp: "Hydro- (water) lysis (splitting) uses $H_2O$ to break covalent bonds between monomers."
+    },
+    {
+        q: "Dehydration synthesis and hydrolysis are essentially:",
+        options: ["The same reaction occurring at different temperatures.", "Opposite processes for building and breaking polymers.", "Only used in the digestion of proteins.", "Dependent on the presence of lipids."],
+        correct: "Opposite processes for building and breaking polymers.",
+        exp: "Dehydration builds; hydrolysis breaks."
+    },
+    {
+        q: "Which type of bond joins two monosaccharides together?",
+        options: ["Peptide bond", "Glycosidic linkage", "Phosphodiester bond", "Ester linkage"],
+        correct: "Glycosidic linkage",
+        exp: "A glycosidic linkage is a covalent bond formed between two sugars by dehydration."
+    },
+    {
+        q: "Which macromolecule is NOT technically a polymer?",
+        options: ["Proteins", "Nucleic Acids", "Lipids", "Carbohydrates"],
+        correct: "Lipids",
+        exp: "Lipids (like fats) are not composed of repeating monomer subunits linked in a chain."
+    },
+    {
+        q: "What is the monomer of a protein?",
+        options: ["Nucleotide", "Amino acid", "Monosaccharide", "Fatty acid"],
+        correct: "Amino acid",
+        exp: "Proteins are polymers made of amino acid monomers."
+    },
+    {
+        q: "The formation of a peptide bond occurs between which two functional groups?",
+        options: ["Hydroxyl and Methyl", "Carboxyl and Amine", "Phosphate and Hydroxyl", "Amine and Methyl"],
+        correct: "Carboxyl and Amine",
+        exp: "The carboxyl group of one amino acid reacts with the amine group of the next."
+    },
+    {
+        q: "Which of the following is the monomer of DNA?",
+        options: ["Amino acid", "Deoxyribonucleotide", "Ribonucleotide", "Glycerol"],
+        correct: "Deoxyribonucleotide",
+        exp: "DNA is composed of deoxyribonucleotide monomers."
+    },
+    {
+        q: "The directionality of a DNA strand is defined by:",
+        options: ["The position of the nitrogenous bases.", "The 5' phosphate and 3' hydroxyl ends.", "The number of hydrogen bonds.", "The type of pentose sugar used."],
+        correct: "The 5' phosphate and 3' hydroxyl ends.",
+        exp: "DNA has a 5' end (phosphate) and a 3' end (hydroxyl), determining how it is replicated."
+    },
+    {
+        q: "A pentose sugar, a phosphate group, and a nitrogenous base together form a:",
+        options: ["Nucleoside", "Nucleotide", "Amino acid", "Triglyceride"],
+        correct: "Nucleotide",
+        exp: "This is the three-part structure of a nucleotide."
+    },
+    {
+        q: "Which process is used by the body to digest the starch in a piece of bread?",
+        options: ["Dehydration synthesis", "Hydrolysis", "Denaturation", "Chemiosmosis"],
+        correct: "Hydrolysis",
+        exp: "Digestion is the process of breaking down polymers into monomers using water."
+    },
+
+    // --- Topic 1.4: Carbohydrates ---
+    {
+        q: "Which carbohydrate provides structural support in the cell walls of plants?",
+        options: ["Starch", "Glycogen", "Cellulose", "Chitin"],
+        correct: "Cellulose",
+        exp: "Cellulose is a structural polysaccharide made of glucose monomers that humans cannot digest."
+    },
+    {
+        q: "In what form do animals store excess glucose in the liver and muscles?",
+        options: ["Starch", "Glycogen", "Cellulose", "Chitin"],
+        correct: "Glycogen",
+        exp: "Glycogen is a highly branched storage polysaccharide in animals."
+    },
+    {
+        q: "What is the difference between alpha-glucose and beta-glucose?",
+        options: ["The number of carbons in the ring.", "The orientation of the hydroxyl group on the first carbon.", "The presence of a phosphate group.", "One is found in DNA, the other in RNA."],
+        correct: "The orientation of the hydroxyl group on the first carbon.",
+        exp: "This subtle difference allows alpha-glucose to form starch and beta-glucose to form cellulose."
+    },
+    {
+        q: "Which of the following is a disaccharide?",
+        options: ["Glucose", "Fructose", "Sucrose", "Galactose"],
+        correct: "Sucrose",
+        exp: "Sucrose (table sugar) is a disaccharide made of glucose and fructose."
+    },
+    {
+        q: "Why can't humans digest cellulose?",
+        options: ["We lack the enzymes to break beta-glycosidic linkages.", "Cellulose is too large to enter cells.", "Cellulose contains nitrogen, which is toxic.", "It is a lipid, not a carbohydrate."],
+        correct: "We lack the enzymes to break beta-glycosidic linkages.",
+        exp: "Our enzymes (like amylase) only recognize alpha-linkages found in starch."
+    },
+    {
+        q: "Chitin is a structural polysaccharide used by:",
+        options: ["Plants for cell walls", "Fungi and Arthropods", "Bacteria for capsules", "Mammals for energy"],
+        correct: "Fungi and Arthropods",
+        exp: "Chitin is found in fungal cell walls and insect exoskeletons."
+    },
+    {
+        q: "The formula $C_{12}H_{22}O_{11}$ represents a disaccharide. Why is it not $C_{12}H_{24}O_{12}$?",
+        options: ["Carbon atoms are lost during the reaction.", "A water molecule is removed during dehydration synthesis.", "Oxygen is converted to energy.", "The question is incorrect; it should be $C_{12}H_{24}O_{12}$."],
+        correct: "A water molecule is removed during dehydration synthesis.",
+        exp: "Joining two $C_6H_{12}O_6$ molecules removes $H_2O$ ($2H$ and $1O$)."
+    },
+    {
+        q: "Which carbohydrate is found in the exoskeletons of insects?",
+        options: ["Cellulose", "Starch", "Chitin", "Glycogen"],
+        correct: "Chitin",
+        exp: "Chitin provides rigid structural support for arthropods."
+    },
+    {
+        q: "What is the primary function of starch in plants?",
+        options: ["Structural support", "Energy storage", "Information storage", "Enzymatic activity"],
+        correct: "Energy storage",
+        exp: "Plants synthesize starch to store surplus glucose produced during photosynthesis."
+    },
+    {
+        q: "Simple sugars like glucose are primarily used by the cell for:",
+        options: ["Building membranes", "Immediate energy (ATP production)", "Storing genetic data", "Catalyzing reactions"],
+        correct: "Immediate energy (ATP production)",
+        exp: "Glucose is the primary fuel for cellular respiration."
+    },
+
+    // --- Topic 1.5: Lipids ---
+    {
+        q: "What characteristic is shared by all lipids?",
+        options: ["They are all made of glycerol.", "They are all hydrophobic.", "They all contain nitrogen.", "They all form polymers."],
+        correct: "They are all hydrophobic.",
+        exp: "Lipids are defined by their insolubility in water due to their nonpolar nature."
+    },
+    {
+        q: "How does a saturated fatty acid differ from an unsaturated fatty acid?",
+        options: ["Saturated fats have at least one double bond.", "Unsaturated fats have at least one double bond, causing a 'kink' in the chain.", "Saturated fats are liquid at room temperature.", "Unsaturated fats have more hydrogen atoms."],
+        correct: "Unsaturated fats have at least one double bond, causing a 'kink' in the chain.",
+        exp: "The double bond in unsaturated fats prevents them from packing tightly, making them liquid at room temperature."
+    },
+    {
+        q: "Which lipid is the main component of biological membranes?",
+        options: ["Triglycerides", "Steroids", "Phospholipids", "Waxes"],
+        correct: "Phospholipids",
+        exp: "Phospholipids form the bilayer of cell membranes due to their amphipathic nature."
+    },
+    {
+        q: "A steroid is characterized by:",
+        options: ["A long hydrocarbon tail.", "A carbon skeleton consisting of four fused rings.", "A phosphate group and two fatty acids.", "A glycerol backbone."],
+        correct: "A carbon skeleton consisting of four fused rings.",
+        exp: "Cholesterol and hormones like estrogen/testosterone are steroids with this ring structure."
+    },
+    {
+        q: "The 'head' of a phospholipid is ______ while the 'tails' are ______.",
+        options: ["Hydrophobic; Hydrophilic", "Hydrophilic; Hydrophobic", "Nonpolar; Polar", "Acidic; Basic"],
+        correct: "Hydrophilic; Hydrophobic",
+        exp: "The phosphate head is polar (attracted to water), while the fatty acid tails are nonpolar (repelled by water)."
+    },
+    {
+        q: "What is the main function of triglycerides?",
+        options: ["Structural support", "Long-term energy storage", "Cell signaling", "Information storage"],
+        correct: "Long-term energy storage",
+        exp: "Fats store more than twice as much energy per gram as carbohydrates."
+    },
+    {
+        q: "Which of the following would be solid at room temperature?",
+        options: ["Olive oil", "Lard (saturated fat)", "Cod liver oil", "Vegetable oil"],
+        correct: "Lard (saturated fat)",
+        exp: "Saturated fats lack double bonds and pack tightly into solids."
+    },
+    {
+        q: "Which molecule is a precursor for the synthesis of other steroids, such as testosterone and estrogen?",
+        options: ["Cholesterol", "Glucose", "Glycerol", "ATP"],
+        correct: "Cholesterol",
+        exp: "Cholesterol is a vital steroid that is modified to create various hormones."
+    },
+    {
+        q: "Why are phospholipids described as 'amphipathic'?",
+        options: ["They can exist as both solids and liquids.", "They have both a hydrophilic region and a hydrophobic region.", "They can be found in both plants and animals.", "They act as both an acid and a base."],
+        correct: "They have both a hydrophilic region and a hydrophobic region.",
+        exp: "Amphi- means 'both,' referring to their dual affinity for water and oil."
+    },
+    {
+        q: "The synthesis of a triglyceride from glycerol and three fatty acids involves how many water molecules being released?",
+        options: ["One", "Two", "Three", "Four"],
+        correct: "Three",
+        exp: "One water molecule is removed for each of the three fatty acids attached to the glycerol."
+    },
+
+    // --- Topic 1.6: Nucleic Acids ---
+    {
+        q: "Which nitrogenous base is found in RNA but not in DNA?",
+        options: ["Adenine", "Thymine", "Uracil", "Guanine"],
+        correct: "Uracil",
+        exp: "RNA uses Uracil ($U$), while DNA uses Thymine ($T$)."
+    },
+    {
+        q: "The two strands of a DNA molecule are held together by which type of bond?",
+        options: ["Covalent bonds between bases", "Ionic bonds between sugars", "Hydrogen bonds between nitrogenous bases", "Peptide bonds"],
+        correct: "Hydrogen bonds between nitrogenous bases",
+        exp: "Hydrogen bonds provide enough stability to hold the strands together but can be 'unzipped' for replication."
+    },
+    {
+        q: "If a DNA sample contains 20% Adenine, what percentage of Cytosine does it contain?",
+        options: ["20%", "30%", "40%", "80%"],
+        correct: "30%",
+        exp: "If $A=20\%$, then $T=20\%$. Total $A+T = 40\%$. The remaining $60\%$ must be $G+C$, so $C = 30\%$."
+    },
+    {
+        q: "What sugar is found in the nucleotides of DNA?",
+        options: ["Ribose", "Deoxyribose", "Glucose", "Sucrose"],
+        correct: "Deoxyribose",
+        exp: "Deoxyribose is the pentose sugar in DNA (missing one oxygen compared to ribose)."
+    },
+    {
+        q: "The backbone of a nucleic acid strand is composed of:",
+        options: ["Nitrogenous bases", "Alternating sugars and phosphates", "Amino acids", "Fatty acids"],
+        correct: "Alternating sugars and phosphates",
+        exp: "This is the 'sugar-phosphate backbone' held together by phosphodiester bonds."
+    },
+    {
+        q: "In DNA, Guanine ($G$) always pairs with ______ via ______ hydrogen bonds.",
+        options: ["Cytosine ($C$); two", "Cytosine ($C$); three", "Thymine ($T$); two", "Adenine ($A$); three"],
+        correct: "Cytosine ($C$); three",
+        exp: "$G-C$ pairs have three hydrogen bonds; $A-T$ pairs have two."
+    },
+    {
+        q: "Which of the following best describes the 'Antiparallel' nature of DNA?",
+        options: ["The strands run in opposite directions (5' to 3' and 3' to 5').", "The strands are identical in sequence.", "One strand is made of DNA, the other of RNA.", "The strands repel each other."],
+        correct: "The strands run in opposite directions (5' to 3' and 3' to 5').",
+        exp: "This orientation is crucial for the function of DNA polymerase."
+    },
+    {
+        q: "What is the primary function of RNA?",
+        options: ["Long-term hereditary storage", "To transmit genetic information from DNA to the ribosome", "To act as the primary energy source for the cell", "To form the lipid bilayer"],
+        correct: "To transmit genetic information from DNA to the ribosome",
+        exp: "mRNA specifically carries the 'code' out of the nucleus to be translated into protein."
+    },
+    {
+        q: "Nucleotides are joined by which specific covalent bond?",
+        options: ["Peptide bond", "Phosphodiester bond", "Glycosidic bond", "Ester bond"],
+        correct: "Phosphodiester bond",
+        exp: "This bond connects the 3' carbon of one sugar to the 5' phosphate of the next."
+    },
+    {
+        q: "Which of the following is a pyrimidine?",
+        options: ["Adenine", "Guanine", "Cytosine", "None of these"],
+        correct: "Cytosine",
+        exp: "Pyrimidines (one ring) include Cytosine, Thymine, and Uracil. Purines (two rings) include Adenine and Guanine."
+    },
+
+    // --- Topic 1.7: Proteins ---
+    {
+        q: "The primary structure of a protein is determined by its:",
+        options: ["Hydrogen bonds", "Sequence of amino acids", "Alpha helices and Beta sheets", "Interaction between multiple polypeptides"],
+        correct: "Sequence of amino acids",
+        exp: "Primary structure is the unique linear chain of amino acids held by peptide bonds."
+    },
+    {
+        q: "Alpha helices and beta-pleated sheets are characteristic of which level of protein structure?",
+        options: ["Primary", "Secondary", "Tertiary", "Quaternary"],
+        correct: "Secondary",
+        exp: "Secondary structure is formed by hydrogen bonds between the polypeptide backbone (not the R-groups)."
+    },
+    {
+        q: "What type of interaction maintains the tertiary structure of a protein?",
+        options: ["Peptide bonds only", "Hydrogen bonds between the backbone", "Interactions between amino acid R-groups", "The sequence of nucleotides"],
+        correct: "Interactions between amino acid R-groups",
+        exp: "Tertiary structure involves disulfide bridges, hydrophobic interactions, and ionic bonds between R-groups."
+    },
+    {
+        q: "A protein is denatured when:",
+        options: ["Its primary structure is broken by hydrolysis.", "It loses its 3D shape due to heat or $pH$ changes.", "It is synthesized at the ribosome.", "It gains a new function."],
+        correct: "It loses its 3D shape due to heat or $pH$ changes.",
+        exp: "Denaturation disrupts the secondary and tertiary structures, rendering the protein non-functional."
+    },
+    {
+        q: "Which level of protein structure involves the joining of two or more polypeptide chains?",
+        options: ["Secondary", "Tertiary", "Quaternary", "Primary"],
+        correct: "Quaternary",
+        exp: "Hemoglobin is a classic example of quaternary structure, consisting of four subunits."
+    },
+    {
+        q: "Which part of the amino acid defines its unique chemical properties (e.g., polar vs. nonpolar)?",
+        options: ["The Amine group", "The Carboxyl group", "The R-group (side chain)", "The Alpha carbon"],
+        correct: "The R-group (side chain)",
+        exp: "The 20 different amino acids differ only in their R-groups."
+    },
+    {
+        q: "Enzymes are a class of proteins that function as:",
+        options: ["Energy storage molecules", "Structural components of hair", "Biological catalysts", "Hormones"],
+        correct: "Biological catalysts",
+        exp: "Enzymes speed up chemical reactions by lowering activation energy."
+    },
+    {
+        q: "A disulfide bridge is a strong covalent bond that contributes to which level of protein structure?",
+        options: ["Primary", "Secondary", "Tertiary", "Quaternary"],
+        correct: "Tertiary",
+        exp: "Disulfide bridges form between two cysteine R-groups to stabilize folding."
+    },
+    {
+        q: "If a protein's primary structure is altered by a mutation, what is the most likely result?",
+        options: ["The protein will function better.", "The protein may fold incorrectly and lose its function.", "The protein will turn into a carbohydrate.", "The protein will become more stable."],
+        correct: "The protein may fold incorrectly and lose its function.",
+        exp: "Shape determines function. A change in the sequence (structure) often destroys the function."
+    },
+    {
+        q: "Proteins that help other proteins fold correctly are called:",
+        options: ["Enzymes", "Chaperonins", "Prions", "Ribozymes"],
+        correct: "Chaperonins",
+        exp: "Chaperonins provide a sheltered environment for folding to occur properly."
+    }
+];
     // 1. Data Structure Placeholder (You will fill these with 60+ questions each)
     const questionsData = {
         unit1: [
