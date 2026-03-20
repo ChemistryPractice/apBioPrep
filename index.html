@@ -136,6 +136,40 @@
 
         #prev-btn { background-color: #dee2e6; }
         #next-btn { background-color: var(--primary-bio); color: white; }
+      
+        .instruction-box {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f0f7f4; /* Very light bio-green */
+            border: 1px dashed var(--primary-bio);
+            border-radius: 12px;
+            color: var(--text-dark);
+        }
+
+        .instruction-box h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            color: var(--primary-bio);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    
+        .instruction-box ol {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+
+        .instruction-box li {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+/* Helper to ensure vertical alignment in main */
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
     </style>
 </head>
