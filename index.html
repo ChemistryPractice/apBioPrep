@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Biology Review Prep</title>
+    <style>
+        :root {
+            --primary-bio: #2d6a4f; /* Biology Green */
+            --secondary-bio: #b7e4c7;
+            --text-dark: #1b4332;
+            --bg-light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-color: var(--bg-light);
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 280px;
+            background-color: var(--primary-bio);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 10px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        nav h2 {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--secondary-bio);
+            padding-bottom: 10px;
+        }
+
+        .unit-btn {
+            background: none;
+            border: 1px solid transparent;
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .unit-btn:hover {
+            background-color: var(--secondary-bio);
+            color: var(--text-dark);
+        }
+
+        /* Main Quiz Area */
+        main {
+            flex-grow: 1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            overflow-y: auto;
+        }
+
+        .quiz-container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        #question-text {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
+        .options-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .option-item {
+            border: 2px solid #edf2f4;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .option-item:hover {
+            border-color: var(--primary-bio);
+            background-color: #f0fff4;
+        }
+
+        /* Explanation Box */
+        .explanation {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-left: 5px solid var(--primary-bio);
+            display: none; /* Hidden by default */
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .nav-btn {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #prev-btn { background-color: #dee2e6; }
+        #next-btn { background-color: var(--primary-bio); color: white; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>AP Biology Prep</h2>
+        <button class="unit-btn">Unit 1: Chemistry of Life</button>
+        <button class="unit-btn">Unit 2: Cell Structure & Function</button>
+        <button class="unit-btn">Unit 3: Cellular Energetics</button>
+        <button class="unit-btn">Unit 4: Cell Communication</button>
+        <button class="unit-btn">Unit 5: Heredity</button>
+        <button class="unit-btn">Unit 6: Gene Expression</button>
+        <button class="unit-btn">Unit 7: Natural Selection</button>
+        <button class="unit-btn">Unit 8: Ecology</button>
+    </nav>
+
+    <main>
+        <div class="quiz-container">
+            <div class="quiz-header">
+                <span id="unit-title"><strong>Unit 1 Review</strong></span>
+                <span id="score-counter">Score: 0/10</span>
+            </div>
+
+            <div id="quiz-box">
+                <p id="question-number">Question 1 of 10</p>
+                <p id="question-text">
+                    Which statement best describes how the properties of water contribute to capillary action in plants?
+                </p>
+
+                <div class="options-list">
+                    <div class="option-item">A) High specific heat prevents rapid temperature changes.</div>
+                    <div class="option-item">B) Cohesion and adhesion allow water to defy gravity.</div>
+                    <div class="option-item">C) Water acts as a universal solvent for nonpolar molecules.</div>
+                    <div class="option-item">D) Ice is less dense than liquid water.</div>
+                </div>
+
+                <div class="explanation" id="explanation-box">
+                    <strong>Explanation:</strong> Cohesion allows water molecules to stick to each other, while adhesion allows them to stick to the xylem walls, pulling the water column upward.
+                </div>
+
+                <div class="controls">
+                    <button id="prev-btn" class="nav-btn">Previous</button>
+                    <button id="next-btn" class="nav-btn">Next Question</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
