@@ -176,18 +176,18 @@
 <body>
 
     <nav>
-        <h2>AP Biology Prep</h2>
-        <button class="unit-btn">Unit 1: Chemistry of Life</button>
-        <button class="unit-btn">Unit 2: Cell Structure & Function</button>
-        <button class="unit-btn">Unit 3: Cellular Energetics</button>
-        <button class="unit-btn">Unit 4: Cell Communication</button>
-        <button class="unit-btn">Unit 5: Heredity</button>
-        <button class="unit-btn">Unit 6: Gene Expression</button>
-        <button class="unit-btn">Unit 7: Natural Selection</button>
-        <button class="unit-btn">Unit 8: Ecology</button>
-    </nav>
+    <h2>AP Biology Prep</h2>
+    <button class="unit-btn" onclick="loadTopic('unit1', event)">Unit 1: Chemistry of Life</button>
+    <button class="unit-btn" onclick="loadTopic('unit2', event)">Unit 2: Cell Structure & Function</button>
+    <button class="unit-btn" onclick="loadTopic('unit3', event)">Unit 3: Cellular Energetics</button>
+    <button class="unit-btn" onclick="loadTopic('unit4', event)">Unit 4: Cell Communication</button>
+    <button class="unit-btn" onclick="loadTopic('unit5', event)">Unit 5: Heredity</button>
+    <button class="unit-btn" onclick="loadTopic('unit6', event)">Unit 6: Gene Expression</button>
+    <button class="unit-btn" onclick="loadTopic('unit7', event)">Unit 7: Natural Selection</button>
+    <button class="unit-btn" onclick="loadTopic('unit8', event)">Unit 8: Ecology</button>
+</nav>
 
-    <main>
+<main>
     <div class="content-wrapper" style="width: 100%; max-width: 800px;">
         
         <div class="quiz-container">
@@ -197,27 +197,18 @@
             </div>
 
             <div id="quiz-box">
-                <p id="question-number">Question 1 of 10</p>
-                <p id="question-text">
-                    Which statement best describes how the properties of water contribute to capillary action in plants?
-                </p>
+    <p id="question-number">Select a unit to begin</p>
+    <p id="question-text">Please choose a unit from the left sidebar to start your review.</p>
 
-                <div class="options-list">
-                    <div class="option-item">A) High specific heat prevents rapid temperature changes.</div>
-                    <div class="option-item">B) Cohesion and adhesion allow water to defy gravity.</div>
-                    <div class="option-item">C) Water acts as a universal solvent for nonpolar molecules.</div>
-                    <div class="option-item">D) Ice is less dense than liquid water.</div>
-                </div>
+    <div id="options-container" class="options-list"></div>
 
-                <div class="explanation" id="explanation-box">
-                    <strong>Explanation:</strong> Cohesion allows water molecules to stick to each other, while adhesion allows them to stick to the xylem walls, pulling the water column upward.
-                </div>
+    <div class="explanation" id="explanation-box"></div>
 
-                <div class="controls">
-                    <button id="prev-btn" class="nav-btn">Previous</button>
-                    <button id="next-btn" class="nav-btn">Next Question</button>
-                </div>
-            </div>
+    <div class="controls">
+        <button id="prev-btn" class="nav-btn" onclick="changeQuestion(-1)">Previous</button>
+        <button id="next-btn" class="nav-btn" onclick="changeQuestion(1)">Next Question</button>
+    </div>
+</div>
         </div>
 
         <div class="instruction-box">
@@ -1292,7 +1283,7 @@ unit2: [
         exp: "Cyanobacteria are photosynthetic prokaryotes that closely resemble modern chloroplasts."
     }
 
-];    
+  };    
     // 1. Data Structure Placeholder (You will fill these with 60+ questions each)
     const questionsData = {
         unit1: unit1,
