@@ -1284,16 +1284,17 @@ unit2: [
     }
 
   };    
-    // 1. Data Structure Placeholder (You will fill these with 60+ questions each)
+// 1. Map the database into the format your logic expects
+    // This ensures that unit1, unit2, etc. are properly referenced
     const questionsData = {
-        unit1: unit1,
-        unit2: unit2, 
-        unit3: [], 
-        unit4: [], 
-        unit5: [], 
-        unit6: [], 
-        unit7: [], 
-        unit8: []
+        unit1: database.unit1 || [],
+        unit2: database.unit2 || [],
+        unit3: database.unit3 || [],
+        unit4: database.unit4 || [],
+        unit5: database.unit5 || [],
+        unit6: database.unit6 || [],
+        unit7: database.unit7 || [],
+        unit8: database.unit8 || []
     };
 
     // 2. Global State
@@ -1324,11 +1325,11 @@ unit2: [
     // 5. Initialize a Unit
     function startUnit(unitKey, displayTitle) {
         if (!questionsData[unitKey] || questionsData[unitKey].length === 0) {
-            alert("Question bank for this unit is currently empty!");
+            alert("The question bank for " + displayTitle + " is currently being built!");
             return;
         }
 
-        // Shuffle all questions and pick the first 10
+        // Shuffle all questions from the unit and pick the first 10
         const fullBank = [...questionsData[unitKey]];
         currentPool = shuffle(fullBank).slice(0, 10);
         
@@ -1366,23 +1367,31 @@ unit2: [
         // Toggle Nav Buttons
         prevBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
         nextBtn.innerText = currentIndex === 9 ? "Finish Unit" : "Next Question";
+
+        // If you are using MathJax, trigger a re-render here
+        if (window.MathJax) {
+            MathJax.typesetPromise();
+        }
     }
 
     // 7. Handle Selection
     function handleAnswer(element, selected, correct) {
-        if (answered) return; // Prevent clicking multiple answers
+        if (answered) return; 
         answered = true;
 
         if (selected === correct) {
             score++;
-            element.style.backgroundColor = "#d4edda"; // Green
-            element.style.borderColor = "#28a745";
+            element.style.backgroundColor = "#b7e4c7"; // Bio-green light
+            element.style.borderColor = "#2d6a4f";     // Bio-green dark
         } else {
-            element.style.backgroundColor = "#f8d7da"; // Red
-            element.style.borderColor = "#dc3545";
-            // Highlight the correct one
+            element.style.backgroundColor = "#f8d7da"; // Soft red
+            element.style.borderColor = "#dc3545";     // Dark red
+            // Highlight the correct one so the student learns
             Array.from(optionsCont.children).forEach(child => {
-                if (child.innerText === correct) child.style.borderColor = "#28a745";
+                if (child.innerText === correct) {
+                    child.style.borderColor = "#2d6a4f";
+                    child.style.borderWidth = "3px";
+                }
             });
         }
 
@@ -1390,7 +1399,7 @@ unit2: [
         expBox.style.display = 'block';
     }
 
-    // 8. Event Listeners for Nav
+    // 8. Navigation Event Listeners
     nextBtn.onclick = () => {
         if (currentIndex < 9) {
             currentIndex++;
@@ -1407,7 +1416,9 @@ unit2: [
         }
     };
 
-    // 9. Attach Sidebar Listeners
+    // 9. Sidebar Button Auto-Assign
+    // This looks at all buttons with class 'unit-btn' and assigns 
+    // them to unit1, unit2, etc. based on their order.
     document.querySelectorAll('.unit-btn').forEach((btn, index) => {
         btn.onclick = () => {
             const unitKey = `unit${index + 1}`;
