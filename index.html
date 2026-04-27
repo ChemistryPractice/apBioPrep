@@ -667,6 +667,629 @@
         correct: "Chaperonins",
         exp: "Chaperonins provide a sheltered environment for folding to occur properly."
     }
+
+    // UNIT 2: CELL STRUCTURE AND FUNCTION
+unit2: [
+    // 2.1 - Cell structure and function
+    {
+        q: "A cell is treated with a chemical that prevents the folding of proteins within the endoplasmic reticulum. Which of the following organelles will be most directly affected in its ability to receive functional proteins?",
+        options: ["Golgi apparatus", "Ribosome", "Mitochondria", "Nucleus"],
+        correct: "Golgi apparatus",
+        exp: "The Golgi receives proteins from the ER. If the ER cannot properly fold/process proteins, the Golgi will receive non-functional cargo."
+    },
+    {
+        q: "The liver is involved in the detoxification of many poisons and drugs. Which of the following structures is primarily responsible for this function and would be abundant in liver cells?",
+        options: ["Smooth ER", "Rough ER", "Nucleolus", "Lysosomes"],
+        correct: "Smooth ER",
+        exp: "The Smooth ER is responsible for lipid synthesis and the detoxification of chemicals and metabolic waste."
+    },
+    {
+        q: "Cyanide binds to and inhibits the enzyme cytochrome oxidase, stopping the electron transport chain. Which organelle's function is directly compromised by cyanide?",
+        options: ["Mitochondria", "Chloroplast", "Peroxisome", "Lysosome"],
+        correct: "Mitochondria",
+        exp: "Mitochondria are the site of the electron transport chain and aerobic respiration; inhibiting these stops ATP production."
+    },
+    {
+        q: "Which of the following best describes the functional relationship between the nucleolus and ribosomes?",
+        options: ["The nucleolus synthesizes ribosomal RNA (rRNA).", "Ribosomes synthesize the nucleolus during mitosis.", "The nucleolus provides the energy for translation.", "Ribosomes are stored inside the nucleolus until needed."],
+        correct: "The nucleolus synthesizes ribosomal RNA (rRNA).",
+        exp: "The nucleolus is the site where rRNA is transcribed and ribosomal subunits are assembled."
+    },
+    {
+        q: "A scientist observes a cell with a large central vacuole and a cell wall. Which of the following functions is this cell most likely specialized for?",
+        options: ["Maintaining turgor pressure", "Phagocytosis of bacteria", "Rapid movement via cilia", "Secretion of digestive enzymes"],
+        correct: "Maintaining turgor pressure",
+        exp: "Large central vacuoles in plant cells store water and provide turgor pressure against the cell wall for structural support."
+    },
+    {
+        q: "Which structural feature of the nuclear envelope allows for the passage of mRNA out of the nucleus?",
+        options: ["Nuclear pores", "Phospholipid bilayer", "Attached ribosomes", "Nucleoplasm"],
+        correct: "Nuclear pores",
+        exp: "Nuclear pores are large protein complexes that regulate the movement of macromolecules like RNA and proteins into and out of the nucleus."
+    },
+    {
+        q: "Which organelle contains hydrolytic enzymes that can break down macromolecules and old organelles?",
+        options: ["Lysosome", "Golgi apparatus", "Smooth ER", "Mitochondria"],
+        correct: "Lysosome",
+        exp: "Lysosomes are acidic sacs containing enzymes meant for intracellular digestion."
+    },
+    {
+        q: "What is the primary evolutionary advantage of the extensive folding of the inner mitochondrial membrane (cristae)?",
+        options: ["Increases surface area for ATP synthesis", "Decreases the volume of the matrix", "Allows for easier transport of oxygen", "Protects the mitochondrial DNA"],
+        correct: "Increases surface area for ATP synthesis",
+        exp: "Increased surface area allows for more Electron Transport Chain complexes and ATP synthase enzymes, maximizing energy production."
+    },
+    {
+        q: "If a cell's Golgi apparatus were destroyed, which of the following would be the most immediate result?",
+        options: ["Secretory proteins would not be packaged and shipped.", "Protein synthesis would stop.", "The cell would lose its ability to produce ATP.", "The cell membrane would immediately dissolve."],
+        correct: "Secretory proteins would not be packaged and shipped.",
+        exp: "The Golgi's primary role is modifying, sorting, and packaging proteins for secretion or delivery to other organelles."
+    },
+    {
+        q: "Which of the following organelles is responsible for the capture of light energy and its conversion into chemical energy?",
+        options: ["Chloroplast", "Mitochondria", "Rough ER", "Leucoplast"],
+        correct: "Chloroplast",
+        exp: "Chloroplasts perform photosynthesis, converting light energy into the chemical energy of glucose."
+    },
+
+    // 2.2 Cell size
+    {
+        q: "Which of the following cells would be most efficient at exchanging materials with its environment via diffusion?",
+        options: ["A small, spherical cell", "A large, spherical cell", "A cell with a very low surface-area-to-volume ratio", "A cell with a small surface area and large volume"],
+        correct: "A small, spherical cell",
+        exp: "A smaller cell has a higher surface-area-to-volume ratio, making the exchange of nutrients and waste more efficient."
+    },
+    {
+        q: "If a cuboidal cell with a side length of 2 $\\mu m$ doubles its side length to 4 $\\mu m$, what happens to its surface-area-to-volume ratio?",
+        options: ["It decreases by half.", "It doubles.", "It remains the same.", "It quadruples."],
+        correct: "It decreases by half.",
+        exp: "For a cube, SA/V = $6/s$. If $s=2$, ratio=3. If $s=4$, ratio=1.5. The ratio is halved."
+    },
+    {
+        q: "Small, finger-like projections called microvilli are found on the surface of cells in the small intestine. What is their primary purpose?",
+        options: ["To increase surface area for nutrient absorption", "To help the cell move through the intestine", "To decrease the volume of the cell", "To protect the cell from stomach acid"],
+        correct: "To increase surface area for nutrient absorption",
+        exp: "Microvilli significantly increase the plasma membrane surface area without greatly increasing volume, maximizing absorption efficiency."
+    },
+    {
+        q: "As a cell increases in size, its volume increases ______ than its surface area.",
+        options: ["Faster", "Slower", "At the same rate", "Not at all"],
+        correct: "Faster",
+        exp: "Volume is a cubic function ($s^3$), while surface area is a squared function ($s^2$). Volume grows much faster as dimensions increase."
+    },
+    {
+        q: "Which of the following adaptations would help a very large cell maintain efficient metabolic function?",
+        options: ["A highly folded plasma membrane", "A perfectly spherical shape", "Decreasing the number of mitochondria", "Thickening the cell wall"],
+        correct: "A highly folded plasma membrane",
+        exp: "Folding increases the surface area available for transport without adding significant volume."
+    },
+    {
+        q: "Why is a high surface-area-to-volume ratio considered a constraint on cell size?",
+        options: ["Large cells cannot move nutrients in or waste out fast enough to support their volume.", "Large cells have too much DNA for the nucleus to manage.", "Small cells are more susceptible to viral infections.", "Small cells cannot store enough energy."],
+        correct: "Large cells cannot move nutrients in or waste out fast enough to support their volume.",
+        exp: "The rate of diffusion is limited; if the volume is too large, the center of the cell will not receive nutrients or clear waste quickly enough."
+    },
+    {
+        q: "Consider a spherical cell. If the radius is tripled, by what factor does the surface area increase?",
+        options: ["9", "3", "27", "6"],
+        correct: "9",
+        exp: "Surface area of a sphere is $4\\pi r^2$. If $r$ is tripled, $SA$ increases by $3^2 = 9$."
+    },
+    {
+        q: "Flattened cell shapes, like those in the skin, are an evolutionary adaptation to:",
+        options: ["Maximize surface area for exchange while minimizing distance to the center.", "Provide maximum protection with minimum volume.", "Increase the rate of protein synthesis.", "Store large amounts of glycogen."],
+        correct: "Maximize surface area for exchange while minimizing distance to the center.",
+        exp: "A flat shape keeps the surface-area-to-volume ratio high compared to a sphere of the same volume."
+    },
+    {
+        q: "In a laboratory, which 'cell' model would lose heat the slowest to the environment?",
+        options: ["An agar cube with 5 cm sides", "An agar cube with 1 cm sides", "An agar sphere with 1 cm radius", "An agar cylinder with 1 cm radius"],
+        correct: "An agar cube with 5 cm sides",
+        exp: "The largest object has the lowest surface-area-to-volume ratio, meaning it has less surface area per unit of heat-containing volume to lose heat from."
+    },
+    {
+        q: "Which of the following is the most likely reason that the majority of cells are microscopic?",
+        options: ["The physics of diffusion", "The weight of the cytoplasm", "The speed of light", "The availability of phospholipids"],
+        correct: "The physics of diffusion",
+        exp: "Diffusion is only effective over very short distances; larger cells would require active transport for every single molecule, which is energetically impossible."
+    },
+
+    // 2.3 - plasma membrane
+    {
+        q: "According to the fluid mosaic model, what is the primary role of cholesterol in the animal cell membrane?",
+        options: ["Regulating membrane fluidity", "Acting as a transport channel", "Pumping ions against a gradient", "Identifying the cell to the immune system"],
+        correct: "Regulating membrane fluidity",
+        exp: "Cholesterol prevents the membrane from becoming too fluid at high temperatures and too solid at low temperatures."
+    },
+    {
+        q: "The 'mosaic' part of the fluid mosaic model refers to:",
+        options: ["The various proteins embedded in the phospholipid bilayer", "The different types of phospholipids used", "The patterns of carbohydrates on the outside", "The arrangement of DNA in the nucleus"],
+        correct: "The various proteins embedded in the phospholipid bilayer",
+        exp: "The membrane is a 'mosaic' of proteins (integral, peripheral) floating in or on the fluid lipid bilayer."
+    },
+    {
+        q: "Which part of a phospholipid molecule is responsible for the 'barrier' nature of the plasma membrane?",
+        options: ["Hydrophobic fatty acid tails", "Hydrophilic phosphate heads", "Glycerol backbone", "Attached carbohydrate chains"],
+        correct: "Hydrophobic fatty acid tails",
+        exp: "The hydrophobic tails face inward, creating a nonpolar interior that prevents polar or charged substances from crossing easily."
+    },
+    {
+        q: "Which of the following molecules would most likely be used for cell-to-cell recognition?",
+        options: ["Glycoproteins", "Cholesterol", "Aquaporins", "Phospholipids"],
+        correct: "Glycoproteins",
+        exp: "Carbohydrate chains attached to proteins (glycoproteins) or lipids (glycolipids) act as 'ID tags' on the cell surface."
+    },
+    {
+        q: "An integral membrane protein must contain which of the following?",
+        options: ["A hydrophobic region", "A purely hydrophilic structure", "A covalent bond to cholesterol", "A DNA binding site"],
+        correct: "A hydrophobic region",
+        exp: "To span the membrane, a protein must have hydrophobic amino acids that can interact with the fatty acid tails of the phospholipids."
+    },
+    {
+        q: "Which statement best describes the orientation of phospholipids in the bilayer?",
+        options: ["Heads face the aqueous environments; tails face each other.", "Tails face the aqueous environments; heads face each other.", "Heads and tails are mixed randomly.", "All heads face the outside of the cell."],
+        correct: "Heads face the aqueous environments; tails face each other.",
+        exp: "Because the cytoplasm and extracellular fluid are water-based, the hydrophilic heads face outward and the hydrophobic tails hide inward."
+    },
+    {
+        q: "How would the membrane of an organism living in a very cold environment likely differ from one in a hot environment?",
+        options: ["More unsaturated fatty acid tails", "Fewer proteins", "No cholesterol", "Thicker phospholipid heads"],
+        correct: "More unsaturated fatty acid tails",
+        exp: "Unsaturated tails have 'kinks' that prevent them from packing tightly, keeping the membrane fluid at low temperatures."
+    },
+    {
+        q: "Peripheral membrane proteins are typically:",
+        options: ["Loosely bound to the surface of the membrane", "Spanning the entire bilayer", "Found only in the hydrophobic core", "Responsible for ion pumping"],
+        correct: "Loosely bound to the surface of the membrane",
+        exp: "Peripheral proteins do not embed in the hydrophobic core; they sit on the surface, often attached to integral proteins."
+    },
+    {
+        q: "What prevents the phospholipids from flipping 'upside down' (from one leaf of the bilayer to the other) frequently?",
+        options: ["The hydrophilic heads would have to pass through the hydrophobic core.", "The tails are tied to the cytoskeleton.", "Cholesterol glues them in place.", "The proteins are too heavy."],
+        correct: "The hydrophilic heads would have to pass through the hydrophobic core.",
+        exp: "Crossing the hydrophobic center is energetically unfavorable for the polar, hydrophilic phosphate heads."
+    },
+    {
+        q: "The plasma membrane is often described as 'semi-permeable.' What does this mean?",
+        options: ["It allows some substances to pass but not others.", "It allows anything to enter but nothing to leave.", "It is only permeable when the cell is dividing.", "It is made of half lipids and half proteins."],
+        correct: "It allows some substances to pass but not others.",
+        exp: "Selective permeability is a key feature of the membrane, allowing the cell to maintain a specific internal environment."
+    },
+
+    // 2.4 membrane permeability
+    {
+        q: "Which of the following substances would cross the plasma membrane most easily without the help of a protein?",
+        options: ["$CO_2$", "$Na^+$", "Glucose", "$H_2O$"],
+        correct: "$CO_2$",
+        exp: "Small, nonpolar molecules like $O_2$, $CO_2$, and $N_2$ can dissolve in the lipid bilayer and pass through easily."
+    },
+    {
+        q: "Why is the plasma membrane impermeable to most ions like $K^+$ and $Cl^-$?",
+        options: ["The hydrophobic core repels charged particles.", "Ions are too large to fit through the lipids.", "Ions react chemically with the phosphate heads.", "Ions are always pumped out by the cell."],
+        correct: "The hydrophobic core repels charged particles.",
+        exp: "Charged ions are highly hydrophilic and cannot pass through the nonpolar, hydrophobic fatty acid tails of the bilayer."
+    },
+    {
+        q: "Water is polar, yet it can pass through the plasma membrane in small amounts. What allows it to do this despite the hydrophobic barrier?",
+        options: ["It is small enough to pass through gaps in the shifting phospholipids.", "It is slightly nonpolar.", "It dissolves in the cholesterol.", "It follows a gravity gradient."],
+        correct: "It is small enough to pass through gaps in the shifting phospholipids.",
+        exp: "While polar, water molecules are very small and can move through transient gaps in the membrane, though slowly compared to $CO_2$."
+    },
+    {
+        q: "Which of the following would require a transport protein to cross the membrane?",
+        options: ["Glucose", "$O_2$", "$N_2$", "Lipid-based hormones"],
+        correct: "Glucose",
+        exp: "Glucose is large and polar; it cannot pass through the hydrophobic core without assistance."
+    },
+    {
+        q: "Small, nonpolar molecules pass through the membrane via:",
+        options: ["Simple diffusion", "Facilitated diffusion", "Active transport", "Endocytosis"],
+        correct: "Simple diffusion",
+        exp: "Simple diffusion is the movement of solutes directly through the phospholipid bilayer from high to low concentration."
+    },
+    {
+        q: "Cell walls, found in plants and fungi, provide which of the following permeability functions?",
+        options: ["They provide a structural barrier but are generally porous to small molecules.", "They are more selective than the plasma membrane.", "They prevent all gases from entering the cell.", "They act as a pump for active transport."],
+        correct: "They provide a structural barrier but are generally porous to small molecules.",
+        exp: "Cell walls provide structural support and protection but are relatively non-selective compared to the plasma membrane."
+    },
+    {
+        q: "The presence of aquaporins in a cell membrane would most likely:",
+        options: ["Increase the rate of water movement.", "Allow glucose to enter the cell.", "Stop the movement of ions.", "Convert active transport to passive transport."],
+        correct: "Increase the rate of water movement.",
+        exp: "Aquaporins are specialized channel proteins that facilitate the rapid movement of water molecules."
+    },
+    {
+        q: "What determines if a molecule can move via simple diffusion?",
+        options: ["Polarity and size", "The amount of ATP available", "The presence of a cell wall", "The number of ribosomes"],
+        correct: "Polarity and size",
+        exp: "Small and nonpolar molecules can move via simple diffusion; large or polar/charged molecules cannot."
+    },
+    {
+        q: "Which of the following is NOT a component of the plasma membrane that influences permeability?",
+        options: ["Ribosomes", "Phospholipids", "Proteins", "Cholesterol"],
+        correct: "Ribosomes",
+        exp: "Ribosomes are for protein synthesis, not part of the membrane structure that regulates permeability."
+    },
+    {
+        q: "Oxygen ($O_2$) concentrations are typically higher outside a cell than inside. Oxygen will move:",
+        options: ["Inward via simple diffusion", "Inward via active transport", "Outward via facilitated diffusion", "Not at all"],
+        correct: "Inward via simple diffusion",
+        exp: "Oxygen is small and nonpolar, so it moves down its concentration gradient directly through the membrane."
+    },
+
+    // 2.5 membrane transport
+    {
+        q: "Which of the following is a characteristic of all passive transport processes?",
+        options: ["They move substances down their concentration gradient.", "They require the use of ATP.", "They move substances from low to high concentration.", "They involve the use of vesicles."],
+        correct: "They move substances down their concentration gradient.",
+        exp: "Passive transport (diffusion, osmosis) occurs spontaneously as molecules move from areas of high concentration to low concentration."
+    },
+    {
+        q: "Active transport differs from passive transport because active transport:",
+        options: ["Requires energy (ATP) to move molecules against a gradient.", "Only happens in plant cells.", "Always involves the movement of water.", "Does not require a membrane."],
+        correct: "Requires energy (ATP) to move molecules against a gradient.",
+        exp: "Active transport moves substances from low to high concentration, which requires work/energy."
+    },
+    {
+        q: "The Sodium-Potassium pump ($Na^+/K^+$ pump) is an example of:",
+        options: ["Primary active transport", "Simple diffusion", "Facilitated diffusion", "Osmosis"],
+        correct: "Primary active transport",
+        exp: "The pump uses ATP to move $Na^+$ out and $K^+$ in, both against their concentration gradients."
+    },
+    {
+        q: "If a cell is using a lot of ATP to maintain a high concentration of $Ca^{2+}$ ions outside the cell, what process is occurring?",
+        options: ["Active transport", "Facilitated diffusion", "Simple diffusion", "Osmosis"],
+        correct: "Active transport",
+        exp: "Moving ions to an area where they are already highly concentrated requires energy and is therefore active transport."
+    },
+    {
+        q: "Which of the following processes does NOT require the use of a protein?",
+        options: ["Simple diffusion", "Facilitated diffusion", "Active transport", "Endocytosis"],
+        correct: "Simple diffusion",
+        exp: "Simple diffusion is the only process listed where molecules move directly through the lipids without protein help."
+    },
+    {
+        q: "Electrochemical gradients are maintained by:",
+        options: ["Active transport pumps", "Aquaporins", "Oxygen diffusion", "High temperatures"],
+        correct: "Active transport pumps",
+        exp: "Pumps like the proton pump create a gradient of both concentration and charge (voltage) across a membrane."
+    },
+    {
+        q: "What provides the energy for 'secondary' active transport (cotransport)?",
+        options: ["The concentration gradient of another ion", "Direct hydrolysis of ATP", "Light energy", "Heat energy"],
+        correct: "The concentration gradient of another ion",
+        exp: "In cotransport, a pump first creates a gradient (using ATP), and then the movement of that ion back down its gradient 'powers' the transport of a second molecule."
+    },
+    {
+        q: "Small, nonpolar molecules move through the membrane via ______ transport.",
+        options: ["Passive", "Active", "Vesicular", "None of these"],
+        correct: "Passive",
+        exp: "Simple diffusion of nonpolar molecules is a form of passive transport."
+    },
+    {
+        q: "The movement of glucose into a cell where glucose is already high would require:",
+        options: ["Active transport", "Simple diffusion", "Facilitated diffusion", "Osmosis"],
+        correct: "Active transport",
+        exp: "Moving 'uphill' against a gradient always requires active transport."
+    },
+    {
+        q: "Which of the following is true regarding concentration gradients?",
+        options: ["They represent a form of potential energy.", "They can only be created by plants.", "They are destroyed by active transport.", "They only exist for water."],
+        correct: "They represent a form of potential energy.",
+        exp: "A gradient is a separation of 'stuff,' which can be used to do work (like turning ATP synthase) as it flows back."
+    },
+
+    // 2.6 - facilitated diffusion
+    {
+        q: "Facilitated diffusion and simple diffusion are similar in that they both:",
+        options: ["Move solutes down their concentration gradient", "Require ATP", "Require a transport protein", "Only move water molecules"],
+        correct: "Move solutes down their concentration gradient",
+        exp: "Both are passive processes where molecules move from high to low concentration without energy input."
+    },
+    {
+        q: "What is the primary difference between a channel protein and a carrier protein in facilitated diffusion?",
+        options: ["Carrier proteins change shape to move the solute.", "Channel proteins require ATP.", "Carrier proteins are only found in bacteria.", "Channel proteins only move large glucose molecules."],
+        correct: "Carrier proteins change shape to move the solute.",
+        exp: "Channels are like tunnels; carriers bind to the solute and undergo a conformational change to release it on the other side."
+    },
+    {
+        q: "Which of the following would move via facilitated diffusion?",
+        options: ["An ion moving from high to low concentration", "Oxygen moving into a muscle cell", "Carbon dioxide leaving a cell", "Water moving against its gradient"],
+        correct: "An ion moving from high to low concentration",
+        exp: "Ions cannot pass the lipids; they need a protein channel, but if they move 'downhill,' it is facilitated diffusion."
+    },
+    {
+        q: "Gated ion channels open or close in response to:",
+        options: ["Chemical or electrical signals", "The presence of gravity", "Cell division only", "The age of the cell"],
+        correct: "Chemical or electrical signals",
+        exp: "Gated channels are regulated; they can be opened by a ligand (chemical) or a change in voltage."
+    },
+    {
+        q: "Which of the following is the most likely reason a cell would increase the number of aquaporins in its membrane?",
+        options: ["To increase the rate at which water enters or leaves the cell.", "To prevent the cell from bursting in salt water.", "To allow more sodium to enter the cell.", "To speed up the process of mitosis."],
+        correct: "To increase the rate at which water enters or leaves the cell.",
+        exp: "More aquaporins mean more 'tunnels' for water, significantly increasing the rate of osmosis."
+    },
+    {
+        q: "Facilitated diffusion is 'selective' because:",
+        options: ["The transport proteins are specific to certain molecules.", "It only happens when the cell needs food.", "It only works for nonpolar molecules.", "It requires a signal from the nucleus."],
+        correct: "The transport proteins are specific to certain molecules.",
+        exp: "Each protein is shaped to allow only a specific molecule or ion (e.g., a glucose transporter won't move calcium)."
+    },
+    {
+        q: "Which of the following describes the movement of a molecule via a transport protein without the use of energy?",
+        options: ["Facilitated diffusion", "Active transport", "Simple diffusion", "Endocytosis"],
+        correct: "Facilitated diffusion",
+        exp: "This is the definition of facilitated diffusion: protein-aided passive transport."
+    },
+    {
+        q: "If all the carrier proteins for a specific molecule are occupied, the rate of transport levels off. This is known as:",
+        options: ["Saturation", "Denaturation", "Osmotic pressure", "Equilibrium"],
+        correct: "Saturation",
+        exp: "Like a revolving door, if every 'slot' in the proteins is full, the rate can't go any faster regardless of the concentration."
+    },
+    {
+        q: "Facilitated diffusion increases the rate of diffusion for which type of molecules?",
+        options: ["Large polar molecules and ions", "Small nonpolar gases", "Lipid-soluble vitamins", "All molecules"],
+        correct: "Large polar molecules and ions",
+        exp: "These are the molecules that are blocked by the lipid bilayer and depend on proteins to pass."
+    },
+    {
+        q: "Which of the following is NOT true of facilitated diffusion?",
+        options: ["It can move molecules against their concentration gradient.", "It is a passive process.", "It involves integral membrane proteins.", "It is faster than simple diffusion for polar molecules."],
+        correct: "It can move molecules against their concentration gradient.",
+        exp: "Facilitated diffusion is passive and can only move molecules 'down' a gradient."
+    },
+
+    // 2.7 - tonicity and osmoregulation
+    {
+        q: "An animal cell placed in a hypertonic solution will:",
+        options: ["Shrink (shrivel)", "Swell and burst (lyse)", "Remain the same size", "Divide rapidly"],
+        correct: "Shrink (shrivel)",
+        exp: "In a hypertonic solution, there is more solute outside, so water leaves the cell via osmosis."
+    },
+    {
+        q: "A plant cell is placed in a hypotonic solution. What is the result?",
+        options: ["The cell becomes turgid.", "The cell undergoes plasmolysis.", "The cell bursts.", "Nothing happens."],
+        correct: "The cell becomes turgid.",
+        exp: "Water enters the cell, but the cell wall prevents bursting. The resulting pressure is called turgor pressure."
+    },
+    {
+        q: "If a Paramecium (a single-celled freshwater organism) is moved to salt water, what will happen to the activity of its contractile vacuole?",
+        options: ["It will decrease or stop.", "It will increase rapidly.", "It will remain the same.", "It will begin pumping salt instead of water."],
+        correct: "It will decrease or stop.",
+        exp: "Contractile vacuoles pump out excess water. In salt water (hypertonic), water will naturally leave the cell, so the vacuole is no longer needed."
+    },
+    {
+        q: "The water potential of pure water in an open beaker is:",
+        options: ["0", "1", " -10", "Dependent on temperature"],
+        correct: "0",
+        exp: "By definition, the water potential of pure water at atmospheric pressure is 0."
+    },
+    {
+        q: "Water always moves from an area of ______ water potential to an area of ______ water potential.",
+        options: ["Higher; Lower", "Lower; Higher", "Negative; Positive", "Zero; Positive"],
+        correct: "Higher; Lower",
+        exp: "Water moves down its potential gradient, from high (more free water) to low (less free water/more solute)."
+    },
+    {
+        q: "What is the solute potential ($\\Psi_s$) of a 1.0 M sugar solution at 27°C? ($i=1, R=0.0831, T=K$)",
+        options: [" -24.93 bars", " -2.24 bars", " 0 bars", " 24.93 bars"],
+        correct: " -24.93 bars",
+        exp: "Using $\\Psi_s = -iCRT$: $-(1)(1.0)(0.0831)(300) = -24.93$ bars."
+    },
+    {
+        q: "Which of the following describes a 'flaccid' plant cell?",
+        options: ["A cell in an isotonic environment with no net movement of water.", "A cell in a hypotonic environment that is very firm.", "A cell in a hypertonic environment where the membrane has pulled away from the wall.", "A cell that has burst."],
+        correct: "A cell in an isotonic environment with no net movement of water.",
+        exp: "In an isotonic solution, there is no turgor pressure, so the plant tissue feels limp or flaccid."
+    },
+    {
+        q: "Plasmolysis occurs when:",
+        options: ["The plasma membrane pulls away from the cell wall in a hypertonic solution.", "The cell wall dissolves.", "A cell explodes due to water intake.", "The nucleus is ejected from the cell."],
+        correct: "The plasma membrane pulls away from the cell membrane in a hypertonic solution.",
+        exp: "This occurs in plants when they lose too much water, causing the cytoplasm to shrink."
+    },
+    {
+        q: "Distilled water is ______ to a red blood cell.",
+        options: ["Hypotonic", "Hypertonic", "Isotonic", "Equilibrium"],
+        correct: "Hypotonic",
+        exp: "Distilled water has zero solute, while the cell has many solutes. Water will rush into the cell."
+    },
+    {
+        q: "Marine fish must constantly drink seawater to stay hydrated because their environment is:",
+        options: ["Hypertonic to their tissues", "Hypotonic to their tissues", "Isotonic to their tissues", "Full of fresh water"],
+        correct: "Hypertonic to their tissues",
+        exp: "The ocean has more salt than their bodies, so they are constantly losing water to their surroundings."
+    },
+
+    // 2.8 - mechanisms of transport
+    {
+        q: "Which of the following processes is used by white blood cells to engulf and destroy bacteria?",
+        options: ["Phagocytosis", "Pinocytosis", "Exocytosis", "Facilitated diffusion"],
+        correct: "Phagocytosis",
+        exp: "Phagocytosis ('cell eating') is a type of endocytosis used to take in large particles or whole cells."
+    },
+    {
+        q: "What is the main purpose of exocytosis?",
+        options: ["To release substances like hormones or waste from the cell", "To bring nutrients into the cell", "To move ions against a gradient", "To produce ATP"],
+        correct: "To release substances like hormones or waste from the cell",
+        exp: "Exocytosis involves a vesicle fusing with the plasma membrane to dump its contents outside the cell."
+    },
+    {
+        q: "Receptor-mediated endocytosis is highly 'selective' because:",
+        options: ["It only triggers when specific ligands bind to surface receptors.", "It uses ATP to pull in only nonpolar molecules.", "It is only performed by the Golgi.", "It only happens in the dark."],
+        correct: "It only triggers when specific ligands bind to surface receptors.",
+        exp: "This allows cells to bulk-import rare substances (like cholesterol) even if they are in low concentrations outside."
+    },
+    {
+        q: "Large amounts of fluid are taken into a cell through small vesicles during:",
+        options: ["Pinocytosis", "Phagocytosis", "Active transport", "Simple diffusion"],
+        correct: "Pinocytosis",
+        exp: "Pinocytosis ('cell drinking') is the non-specific uptake of extracellular fluid."
+    },
+    {
+        q: "Vesicles that move from the Golgi to the plasma membrane for secretion are involved in:",
+        options: ["Exocytosis", "Endocytosis", "Osmosis", "Translation"],
+        correct: "Exocytosis",
+        exp: "Secretion of proteins is the final step of the endomembrane system, achieved via exocytosis."
+    },
+    {
+        q: "Endocytosis and exocytosis both require:",
+        options: ["Energy (ATP)", "A cell wall", "Aquaporins", "A nucleus"],
+        correct: "Energy (ATP)",
+        exp: "Both are forms of bulk transport, which require significant energy to reshape the membrane and move vesicles."
+    },
+    {
+        q: "When a vesicle fuses with the plasma membrane during exocytosis, what happens to the membrane of the vesicle?",
+        options: ["It becomes part of the plasma membrane.", "It is digested by lysosomes.", "It is released into the extracellular fluid.", "It returns to the nucleus."],
+        correct: "It becomes part of the plasma membrane.",
+        exp: "Vesicle fusion adds lipids and proteins to the plasma membrane, helping it grow or recycle."
+    },
+    {
+        q: "How does the cell 'know' which molecules to take in during receptor-mediated endocytosis?",
+        options: ["Proteins called receptors bind only to specific molecules.", "The cell follows a heat gradient.", "The cell wall filters the molecules.", "Small nonpolar gases guide the process."],
+        correct: "Proteins called receptors bind only to specific molecules.",
+        exp: "Specific binding between a ligand and its receptor ensures only the target molecule is captured."
+    },
+    {
+        q: "Which organelle is most involved in the formation of vesicles for exocytosis?",
+        options: ["Golgi apparatus", "Mitochondria", "Smooth ER", "Nucleolus"],
+        correct: "Golgi apparatus",
+        exp: "The Golgi is the 'shipping center' that buds off vesicles destined for the plasma membrane."
+    },
+    {
+        q: "Bulk transport is necessary for:",
+        options: ["Moving large molecules like proteins and polysaccharides.", "Moving small ions like $Na^+$.", "Moving oxygen gas.", "Moving water molecules."],
+        correct: "Moving large molecules like proteins and polysaccharides.",
+        exp: "Molecules that are too large for transport proteins must be moved in bulk via vesicles."
+    },
+
+    // 2.9 - cell compartmentalization
+    {
+        q: "What is the primary benefit of membrane-bound organelles in eukaryotic cells?",
+        options: ["They allow for incompatible processes to occur simultaneously in different areas.", "They allow the cell to be smaller.", "They prevent the cell from using ATP.", "They eliminate the need for a nucleus."],
+        correct: "They allow for incompatible processes to occur simultaneously in different areas.",
+        exp: "Compartmentalization increases efficiency by creating localized environments (e.g., acidic lysosomes vs neutral cytoplasm)."
+    },
+    {
+        q: "How does the internal membrane system of the mitochondria increase its efficiency?",
+        options: ["It increases surface area for metabolic reactions.", "It stores extra DNA.", "It prevents the cell from getting too hot.", "It allows for faster movement of the cell."],
+        correct: "It increases surface area for metabolic reactions.",
+        exp: "Folding the inner membrane provides more space for the enzymes of the electron transport chain."
+    },
+    {
+        q: "Lysosomes maintain a low pH (acidic) compared to the rest of the cell. This is an example of:",
+        options: ["Compartmentalization", "Simple diffusion", "Endosymbiosis", "Natural selection"],
+        correct: "Compartmentalization",
+        exp: "By sequestering digestive enzymes in a specific compartment, the cell protects the rest of its components from being eaten."
+    },
+    {
+        q: "Which of the following is a key difference between prokaryotic and eukaryotic cells regarding compartmentalization?",
+        options: ["Eukaryotes have membrane-bound organelles; prokaryotes do not.", "Prokaryotes have a nucleus; eukaryotes do not.", "Prokaryotes use compartments to make ATP; eukaryotes do not.", "There is no difference."],
+        correct: "Eukaryotes have membrane-bound organelles; prokaryotes do not.",
+        exp: "Prokaryotes generally lack internal membranes, performing most functions on the plasma membrane or in the cytosol."
+    },
+    {
+        q: "The separation of the genetic material in a nucleus allows eukaryotes to:",
+        options: ["Regulate gene expression more intricately.", "Copy DNA faster than prokaryotes.", "Avoid using RNA.", "Live without a plasma membrane."],
+        correct: "Regulate gene expression more intricately.",
+        exp: "The nuclear envelope separates transcription from translation, allowing for more complex control of which proteins are made."
+    },
+    {
+        q: "Which organelle's folding is most critical for the synthesis and modification of proteins?",
+        options: ["Endoplasmic reticulum", "Vacuole", "Peroxisome", "Nucleolus"],
+        correct: "Endoplasmic reticulum",
+        exp: "The vast, folded surface of the ER provides the space needed for ribosomes to dock and for proteins to fold correctly."
+    },
+    {
+        q: "In a eukaryotic cell, where would you expect to find the enzymes for the Citric Acid Cycle?",
+        options: ["Mitochondrial matrix", "Cytoplasm", "Inside the nucleus", "Attached to the cell wall"],
+        correct: "Mitochondrial matrix",
+        exp: "Compartmentalization ensures these specific enzymes are concentrated where they are needed."
+    },
+    {
+        q: "Folding of cellular membranes is most likely an evolutionary response to the need for:",
+        options: ["Increased surface area", "Decreased volume", "Better protection from viruses", "Improved structural stability"],
+        correct: "Increased surface area",
+        exp: "More surface area means more membrane-bound reactions can happen at once."
+    },
+    {
+        q: "Which of the following would be an example of compartmentalization in a plant cell?",
+        options: ["Storing toxic metabolic byproducts in a central vacuole", "The presence of a cell wall", "The movement of the cell using flagella", "The replication of DNA"],
+        correct: "Storing toxic metabolic byproducts in a central vacuole",
+        exp: "This keeps toxins away from sensitive metabolic processes in the cytoplasm."
+    },
+    {
+        q: "The 'intermembrane space' is a distinct compartment found in which organelle?",
+        options: ["Mitochondria", "Ribosome", "Golgi apparatus", "Lysosome"],
+        correct: "Mitochondria",
+        exp: "The space between the inner and outer membranes is vital for building the proton gradient during ATP synthesis."
+    },
+
+    // 2.10 - origins of cell compartmentalization
+    {
+        q: "The endosymbiotic theory suggests that which of the following organelles evolved from free-living bacteria?",
+        options: ["Mitochondria and Chloroplasts", "Nucleus and Ribosomes", "ER and Golgi", "Lysosomes and Vacuoles"],
+        correct: "Mitochondria and Chloroplasts",
+        exp: "These organelles share many features with prokaryotes, suggesting they were once independent organisms."
+    },
+    {
+        q: "Which of the following is evidence supporting the endosymbiotic theory?",
+        options: ["Mitochondria have their own circular DNA and ribosomes.", "Mitochondria are the same size as a blue whale.", "Chloroplasts are found in animal cells.", "Mitochondria can survive outside of a cell today."],
+        correct: "Mitochondria have their own circular DNA and ribosomes.",
+        exp: "Circular DNA and 70S ribosomes are characteristic of prokaryotes, not eukaryotes."
+    },
+    {
+        q: "According to the endosymbiotic theory, the inner membrane of a mitochondrion is derived from ______ and the outer membrane is derived from ______.",
+        options: ["The original bacterium; the host cell's vesicle", "The host cell; the original bacterium", "The nucleus; the ER", "Spontaneous generation; phospholipids"],
+        correct: "The original bacterium; the host cell's vesicle",
+        exp: "When the host cell 'ate' the bacterium, the bacterium's membrane stayed, and it was wrapped in a layer of the host's membrane."
+    },
+    {
+        q: "Why is it thought that mitochondria evolved before chloroplasts?",
+        options: ["Almost all eukaryotes have mitochondria, but only some have chloroplasts.", "Mitochondria are smaller.", "Chloroplasts are more complex.", "Mitochondria produce more ATP."],
+        correct: "Almost all eukaryotes have mitochondria, but only some have chloroplasts.",
+        exp: "This suggests the 'mitochondrial event' happened in a common ancestor of all eukaryotes, while the 'chloroplast event' happened later in a specific lineage."
+    },
+    {
+        q: "The fact that mitochondria and chloroplasts reproduce via binary fission is evidence of:",
+        options: ["Their prokaryotic origins", "Their relationship to viruses", "The influence of the nucleus", "Their inability to function"],
+        correct: "Their prokaryotic origins",
+        exp: "Binary fission is the method of asexual reproduction used by bacteria."
+    },
+    {
+        q: "Which of the following would NOT be found in a chloroplast but WOULD be found in a typical prokaryote?",
+        options: ["Peptidoglycan cell wall", "Circular DNA", "Ribosomes", "Double membrane"],
+        correct: "Peptidoglycan cell wall",
+        exp: "While chloroplasts have DNA and ribosomes, they lost their ancestral cell walls after becoming endosymbionts."
+    },
+    {
+        q: "The original host cell that engulfed the aerobic bacterium was likely:",
+        options: ["An anaerobic archaean", "A photosynthetic plant cell", "A virus", "A fungus"],
+        correct: "An anaerobic archaean",
+        exp: "Current evidence suggests an ancestral archaean-like cell provided the 'host' for the first endosymbionts."
+    },
+    {
+        q: "Endosymbiosis is a type of relationship where:",
+        options: ["One organism lives inside another and both benefit.", "One organism eats another and both die.", "Two organisms compete for the same food.", "A virus infects a cell."],
+        correct: "One organism lives inside another and both benefit.",
+        exp: "The host got efficient energy/food, and the endosymbiont got protection and nutrients."
+    },
+    {
+        q: "If the endosymbiotic theory is correct, mitochondrial ribosomes should be more similar to:",
+        options: ["Bacterial ribosomes", "Cytoplasmic ribosomes of a human cell", "Ribosomes found on the Rough ER", "Plant vacuole ribosomes"],
+        correct: "Bacterial ribosomes",
+        exp: "Because of their ancestry, mitochondrial ribosomes are 'prokaryotic' in size and structure (70S)."
+    },
+    {
+        q: "The ancestral 'chloroplast' was likely a type of:",
+        options: ["Cyanobacteria", "E. coli", "Yeast", "Thermophilic archaea"],
+        correct: "Cyanobacteria",
+        exp: "Cyanobacteria are photosynthetic prokaryotes that closely resemble modern chloroplasts."
+    }
+]
 ];    
     // 1. Data Structure Placeholder (You will fill these with 60+ questions each)
     const questionsData = {
