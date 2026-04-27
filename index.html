@@ -177,14 +177,14 @@
 
     <nav>
     <h2>AP Biology Prep</h2>
-    <button class="unit-btn" onclick="loadTopic('unit1', event)">Unit 1: Chemistry of Life</button>
-    <button class="unit-btn" onclick="loadTopic('unit2', event)">Unit 2: Cell Structure & Function</button>
-    <button class="unit-btn" onclick="loadTopic('unit3', event)">Unit 3: Cellular Energetics</button>
-    <button class="unit-btn" onclick="loadTopic('unit4', event)">Unit 4: Cell Communication</button>
-    <button class="unit-btn" onclick="loadTopic('unit5', event)">Unit 5: Heredity</button>
-    <button class="unit-btn" onclick="loadTopic('unit6', event)">Unit 6: Gene Expression</button>
-    <button class="unit-btn" onclick="loadTopic('unit7', event)">Unit 7: Natural Selection</button>
-    <button class="unit-btn" onclick="loadTopic('unit8', event)">Unit 8: Ecology</button>
+    <button class="unit-btn" onclick="startUnit('unit1', event)">Unit 1: Chemistry of Life</button>
+    <button class="unit-btn" onclick="startUnit('unit2', event)">Unit 2: Cell Structure & Function</button>
+    <button class="unit-btn" onclick="startUnit('unit3', event)">Unit 3: Cellular Energetics</button>
+    <button class="unit-btn" onclick="startUnit('unit4', event)">Unit 4: Cell Communication</button>
+    <button class="unit-btn" onclick="startUnit('unit5', event)">Unit 5: Heredity</button>
+    <button class="unit-btn" onclick="startUnit('unit6', event)">Unit 6: Gene Expression</button>
+    <button class="unit-btn" onclick="startUnit('unit7', event)">Unit 7: Natural Selection</button>
+    <button class="unit-btn" onclick="startUnit('unit8', event)">Unit 8: Ecology</button>
 </nav>
 
 <main>
@@ -197,17 +197,17 @@
             </div>
 
             <div id="quiz-box">
-    <p id="question-number">Select a unit to begin</p>
-    <p id="question-text">Please choose a unit from the left sidebar to start your review.</p>
+                <p id="question-number">Select a unit to begin</p>
+                <p id="question-text">Please choose a unit from the left sidebar to start your review.</p>
 
-    <div id="options-container" class="options-list"></div>
+            <div id="options-container" class="options-list"></div>
 
-    <div class="explanation" id="explanation-box"></div>
+            <div class="explanation" id="explanation-box"></div>
 
-    <div class="controls">
-        <button id="prev-btn" class="nav-btn" onclick="changeQuestion(-1)">Previous</button>
-        <button id="next-btn" class="nav-btn" onclick="changeQuestion(1)">Next Question</button>
-    </div>
+            <div class="controls">
+                <button id="prev-btn" class="nav-btn">Previous</button>
+                <button id="next-btn" class="nav-btn">Next Question</button>
+        </div>
 </div>
         </div>
 
@@ -225,7 +225,7 @@
 </main>
 <script>
     const database = { 
-        unit1 = [
+        unit1: [
     // --- Topic 1.1: Structure of Water and Hydrogen Bonding ---
     {
         q: "Which of the following best explains why water has a high specific heat?",
@@ -1284,8 +1284,7 @@ unit2: [
     }
 
   };    
-// 1. Map the database into the format your logic expects
-    // This ensures that unit1, unit2, etc. are properly referenced
+// 1. Map the database
     const questionsData = {
         unit1: database.unit1 || [],
         unit2: database.unit2 || [],
@@ -1298,22 +1297,22 @@ unit2: [
     };
 
     // 2. Global State
-    let currentPool = [];    // The 10 random questions for the session
+    let currentPool = [];
     let currentIndex = 0;
     let score = 0;
-    let answered = false;    // Prevents double-scoring the same question
+    let answered = false;
 
     // 3. Select DOM Elements
     const unitTitleDisp = document.getElementById('unit-title');
     const scoreDisp = document.getElementById('score-counter');
     const qNumDisp = document.getElementById('question-number');
     const qTextDisp = document.getElementById('question-text');
-    const optionsCont = document.querySelector('.options-list');
+    const optionsCont = document.getElementById('options-container'); // Corrected ID
     const expBox = document.getElementById('explanation-box');
     const nextBtn = document.getElementById('next-btn');
     const prevBtn = document.getElementById('prev-btn');
 
-    // 4. Shuffle Utility (Fisher-Yates)
+    // 4. Shuffle Utility
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -1325,11 +1324,10 @@ unit2: [
     // 5. Initialize a Unit
     function startUnit(unitKey, displayTitle) {
         if (!questionsData[unitKey] || questionsData[unitKey].length === 0) {
-            alert("The question bank for " + displayTitle + " is currently being built!");
+            alert("The question bank for " + displayTitle + " is currently empty!");
             return;
         }
 
-        // Shuffle all questions from the unit and pick the first 10
         const fullBank = [...questionsData[unitKey]];
         currentPool = shuffle(fullBank).slice(0, 10);
         
@@ -1340,19 +1338,17 @@ unit2: [
         loadQuestion();
     }
 
-    // 6. Load Question to UI
+    // 6. Load Question
     function loadQuestion() {
         answered = false;
         const data = currentPool[currentIndex];
         
-        // Update UI
         scoreDisp.innerText = `Score: ${score}/10`;
         qNumDisp.innerText = `Question ${currentIndex + 1} of 10`;
         qTextDisp.innerText = data.q;
         expBox.style.display = 'none';
         expBox.innerHTML = `<strong>Explanation:</strong> ${data.exp}`;
         
-        // Clear and Shuffled Options
         optionsCont.innerHTML = "";
         const shuffledOptions = shuffle([...data.options]);
 
@@ -1364,14 +1360,8 @@ unit2: [
             optionsCont.appendChild(div);
         });
 
-        // Toggle Nav Buttons
         prevBtn.style.visibility = currentIndex === 0 ? 'hidden' : 'visible';
         nextBtn.innerText = currentIndex === 9 ? "Finish Unit" : "Next Question";
-
-        // If you are using MathJax, trigger a re-render here
-        if (window.MathJax) {
-            MathJax.typesetPromise();
-        }
     }
 
     // 7. Handle Selection
@@ -1381,12 +1371,11 @@ unit2: [
 
         if (selected === correct) {
             score++;
-            element.style.backgroundColor = "#b7e4c7"; // Bio-green light
-            element.style.borderColor = "#2d6a4f";     // Bio-green dark
+            element.style.backgroundColor = "#b7e4c7";
+            element.style.borderColor = "#2d6a4f";
         } else {
-            element.style.backgroundColor = "#f8d7da"; // Soft red
-            element.style.borderColor = "#dc3545";     // Dark red
-            // Highlight the correct one so the student learns
+            element.style.backgroundColor = "#f8d7da";
+            element.style.borderColor = "#dc3545";
             Array.from(optionsCont.children).forEach(child => {
                 if (child.innerText === correct) {
                     child.style.borderColor = "#2d6a4f";
@@ -1394,13 +1383,13 @@ unit2: [
                 }
             });
         }
-
         scoreDisp.innerText = `Score: ${score}/10`;
         expBox.style.display = 'block';
     }
 
-    // 8. Navigation Event Listeners
+    // 8. Navigation Listeners
     nextBtn.onclick = () => {
+        if (currentPool.length === 0) return;
         if (currentIndex < 9) {
             currentIndex++;
             loadQuestion();
@@ -1416,9 +1405,7 @@ unit2: [
         }
     };
 
-    // 9. Sidebar Button Auto-Assign
-    // This looks at all buttons with class 'unit-btn' and assigns 
-    // them to unit1, unit2, etc. based on their order.
+    // 9. Sidebar Auto-Assign
     document.querySelectorAll('.unit-btn').forEach((btn, index) => {
         btn.onclick = () => {
             const unitKey = `unit${index + 1}`;
