@@ -3094,7 +3094,987 @@ unit2: [
     correct: "Systems Interactions",
     exp: "Topic 5.5 is categorized under Big Idea 4: Systems Interactions[cite: 233]."
 }
-        ]
+        ], 
+
+        unit6: [
+         /* --- UNIT 6: GENE EXPRESSION AND REGULATION --- */
+
+// 6.1: DNA and RNA Structure
+{
+    q: "Which of the following describes the typical shape of chromosomes in prokaryotic organisms?",
+    options: ["Multiple linear chromosomes", "A single circular chromosome", "Fragmented RNA strands", "Linear DNA wrapped around histones"],
+    correct: "A single circular chromosome",
+    exp: "Prokaryotic organisms typically have circular chromosomes, while eukaryotes have multiple linear chromosomes." [cite: 890, 891]
+},
+{
+    q: "What are plasmids in the context of genetic information storage?",
+    options: ["Linear proteins in the nucleus", "Extra-chromosomal circular DNA molecules", "Small subunits of the ribosome", "Stretches of RNA that code for histones"],
+    correct: "Extra-chromosomal circular DNA molecules",
+    exp: "Both prokaryotes and eukaryotes can contain plasmids, which are extra-chromosomal circular molecules of DNA." [cite: 894]
+},
+{
+    q: "Which of the following is a nitrogenous base with a double-ring structure?",
+    options: ["Cytosine", "Thymine", "Adenine", "Uracil"],
+    correct: "Adenine",
+    exp: "Purines, which include adenine and guanine, have a double-ring structure." [cite: 899]
+},
+{
+    q: "Which nitrogenous bases are classified as pyrimidines?",
+    options: ["Adenine and Guanine", "Cytosine, Thymine, and Uracil", "Adenine and Thymine", "Guanine and Cytosine"],
+    correct: "Cytosine, Thymine, and Uracil",
+    exp: "Pyrimidines (cytosine, thymine, and uracil) have a single-ring structure." [cite: 900]
+},
+{
+    q: "In DNA base pairing, what is the specific partner for Guanine?",
+    options: ["Adenine", "Thymine", "Cytosine", "Uracil"],
+    correct: "Cytosine",
+    exp: "Purines pair with pyrimidines: specifically, guanine pairs with cytosine." [cite: 901]
+},
+{
+    q: "In an RNA molecule, Adenine pairs with which base?",
+    options: ["Thymine", "Cytosine", "Uracil", "Guanine"],
+    correct: "Uracil",
+    exp: "In RNA, adenine pairs with uracil instead of thymine." [cite: 901]
+},
+{
+    q: "Eukaryotic chromosomes are condensed using which specific proteins?",
+    options: ["Helicases", "Histones", "Ligases", "Topoisomerases"],
+    correct: "Histones",
+    exp: "Eukaryotic linear chromosomes are condensed using histones and associated proteins." [cite: 892]
+},
+{
+    q: "If a DNA sample contains 20% Adenine, what percentage of Cytosine would you expect to find?",
+    options: ["20%", "30%", "40%", "80%"],
+    correct: "30%",
+    exp: "If A=20%, then T=20% (Total 40%). The remaining 60% is shared equally between G and C, so C=30%." [cite: 898, 901]
+},
+{
+    q: "What kind of bond holds the two strands of the DNA double helix together?",
+    options: ["Ionic bonds", "Covalent bonds", "Hydrogen bonds", "Peptide bonds"],
+    correct: "Hydrogen bonds",
+    exp: "Specific nucleotide base pairing is held together by hydrogen bonds between the nitrogenous bases." [cite: 898]
+},
+{
+    q: "Which of the following is common to both DNA and RNA?",
+    options: ["Deoxyribose sugar", "Double-stranded helix structure", "Phosphate groups", "Thymine as a nitrogenous base"],
+    correct: "Phosphate groups",
+    exp: "Both DNA and RNA are nucleic acids that contain phosphate groups in their sugar-phosphate backbones." [cite: 889, 898]
+},
+{
+    q: "DNA is described as being 'antiparallel.' This means:",
+    options: ["The strands run in the same direction", "The strands run in opposite directions (5' to 3' and 3' to 5')", "One strand is DNA and the other is RNA", "The strands are identical in sequence"],
+    correct: "The strands run in opposite directions (5' to 3' and 3' to 5')",
+    exp: "DNA strands are oriented in opposite directions, which is critical for replication and transcription." [cite: 922, 928]
+},
+{
+    q: "The functional difference between a purine and a pyrimidine is based on:",
+    options: ["Their sugar type", "Their ring structure", "The number of phosphate groups", "The presence of sulfur"],
+    correct: "Their ring structure",
+    exp: "Purines have two rings; pyrimidines have one ring." [cite: 899, 900]
+},
+{
+    q: "Which evidence supports the common ancestry of all living organisms regarding genetics?",
+    options: ["All organisms have circular DNA", "All organisms use the same histones", "All organisms exhibit specific nucleotide base pairing that is conserved through evolution", "All organisms have linear chromosomes"],
+    correct: "All organisms exhibit specific nucleotide base pairing that is conserved through evolution",
+    exp: "Specific nucleotide base pairing is a conserved feature across evolution." [cite: 898]
+},
+{
+    q: "Where is genetic information stored in most living systems?",
+    options: ["Ribosomes", "DNA molecules", "Golgi apparatus", "Cell wall"],
+    correct: "DNA molecules",
+    exp: "Genetic information is stored in and passed to subsequent generations through DNA molecules." [cite: 889]
+},
+{
+    q: "In which of the following would you most likely find linear DNA?",
+    options: ["Bacteria", "Archaea", "Plants", "Plasmids"],
+    correct: "Plants",
+    exp: "Eukaryotic organisms, like plants, typically have multiple linear chromosomes." [cite: 891]
+},
+{
+    q: "RNA differs from DNA because RNA:",
+    options: ["Is double-stranded", "Contains the sugar deoxyribose", "Contains the base Uracil", "Has a circular structure"],
+    correct: "Contains the base Uracil",
+    exp: "RNA contains uracil, whereas DNA contains thymine." [cite: 901]
+},
+{
+    q: "The backbone of a DNA strand is composed of:",
+    options: ["Nitrogenous bases", "Alternating sugar and phosphate groups", "Amino acid chains", "Hydrogen bonds"],
+    correct: "Alternating sugar and phosphate groups",
+    exp: "The structural backbone of DNA consists of sugars and phosphate groups." [cite: 898]
+},
+{
+    q: "How many hydrogen bonds form between Guanine and Cytosine?",
+    options: ["One", "Two", "Three", "Four"],
+    correct: "Three",
+    exp: "G-C pairs form three hydrogen bonds, making them slightly more stable than A-T pairs." [cite: 901]
+},
+{
+    q: "How many hydrogen bonds form between Adenine and Thymine?",
+    options: ["One", "Two", "Three", "Four"],
+    correct: "Two",
+    exp: "A-T pairs form two hydrogen bonds." [cite: 901]
+},
+{
+    q: "A scientist finds a circular DNA molecule outside the main chromosome of a yeast cell. This molecule is a:",
+    options: ["Histone", "Plasmid", "Nucleosome", "Linear chromosome"],
+    correct: "Plasmid",
+    exp: "Plasmids are extra-chromosomal circular molecules of DNA found in both prokaryotes and eukaryotes (like yeast)." [cite: 894]
+},
+
+// 6.2: DNA Replication
+{
+    q: "In which direction is DNA always synthesized?",
+    options: ["3' to 5'", "5' to 3'", "Varies by organism", "Bi-directionally on the same strand"],
+    correct: "5' to 3'",
+    exp: "DNA is synthesized in the 5' to 3' direction." [cite: 922]
+},
+{
+    q: "DNA replication is described as 'semiconservative' because:",
+    options: ["The original DNA is completely destroyed", "One strand serves as the template for a new complementary strand", "The new DNA is made entirely of new atoms", "Only half of the genes are copied"],
+    correct: "One strand serves as the template for a new complementary strand",
+    exp: "Replication is semiconservative, meaning each new DNA molecule consists of one old template strand and one new strand." [cite: 923]
+},
+{
+    q: "Which enzyme is responsible for unwinding the DNA strands during replication?",
+    options: ["Ligase", "Helicase", "Topoisomerase", "DNA Polymerase"],
+    correct: "Helicase",
+    exp: "Helicase unwinds the DNA strands." [cite: 924]
+},
+{
+    q: "What is the function of topoisomerase during DNA replication?",
+    options: ["Joining DNA fragments", "Relaxing supercoiling in front of the replication fork", "Adding RNA primers", "Synthesizing the leading strand"],
+    correct: "Relaxing supercoiling in front of the replication fork",
+    exp: "Topoisomerase relaxes supercoiling in front of the replication fork." [cite: 925]
+},
+{
+    q: "DNA polymerase requires which of the following to initiate DNA synthesis?",
+    options: ["A poly-A tail", "RNA primers", "A GTP cap", "Promoter sequences"],
+    correct: "RNA primers",
+    exp: "DNA polymerase requires RNA primers to initiate DNA synthesis." [cite: 926]
+},
+{
+    q: "On which strand is DNA synthesized continuously?",
+    options: ["Lagging strand", "Leading strand", "Template strand", "Coding strand"],
+    correct: "Leading strand",
+    exp: "DNA polymerase synthesizes new strands of DNA continuously on the leading strand." [cite: 928]
+},
+{
+    q: "On which strand is DNA synthesized discontinuously in fragments?",
+    options: ["Leading strand", "Lagging strand", "Promoter strand", "Histone strand"],
+    correct: "Lagging strand",
+    exp: "DNA is synthesized discontinuously on the lagging strand." [cite: 928]
+},
+{
+    q: "Which enzyme joins the fragments on the lagging strand?",
+    options: ["Helicase", "DNA Polymerase", "Ligase", "RNA Polymerase"],
+    correct: "Ligase",
+    exp: "Ligase joins the fragments on the lagging strand." [cite: 929]
+},
+{
+    q: "What is the primary role of DNA polymerase?",
+    options: ["Unzipping DNA", "Synthesizing new strands of DNA", "Breaking hydrogen bonds", "Adding a GTP cap"],
+    correct: "Synthesizing new strands of DNA",
+    exp: "DNA polymerase is the main enzyme that synthesizes new DNA strands." [cite: 928]
+},
+{
+    q: "Why are RNA primers necessary in DNA replication?",
+    options: ["To provide a 3' end for DNA polymerase to build upon", "To unwind the double helix", "To prevent mutations", "To keep the strands separated"],
+    correct: "To provide a 3' end for DNA polymerase to build upon",
+    exp: "DNA polymerase cannot start a strand from scratch; it requires an existing primer." [cite: 926]
+},
+{
+    q: "The fragments produced on the lagging strand are known as:",
+    options: ["Introns", "Exons", "Okazaki fragments", "Plasmids"],
+    correct: "Okazaki fragments",
+    exp: "These fragments (Okazaki) are synthesized discontinuously and then joined by ligase." [cite: 928, 929]
+},
+{
+    q: "What ensures the 'continuity of hereditary information' during replication?",
+    options: ["Random mutations", "The semiconservative nature of replication", "Histone acetylation", "RNA processing"],
+    correct: "The semiconservative nature of replication",
+    exp: "DNA replication ensures continuity of hereditary information through semiconservative copying." [cite: 921, 923]
+},
+{
+    q: "If helicase were non-functional, what would be the immediate effect on replication?",
+    options: ["Fragments would not be joined", "Supercoiling would increase", "The DNA strands would not separate", "Primers would not be added"],
+    correct: "The DNA strands would not separate",
+    exp: "Helicase's job is to unwind/separate the DNA strands." [cite: 924]
+},
+{
+    q: "Topoisomerase prevents DNA from becoming too tightly wound by:",
+    options: ["Cutting and rejoining the DNA backbone", "Adding more hydrogen bonds", "Binding to single-stranded DNA", "Removing RNA primers"],
+    correct: "Cutting and rejoining the DNA backbone",
+    exp: "It relaxes supercoiling tension that builds up as helicase unwinds the DNA." [cite: 925]
+},
+{
+    q: "Where does the energy for DNA synthesis come from?",
+    options: ["ATP only", "The hydrolysis of the phosphate bonds of incoming nucleotides", "Heat from the environment", "Centrosomes"],
+    correct: "The hydrolysis of the phosphate bonds of incoming nucleotides",
+    exp: "Incoming dNTPs provide the energy necessary for the formation of the phosphodiester bond." [cite: 922]
+},
+{
+    q: "What happens during 'Anaphase' of the cell cycle that involves these replicated chromosomes?",
+    options: ["They are synthesized", "They are separated toward poles", "They are condensed with histones", "They are turned into RNA"],
+    correct: "They are separated toward poles",
+    exp: "Replicated sister chromatids separate during anaphase, ensuring each daughter cell gets a copy." [cite: 676]
+},
+{
+    q: "The 'replication fork' is:",
+    options: ["The site where DNA is destroyed", "The Y-shaped region where the parent DNA is being unwound", "A type of protein used for storage", "The end of a linear chromosome"],
+    correct: "The Y-shaped region where the parent DNA is being unwound",
+    exp: "The fork is the active area of replication where enzymes are unwinding and copying DNA." [cite: 925]
+},
+{
+    q: "Which enzyme replaces RNA primers with DNA nucleotides?",
+    options: ["DNA Polymerase", "Ligase", "Helicase", "RNA Polymerase"],
+    correct: "DNA Polymerase",
+    exp: "DNA polymerase removes the RNA primers and fills the gaps with DNA." [cite: 928]
+},
+{
+    q: "If DNA was synthesized 3' to 5', what would happen to the leading strand?",
+    options: ["It would be the lagging strand", "Synthesis would be impossible with current enzymes", "It would require more ligase", "It would not need a primer"],
+    correct: "Synthesis would be impossible with current enzymes",
+    exp: "DNA polymerase only works in the 5' to 3' direction." [cite: 922, 928]
+},
+{
+    q: "Semiconservative replication results in:",
+    options: ["One molecule with two new strands", "Two molecules, each with one original and one new strand", "Two molecules with only original strands", "A single-stranded DNA molecule"],
+    correct: "Two molecules, each with one original and one new strand",
+    exp: "This ensures the genetic code is accurately preserved across generations." [cite: 923]
+},
+
+// 6.3: Transcription and RNA Processing
+{
+    q: "What is the primary function of Messenger RNA (mRNA)?",
+    options: ["Building ribosomes", "Carrying information from DNA to the ribosome", "Transferring amino acids", "Excising introns"],
+    correct: "Carrying information from DNA to the ribosome",
+    exp: "mRNA molecules carry information from DNA in the nucleus to the ribosome in the cytoplasm." [cite: 964]
+},
+{
+    q: "Which RNA molecule carries specific amino acids and has anticodon sequences?",
+    options: ["mRNA", "rRNA", "tRNA", "snRNA"],
+    correct: "tRNA",
+    exp: "tRNA molecules bind specific amino acids and have anticodons that pair with mRNA codons." [cite: 965]
+},
+{
+    q: "Which enzyme synthesizes mRNA by reading the DNA template?",
+    options: ["DNA Polymerase", "Ligase", "RNA Polymerase", "Helicase"],
+    correct: "RNA Polymerase",
+    exp: "RNA polymerases use a single template strand of DNA to direct transcription." [cite: 969]
+},
+{
+    q: "RNA polymerase synthesizes mRNA in the _____ direction by reading the DNA template in the _____ direction.",
+    options: ["3' to 5'; 5' to 3'", "5' to 3'; 3' to 5'", "5' to 3'; 5' to 3'", "3' to 5'; 3' to 5'"],
+    correct: "5' to 3'; 3' to 5'",
+    exp: "RNA polymerase synthesizes mRNA 5' to 3' by reading the template DNA 3' to 5'." [cite: 983]
+},
+{
+    q: "What is added to the 3' end of a eukaryotic mRNA transcript to increase stability?",
+    options: ["GTP cap", "Poly-A tail", "Histone", "Intron"],
+    correct: "Poly-A tail",
+    exp: "The addition of a poly-A tail makes mRNA more stable." [cite: 986]
+},
+{
+    q: "What is the function of the GTP cap on eukaryotic mRNA?",
+    options: ["Protecting from degradation", "Aiding in ribosomal recognition", "Coding for methionine", "Removing introns"],
+    correct: "Aiding in ribosomal recognition",
+    exp: "The addition of a GTP cap helps with ribosomal recognition." [cite: 987]
+},
+{
+    q: "The process of removing non-coding regions and joining coding regions in mRNA is called:",
+    options: ["Transcription", "Alternative splicing", "Translation", "Replication"],
+    correct: "Alternative splicing",
+    exp: "Alternative splicing involves excising introns and retaining exons to generate mature mRNA." [cite: 988, 989]
+},
+{
+    q: "What are the non-coding sequences removed during RNA processing?",
+    options: ["Exons", "Introns", "Codons", "Anticodons"],
+    correct: "Introns",
+    exp: "Introns are excised during RNA processing." [cite: 988]
+},
+{
+    q: "Alternative splicing allows for:",
+    options: ["Production of different proteins from the same gene", "Faster DNA replication", "Conversion of RNA to DNA", "Removal of poly-A tails"],
+    correct: "Production of different proteins from the same gene",
+    exp: "Alternative splicing generates different versions of mature mRNA from a single transcript." [cite: 988, 989]
+},
+{
+    q: "Which RNA molecules are the functional building blocks of ribosomes?",
+    options: ["mRNA", "tRNA", "rRNA", "RNA primers"],
+    correct: "rRNA",
+    exp: "Ribosomal RNA (rRNA) molecules are functional building blocks of ribosomes." [cite: 967]
+},
+{
+    q: "In which part of a eukaryotic cell does transcription occur?",
+    options: ["Ribosome", "Cytoplasm", "Nucleus", "Endoplasmic Reticulum"],
+    correct: "Nucleus",
+    exp: "Eukaryotic transcription takes place in the nucleus before mRNA moves to the cytoplasm." [cite: 964]
+},
+{
+    q: "The DNA strand that is NOT used as a template for transcription is called the:",
+    options: ["Antisense strand", "Coding strand", "Lagging strand", "Primer strand"],
+    correct: "Coding strand",
+    exp: "The coding (or sense) strand has the same sequence as the mRNA (except T for U)." [cite: 983]
+},
+{
+    q: "What determines the function of an RNA molecule?",
+    options: ["Its weight", "The sequence of bases and its structure", "The number of exons it has", "The type of DNA polymerase used"],
+    correct: "The sequence of bases and its structure",
+    exp: "RNA base sequence and molecule structure determine its specific function." [cite: 963]
+},
+{
+    q: "What happens if the GTP cap is not added to an mRNA molecule?",
+    options: ["Transcription will fail", "The mRNA will not be recognized by the ribosome", "The DNA will be mutated", "The poly-A tail will become an intron"],
+    correct: "The mRNA will not be recognized by the ribosome",
+    exp: "The GTP cap is essential for ribosomal binding in eukaryotes." [cite: 987]
+},
+{
+    q: "A mature mRNA transcript contains which of the following?",
+    options: ["Introns and Exons", "Only Exons", "Only Introns", "Exons and Histones"],
+    correct: "Only Exons",
+    exp: "RNA processing removes introns and leaves only the spliced exons." [cite: 988]
+},
+{
+    q: "Which of the following is true for prokaryotic transcription?",
+    options: ["mRNA is modified with a poly-A tail", "Introns are common", "Transcription and translation can occur simultaneously", "A GTP cap is required"],
+    correct: "Transcription and translation can occur simultaneously",
+    exp: "In prokaryotes, translation can occur while the mRNA is still being transcribed because there is no nucleus." [cite: 1018]
+},
+{
+    q: "The sequence of mRNA is complementary to the:",
+    options: ["Coding strand", "Template strand", "Ribosomal RNA", "tRNA anticodon"],
+    correct: "Template strand",
+    exp: "mRNA is synthesized using the template strand as a guide." [cite: 983]
+},
+{
+    q: "RNA processing occurs in which type of cells?",
+    options: ["Prokaryotic only", "Eukaryotic only", "Both Prokaryotic and Eukaryotic", "Only in viruses"],
+    correct: "Eukaryotic only",
+    exp: "mRNA modification (cap, tail, splicing) is a feature of eukaryotic gene expression." [cite: 985]
+},
+{
+    q: "Transcription starts at a specific DNA sequence called a:",
+    options: ["Start codon", "Promoter", "Origin of replication", "Poly-A tail"],
+    correct: "Promoter",
+    exp: "RNA polymerase binds to a promoter to initiate transcription." [cite: 1062]
+},
+{
+    q: "What is the end product of transcription?",
+    options: ["A polypeptide", "A DNA molecule", "An RNA molecule", "A ribosome"],
+    correct: "An RNA molecule",
+    exp: "Transcription produces an RNA transcript (mRNA, tRNA, or rRNA)." [cite: 970]
+},
+
+// 6.4: Translation
+{
+    q: "Where does translation of mRNA into a polypeptide occur?",
+    options: ["Nucleus", "Ribosomes", "Golgi apparatus", "Lysosomes"],
+    correct: "Ribosomes",
+    exp: "Translation of mRNA to generate a polypeptide occurs on ribosomes." [cite: 1016]
+},
+{
+    q: "What is the start codon for translation?",
+    options: ["UAA", "UAG", "AUG", "UGA"],
+    correct: "AUG",
+    exp: "Translation is initiated at the start codon AUG, which codes for methionine." [cite: 1023]
+},
+{
+    q: "In which direction is the mRNA read by the ribosome?",
+    options: ["3' to 5'", "5' to 3'", "Varies by amino acid", "Bi-directionally"],
+    correct: "5' to 3'",
+    exp: "The ribosome reads the mRNA transcript in the 5' to 3' direction." [cite: 983, 1021]
+},
+{
+    q: "What are the triplets of nucleotides on mRNA called?",
+    options: ["Anticodons", "Codons", "Introns", "Promoters"],
+    correct: "Codons",
+    exp: "The sequence of nucleotides on the mRNA is read in triplets called codons." [cite: 1024]
+},
+{
+    q: "What evidence suggests a common ancestry for all living organisms in terms of translation?",
+    options: ["All organisms have a nucleus", "Nearly all organisms use the same genetic code", "All organisms use DNA as a template", "All organisms have circular chromosomes"],
+    correct: "Nearly all organisms use the same genetic code",
+    exp: "The universal nature of the genetic code is evidence for common ancestry." [cite: 1027]
+},
+{
+    q: "Which enzyme allows retroviruses to flow information from RNA to DNA?",
+    options: ["RNA Polymerase", "DNA Ligase", "Reverse Transcriptase", "Helicase"],
+    correct: "Reverse Transcriptase",
+    exp: "Reverse transcriptase copies the viral RNA genome into DNA." [cite: 1040]
+},
+{
+    q: "During translation, which molecule brings the correct amino acid to the ribosome?",
+    options: ["mRNA", "rRNA", "tRNA", "DNA Polymerase"],
+    correct: "tRNA",
+    exp: "tRNA brings the correct amino acid to the place specified by the mRNA codon." [cite: 1034]
+},
+{
+    q: "What happens when the ribosome reaches a stop codon?",
+    options: ["It adds a methionine", "It restarts transcription", "Translation terminates and the protein is released", "It adds a poly-A tail"],
+    correct: "Translation terminates and the protein is released",
+    exp: "Translation continues until a stop codon is reached, at which point the protein is released." [cite: 1036, 1037]
+},
+{
+    q: "Where can ribosomes be found in a eukaryotic cell?",
+    options: ["Only in the nucleus", "Cytoplasm and rough ER", "Only on the cell membrane", "Only in the mitochondria"],
+    correct: "Cytoplasm and rough ER",
+    exp: "Ribosomes are found in the cytoplasm and on the surface of the rough ER." [cite: 1016]
+},
+{
+    q: "The sequence of events in translation is:",
+    options: ["Elongation, Initiation, Termination", "Initiation, Elongation, Termination", "Termination, Elongation, Initiation", "Splicing, Translation, Replication"],
+    correct: "Initiation, Elongation, Termination",
+    exp: "Translation involves three sequential steps: initiation, elongation, and termination." [cite: 1020]
+},
+{
+    q: "Which part of the tRNA pairs with the mRNA?",
+    options: ["Amino acid", "Poly-A tail", "Anticodon", "Promoter"],
+    correct: "Anticodon",
+    exp: "tRNA has anticodon sequences that base pair with mRNA codons." [cite: 965]
+},
+{
+    q: "Many amino acids are encoded by more than one codon. This property is called:",
+    options: ["Ambiguity", "Redundancy (or Degeneracy)", "Mutation", "Splicing"],
+    correct: "Redundancy (or Degeneracy)",
+    exp: "The genetic code is redundant, meaning multiple codons can code for the same amino acid." [cite: 1026]
+},
+{
+    q: "Retroviral DNA, once produced, does what?",
+    options: ["Remains in the cytoplasm", "Integrates into the host genome", "Is immediately destroyed", "Codes for reverse transcriptase only"],
+    correct: "Integrates into the host genome",
+    exp: "Retroviral DNA integrates into the host genome and is then transcribed and translated." [cite: 1041]
+},
+{
+    q: "What is the function of rRNA during translation?",
+    options: ["Coding for proteins", "Interacting with mRNA at the start codon to initiate translation", "Carrying amino acids", "Splicing introns"],
+    correct: "Interacting with mRNA at the start codon to initiate translation",
+    exp: "Translation is initiated when rRNA in the ribosome interacts with mRNA at the start codon." [cite: 1023]
+},
+{
+    q: "How many nucleotides make up a single codon?",
+    options: ["One", "Two", "Three", "Four"],
+    correct: "Three",
+    exp: "mRNA is read in triplets known as codons." [cite: 1024]
+},
+{
+    q: "The peptide bond forms between:",
+    options: ["The sugar and phosphate", "The codon and anticodon", "Incoming amino acids in the growing chain", "The GTP cap and poly-A tail"],
+    correct: "Incoming amino acids in the growing chain",
+    exp: "Amino acids are transferred to the growing polypeptide chain during elongation." [cite: 1035]
+},
+{
+    q: "Which of the following does NOT happen in prokaryotic translation?",
+    options: ["Use of AUG as a start codon", "Polypeptide release at a stop codon", "mRNA processing in the nucleus", "Ribosomal binding"],
+    correct: "mRNA processing in the nucleus",
+    exp: "Prokaryotes lack a nucleus and do not perform eukaryotic-style RNA processing." [cite: 1018]
+},
+{
+    q: "A genetic code chart is used to:",
+    options: ["Identify the DNA sequence", "Deduce the amino acid encoded by a codon", "Map the location of genes", "Count the number of histones"],
+    correct: "Deduce the amino acid encoded by a codon",
+    exp: "Each codon encodes a specific amino acid, deducible via a genetic code chart." [cite: 1025]
+},
+{
+    q: "Retroviruses violate the standard 'central dogma' because they:",
+    options: ["Do not have genes", "Use RNA to make DNA", "Do not use ribosomes", "Are not living"],
+    correct: "Use RNA to make DNA",
+    exp: "Retroviruses have an alternate flow: RNA to DNA via reverse transcriptase." [cite: 1040]
+},
+{
+    q: "The phenotype of an organism is primarily determined by:",
+    options: ["The number of plasmids", "The combination of genes expressed and the resulting proteins", "The length of the poly-A tail", "The number of tRNA molecules"],
+    correct: "The combination of genes expressed and the resulting proteins",
+    exp: "Phenotype is determined by genotype through the process of translation and gene expression." [cite: 1013, 1049]
+},
+
+// 6.5: Regulation of Gene Expression
+{
+    q: "Stretches of DNA that interact with regulatory proteins to control transcription are called:",
+    options: ["Introns", "Regulatory sequences", "Histones", "Amino acids"],
+    correct: "Regulatory sequences",
+    exp: "Regulatory sequences are DNA stretches that interact with proteins to control transcription." [cite: 1046]
+},
+{
+    q: "Epigenetic changes can affect gene expression through:",
+    options: ["Permanent changes to the DNA sequence", "Reversible modifications of DNA or histones", "Deletion of codons", "Creation of new plasmids"],
+    correct: "Reversible modifications of DNA or histones",
+    exp: "Epigenetic changes are reversible modifications that affect expression without changing the DNA sequence." [cite: 1048]
+},
+{
+    q: "Genes that are always being expressed are called:",
+    options: ["Inducible", "Repressible", "Constitutively expressed", "Spliced"],
+    correct: "Constitutively expressed",
+    exp: "Some genes are constitutively expressed (always 'on'), while others are regulated." [cite: 1047]
+},
+{
+    q: "In prokaryotes, groups of genes that are coordinately regulated are often found in:",
+    options: ["Operons", "Nucleosomes", "Enhancers", "Histones"],
+    correct: "Operons",
+    exp: "Prokaryotes regulate genes in inducible or repressible operon systems." [cite: 1057]
+},
+{
+    q: "What determines the phenotype of a specific cell or organism?",
+    options: ["Only the DNA sequence", "The combination of genes expressed and their levels", "The number of ribosomes", "The size of the nucleus"],
+    correct: "The combination of genes expressed and their levels",
+    exp: "Phenotype is determined by which genes are expressed and to what degree." [cite: 1049]
+},
+{
+    q: "Tissue-specific proteins are the result of:",
+    options: ["Random mutations", "Observable cell differentiation", "Non-nuclear inheritance", "Alternative replication"],
+    correct: "Observable cell differentiation",
+    exp: "Cell differentiation results from expressing specific genes for tissue-specific proteins." [cite: 1050]
+},
+{
+    q: "In eukaryotes, how are groups of genes coordinately regulated if they aren't in operons?",
+    options: ["They are on the same plasmid", "They are influenced by the same transcription factors", "They share a single promoter", "They have the same poly-A tail"],
+    correct: "They are influenced by the same transcription factors",
+    exp: "Eukaryotic coordinate regulation occurs when the same transcription factors affect multiple genes." [cite: 1058]
+},
+{
+    q: "Which of the following is a reversible modification that inhibits gene expression?",
+    options: ["DNA methylation", "DNA replication", "Translation elongation", "Alternative splicing"],
+    correct: "DNA methylation",
+    exp: "DNA methylation is a common epigenetic modification that typically turns genes off." [cite: 1048]
+},
+{
+    q: "The lac operon is an example of an ______ system.",
+    options: ["Inducible", "Repressible", "Constitutive", "Epigenetic"],
+    correct: "Inducible",
+    exp: "The lac operon is induced (turned on) in the presence of lactose." [cite: 837, 1057]
+},
+{
+    q: "Transcription factors that stimulate gene expression are called:",
+    options: ["Repressors", "Activators", "Polymerases", "Ligases"],
+    correct: "Activators",
+    exp: "Activators are proteins that help initiate or increase transcription." [cite: 1061, 1062]
+},
+{
+    q: "What happens during development to result in sequential gene expression?",
+    options: ["Mutations occur", "Induction of transcription factors", "Loss of histones", "Replication of plasmids"],
+    correct: "Induction of transcription factors",
+    exp: "Induction of transcription factors during development results in orderly, sequential expression." [cite: 1051]
+},
+{
+    q: "Regulation of gene expression is crucial for:",
+    options: ["Cell specialization", "Ensuring survival", "Differential gene expression", "All of the above"],
+    correct: "All of the above",
+    exp: "Regulation allows for specialization and ensures survival by responding to the environment." [cite: 826, 1066]
+},
+{
+    q: "In a repressible operon, the system is usually _____ but can be turned _____.",
+    options: ["Off; On", "On; Off", "Circular; Linear", "Inducible; Epigenetic"],
+    correct: "On; Off",
+    exp: "Repressible systems (like trp) are usually on unless a repressor shuts them down." [cite: 1057]
+},
+{
+    q: "Regulatory proteins inhibit gene expression by:",
+    options: ["Binding to DNA and blocking transcription", "Deleting the promoter", "Adding a GTP cap", "Breaking hydrogen bonds"],
+    correct: "Binding to DNA and blocking transcription",
+    exp: "Negative regulatory molecules block transcription by binding to the DNA." [cite: 1064]
+},
+{
+    q: "How does histone acetylation affect gene expression?",
+    options: ["It tightens DNA and stops transcription", "It loosens DNA and promotes transcription", "It removes the gene from the chromosome", "It turns RNA into DNA"],
+    correct: "It loosens DNA and promotes transcription",
+    exp: "Acetylation is a reversible modification that typically opens chromatin for expression." [cite: 1048]
+},
+{
+    q: "Small RNA molecules can regulate gene expression by:",
+    options: ["Acting as primers for DNA Poly", "Breaking down mRNA or blocking translation", "Creating new histones", "Splicing exons"],
+    correct: "Breaking down mRNA or blocking translation",
+    exp: "Certain small RNA molecules (like miRNA/siRNA) play roles in regulating gene expression." [cite: 1067]
+},
+{
+    q: "Coordinate regulation in prokaryotes allows them to:",
+    options: ["Express many unrelated genes", "Respond quickly to environmental changes by turning on several related genes at once", "Create linear chromosomes", "Avoid using RNA polymerase"],
+    correct: "Respond quickly to environmental changes by turning on several related genes at once",
+    exp: "Operons allow for efficient, unified control of metabolic pathways." [cite: 1056, 1057]
+},
+{
+    q: "The 'operator' in an operon is where:",
+    options: ["The ribosome binds", "The repressor protein binds", "The poly-A tail is added", "Translation starts"],
+    correct: "The repressor protein binds",
+    exp: "The operator is the regulatory sequence where repressors bind to block RNA polymerase." [cite: 1046, 1064]
+},
+{
+    q: "If a mutation prevents a repressor from binding to an operator, the operon will be:",
+    options: ["Always off", "Always on", "Switched to a plasmid", "Degraded"],
+    correct: "Always on",
+    exp: "Without the repressor to block it, RNA polymerase will transcribe the genes constitutively." [cite: 1047, 1064]
+},
+{
+    q: "Eukaryotic enhancers are usually located:",
+    options: ["Only at the start codon", "Upstream or downstream from the gene", "Inside the nucleus only", "In the poly-A tail"],
+    correct: "Upstream or downstream from the gene",
+    exp: "Enhancer sequences can be located far away from the promoter they regulate." [cite: 1063]
+},
+
+// 6.6: Gene Expression and Cell Specialization
+{
+    q: "What binds to promoter or enhancer DNA sequences to initiate transcription?",
+    options: ["DNA polymerase", "RNA polymerase and transcription factors", "Ribosomes", "tRNA"],
+    correct: "RNA polymerase and transcription factors",
+    exp: "RNA polymerase and transcription factors bind to these sequences to start transcription." [cite: 1062]
+},
+{
+    q: "Promoter sequences are typically found:",
+    options: ["Downstream of the stop codon", "Upstream of the transcription start site", "On the lagging strand only", "Attached to histones"],
+    correct: "Upstream of the transcription start site",
+    exp: "Promoters are located upstream to recruit the transcriptional machinery." [cite: 1063]
+},
+{
+    q: "Differential gene expression is the reason why:",
+    options: ["All cells in an organism are identical in function", "Different cell types exist despite having the same DNA", "Organisms have different numbers of chromosomes", "Mutations occur at different rates"],
+    correct: "Different cell types exist despite having the same DNA",
+    exp: "Gene regulation results in differential gene expression, creating phenotypic differences in cells." [cite: 1065, 1066]
+},
+{
+    q: "Negative regulatory molecules work by:",
+    options: ["Increasing transcription rate", "Blocking RNA polymerase", "Adding exons", "Binding to the ribosome"],
+    correct: "Blocking RNA polymerase",
+    exp: "Negative regulators bind to DNA and inhibit gene expression by blocking transcription." [cite: 1064]
+},
+{
+    q: "Which molecules can play a role in regulating gene expression post-transcriptionally?",
+    options: ["Large proteins", "Small RNA molecules", "Histone proteins", "Plasmids"],
+    correct: "Small RNA molecules",
+    exp: "Certain small RNA molecules have roles in regulating gene expression." [cite: 1067]
+},
+{
+    q: "The combination of _____ determines the phenotype of a cell.",
+    options: ["Amino acids", "Genes expressed and their levels", "Nucleotides", "Transcription factors only"],
+    correct: "Genes expressed and their levels",
+    exp: "The phenotype of a cell is determined by the specific genes being expressed." [cite: 1049]
+},
+{
+    q: "Transcription factors are:",
+    options: ["DNA sequences", "Proteins that regulate gene expression", "RNA molecules that code for ribosomes", "Enzymes that replicate DNA"],
+    correct: "Proteins that regulate gene expression",
+    exp: "Transcription factors are proteins that bind to specific DNA sequences to control transcription." [cite: 1062]
+},
+{
+    q: "An enhancer is a:",
+    options: ["Protein that speeds up translation", "DNA sequence that increases the level of transcription", "Type of RNA polymerase", "Non-coding intron"],
+    correct: "DNA sequence that increases the level of transcription",
+    exp: "Enhancers are DNA sequences that transcription factors bind to, increasing gene expression." [cite: 1062]
+},
+{
+    q: "What is the result of 'cell specialization'?",
+    options: ["All cells become identical", "Different cells perform different functions in a multicellular organism", "Cells lose their DNA", "Mutations are prevented"],
+    correct: "Different cells perform different functions in a multicellular organism",
+    exp: "Specialization (differentiation) allows complex multicellular life to function." [cite: 826]
+},
+{
+    q: "Which of the following is an example of coordinate regulation in eukaryotes?",
+    options: ["The lac operon", "Genes with common enhancer elements responding to the same signal", "A single mRNA coding for five proteins", "The removal of all introns"],
+    correct: "Genes with common enhancer elements responding to the same signal",
+    exp: "This allows multiple genes across different chromosomes to be turned on simultaneously." [cite: 1058]
+},
+{
+    q: "How can the same genotype result in different phenotypes during development?",
+    options: ["Through the loss of DNA", "Through differential gene expression", "Through rapid mutations", "By changing the genetic code"],
+    correct: "Through differential gene expression",
+    exp: "Regulation allows the same instructions (genotype) to produce different results (phenotypes)." [cite: 1065, 1066]
+},
+{
+    q: "TATA boxes are found in:",
+    options: ["Eukaryotic promoters", "Prokaryotic operons", "tRNA anticodons", "Poly-A tails"],
+    correct: "Eukaryotic promoters",
+    exp: "The TATA box is a conserved DNA sequence within the promoter that helps position RNA polymerase." [cite: 860]
+},
+{
+    q: "Gene expression regulation occurs at which level?",
+    options: ["Transcription", "Translation", "Post-translation", "All of the above"],
+    correct: "All of the above",
+    exp: "Gene expression is controlled at multiple stages to ensure the correct amount of protein is produced." [cite: 836]
+},
+{
+    q: "What would happen if a cell lacked certain transcription factors?",
+    options: ["It would replicate its DNA faster", "Specific genes would not be transcribed", "It would become a bacterium", "Translation would stop"],
+    correct: "Specific genes would not be transcribed",
+    exp: "Transcription factors are necessary to initiate the transcription of their target genes." [cite: 1061, 1062]
+},
+{
+    q: "Epigenetic inheritance means:",
+    options: ["DNA mutations are passed down", "Gene expression patterns are passed to daughter cells without changing DNA", "Only plasmids are inherited", "RNA is inherited instead of DNA"],
+    correct: "Gene expression patterns are passed to daughter cells without changing DNA",
+    exp: "Epigenetic modifications can be stable and passed through cell division." [cite: 1048]
+},
+{
+    q: "Transcription initiation requires:",
+    options: ["Only RNA polymerase", "RNA polymerase and a suite of transcription factors", "Ligase and ATP", "Ribosomes and mRNA"],
+    correct: "RNA polymerase and a suite of transcription factors",
+    exp: "In eukaryotes, a complex of proteins is required to start transcription." [cite: 1062]
+},
+{
+    q: "Silencers are DNA sequences that:",
+    options: ["Speed up transcription", "Stop translation", "Bind repressors to inhibit transcription", "Delete introns"],
+    correct: "Bind repressors to inhibit transcription",
+    exp: "Silencers are the negative counterparts to enhancers." [cite: 1064]
+},
+{
+    q: "Which cell type in a human would likely express the gene for hemoglobin?",
+    options: ["Skin cell", "Nerve cell", "Red blood cell precursor", "Muscle cell"],
+    correct: "Red blood cell precursor",
+    exp: "Differential gene expression ensures that only relevant cells produce hemoglobin." [cite: 1066]
+},
+{
+    q: "Induction of genes can be caused by:",
+    options: ["Internal signals like hormones", "External environmental signals", "The presence of specific nutrients", "All of the above"],
+    correct: "All of the above",
+    exp: "Cells respond to various stimuli by altering their gene expression patterns." [cite: 1051, 1065]
+},
+{
+    q: "A scientist observes that a gene is transcribed but no protein is made. This is an example of regulation at the level of:",
+    options: ["Transcription", "Translation", "Replication", "Chromatin structure"],
+    correct: "Translation",
+    exp: "If transcription occurs but no protein is produced, the control is happening at translation." [cite: 1013, 1034]
+},
+
+// 6.7: Mutations
+{
+    q: "Which type of mutation involves a single nucleotide substitution?",
+    options: ["Frameshift", "Point mutation", "Nondisjunction", "Transposition"],
+    correct: "Point mutation",
+    exp: "Point mutations occur when one nucleotide is substituted for another." [cite: 1075]
+},
+{
+    q: "What is the result of a frameshift mutation?",
+    options: ["One amino acid is changed", "The reading frame is shifted, likely changing all subsequent amino acids", "The protein is made faster", "No change occurs"],
+    correct: "The reading frame is shifted, likely changing all subsequent amino acids",
+    exp: "Frameshift mutations (insertions or deletions) shift the triplet reading frame." [cite: 1076]
+},
+{
+    q: "A mutation that causes a premature stop codon is called a:",
+    options: ["Silent mutation", "Nonsense mutation", "Missense mutation", "Neutral mutation"],
+    correct: "Nonsense mutation",
+    exp: "Nonsense mutations create a premature stop, often resulting in a non-functional protein." [cite: 1077]
+},
+{
+    q: "What is a 'silent' mutation?",
+    options: ["A mutation that stops transcription", "A change in DNA that does not change the amino acid sequence", "A mutation that makes the cell quiet", "A mutation in a non-living organism"],
+    correct: "A change in DNA that does not change the amino acid sequence",
+    exp: "Silent mutations have no effect on the protein due to the redundancy of the genetic code." [cite: 1078]
+},
+{
+    q: "Mutations can be:",
+    options: ["Beneficial", "Detrimental", "Neutral", "All of the above"],
+    correct: "All of the above",
+    exp: "The effect of a mutation depends on the resulting change in protein and the environmental context." [cite: 1074, 1086]
+},
+{
+    q: "Nondisjunction during meiosis can lead to:",
+    options: ["Point mutations", "Changes in chromosome number (aneuploidy)", "Alternative splicing", "Faster DNA replication"],
+    correct: "Changes in chromosome number (aneuploidy)",
+    exp: "Incorrect separation of chromosomes results in cells with extra or missing chromosomes." [cite: 1088]
+},
+{
+    q: "Horizontal gene transfer in prokaryotes can occur via:",
+    options: ["Transformation", "Transduction", "Conjugation", "All of the above"],
+    correct: "All of the above",
+    exp: "Transformation, transduction, conjugation, and transposition increase genetic variation in prokaryotes." [cite: 1094]
+},
+{
+    q: "The uptake of 'naked' DNA from the environment by a bacterium is called:",
+    options: ["Conjugation", "Transformation", "Transduction", "Translation"],
+    correct: "Transformation",
+    exp: "Transformation is the horizontal acquisition of DNA from the surroundings." [cite: 1094]
+},
+{
+    q: "Which process involves viral transmission of genetic information between bacteria?",
+    options: ["Transformation", "Transduction", "Conjugation", "Transposition"],
+    correct: "Transduction",
+    exp: "Transduction is the transfer of DNA via a bacteriophage (virus)." [cite: 1094]
+},
+{
+    q: "Conjugation is the:",
+    options: ["Cell-to-cell transfer of DNA", "Movement of DNA within a chromosome", "Acquisition of DNA from a virus", "Spontaneous mutation of DNA"],
+    correct: "Cell-to-cell transfer of DNA",
+    exp: "Conjugation involves a physical connection between two bacterial cells." [cite: 1094]
+},
+{
+    q: "What is a 'neutral' mutation?",
+    options: ["A mutation that kills the cell", "A mutation with no positive or negative effect on phenotype", "A mutation that only happens in neutrons", "A mutation that changes the sex of the organism"],
+    correct: "A mutation with no positive or negative effect on phenotype",
+    exp: "Neutral mutations do not affect an organism's fitness." [cite: 1074]
+},
+{
+    q: "Genetic changes that enhance survival and reproduction are:",
+    options: ["Selected for by environmental conditions", "Always caused by radiation", "Deleted by the cell", "Found only in eukaryotes"],
+    correct: "Selected for by environmental conditions",
+    exp: "Beneficial mutations are the raw material for natural selection." [cite: 1092, 1093]
+},
+{
+    q: "External factors that cause mutations include:",
+    options: ["Radiation", "Reactive chemicals", "Viruses", "All of the above"],
+    correct: "All of the above",
+    exp: "Various environmental stressors can damage DNA and lead to mutations." [cite: 1085]
+},
+{
+    q: "Sickle cell anemia is caused by a _____ in the hemoglobin gene.",
+    options: ["Frameshift", "Point mutation", "Nondisjunction", "Transposition"],
+    correct: "Point mutation",
+    exp: "A single nucleotide change results in a different amino acid, altering the protein's shape." [cite: 1083]
+},
+{
+    q: "What are 'transposons' (or transposition)?",
+    options: ["Proteins that transport RNA", "DNA segments that move within or between DNA molecules", "Enzymes that translate mRNA", "Small ribosomes"],
+    correct: "DNA segments that move within or between DNA molecules",
+    exp: "Transposition increases genetic variation by moving sequences to new locations." [cite: 1094]
+},
+{
+    q: "Related viruses can increase variation by:",
+    options: ["Recombining genetic information if they infect the same cell", "Synthesizing their own ATP", "Performing meiosis", "Converting their DNA to histones"],
+    correct: "Recombining genetic information if they infect the same cell",
+    exp: "Co-infection allows different viral strains to swap genetic material." [cite: 1095]
+},
+{
+    q: "Triploidy is an example of a change in:",
+    options: ["Nucleotide sequence", "Chromosome number", "RNA structure", "Ribosome size"],
+    correct: "Chromosome number",
+    exp: "Triploidy (having three sets of chromosomes) results from errors in meiosis." [cite: 1088]
+},
+{
+    q: "Mutations are a primary source of:",
+    options: ["Energy", "Genetic variation", "Transcription factors", "Plasmids"],
+    correct: "Genetic variation",
+    exp: "Mutations create new alleles, driving diversity within populations." [cite: 1087]
+},
+{
+    q: "Which mutation is generally more damaging: a point mutation or a frameshift?",
+    options: ["Point mutation", "Frameshift mutation", "They are equally damaging", "Neither is ever damaging"],
+    correct: "Frameshift mutation",
+    exp: "Frameshifts alter every codon downstream, whereas point mutations often only change one." [cite: 1075, 1076]
+},
+{
+    q: "The effect of a mutation (whether it is good or bad) often depends on:",
+    options: ["The organism's age", "The environmental context", "The length of the DNA", "The number of ribosomes"],
+    correct: "The environmental context",
+    exp: "A mutation might be beneficial in one environment but detrimental in another." [cite: 1086]
+},
+
+// 6.8: Biotechnology
+{
+    q: "Which process separates DNA fragments based on size and charge?",
+    options: ["PCR", "Gel electrophoresis", "Transformation", "DNA sequencing"],
+    correct: "Gel electrophoresis",
+    exp: "Gel electrophoresis separates fragments using an electric field; smaller fragments move further." [cite: 1101]
+},
+{
+    q: "During gel electrophoresis, DNA moves toward the positive electrode because DNA is:",
+    options: ["Positively charged", "Negatively charged", "Neutral", "Made of protein"],
+    correct: "Negatively charged",
+    exp: "The phosphate backbone of DNA gives it a consistent negative charge." [cite: 1101]
+},
+{
+    q: "What is the purpose of the Polymerase Chain Reaction (PCR)?",
+    options: ["To sequence an entire genome", "To amplify (copy) specific DNA fragments", "To separate DNA by size", "To inject DNA into a cell"],
+    correct: "To amplify (copy) specific DNA fragments",
+    exp: "PCR allows scientists to create millions of copies of a target DNA sequence." [cite: 1102]
+},
+{
+    q: "The three steps of a PCR cycle are:",
+    options: ["Transcription, Translation, Replication", "Denaturing, Annealing, Extending", "Unwinding, Priming, Joining", "Loading, Running, Staining"],
+    correct: "Denaturing, Annealing, Extending",
+    exp: "PCR involves heating to separate strands, cooling to attach primers, and warming to synthesize new DNA." [cite: 1102]
+},
+{
+    q: "Bacterial transformation is used in biotechnology to:",
+    options: ["Sequence DNA", "Introduce foreign DNA into bacterial cells", "Kill bacteria", "Separate DNA fragments"],
+    correct: "Introduce foreign DNA into bacterial cells",
+    exp: "Transformation allows bacteria to take up and express recombinant DNA, like insulin genes." [cite: 1103]
+},
+{
+    q: "DNA sequencing technology is used to:",
+    options: ["Determine the order of nucleotides in a DNA molecule", "Measure the charge of DNA", "Amplify DNA using heat", "Break DNA into small pieces"],
+    correct: "Determine the order of nucleotides in a DNA molecule",
+    exp: "Sequencing allows researchers to read the genetic code directly." [cite: 1104]
+},
+{
+    q: "What is a 'DNA fingerprint'?",
+    options: ["The literal fingerprint of a scientist", "A unique pattern of DNA fragments used for identification", "A type of mutation", "The structure of a histone"],
+    correct: "A unique pattern of DNA fragments used for identification",
+    exp: "Techniques like electrophoresis create unique patterns for forensic or phylogenetic analysis." [cite: 1105, 1109]
+},
+{
+    q: "Which enzyme is essential for PCR because it can withstand high heat?",
+    options: ["DNA Ligase", "Taq Polymerase", "RNA Polymerase", "Helicase"],
+    correct: "Taq Polymerase",
+    exp: "Taq polymerase (from thermophilic bacteria) is required for the high-temperature extension step." [cite: 930, 1102]
+},
+{
+    q: "Genetically modified organisms (GMOs) that contain genes from other species are called:",
+    options: ["Plasmids", "Transgenic organisms", "Histones", "Retroviruses"],
+    correct: "Transgenic organisms",
+    exp: "Transgenic animals and plants are examples of genetically modified organisms." [cite: 1110]
+},
+{
+    q: "Gene cloning is primarily used to:",
+    options: ["Make exact copies of a gene for study or use", "Destroy harmful genes", "Sequence the entire genome", "Move DNA with electrophoresis"],
+    correct: "Make exact copies of a gene for study or use",
+    exp: "Cloning allows the propagation and study of specific DNA fragments." [cite: 1111]
+},
+{
+    q: "In gel electrophoresis, which fragments move the fastest and furthest?",
+    options: ["The largest fragments", "The smallest fragments", "The most positively charged fragments", "Fragments with more Adenine"],
+    correct: "The smallest fragments",
+    exp: "Smaller fragments can navigate through the gel matrix more easily than larger ones." [cite: 1101]
+},
+{
+    q: "Why are primers needed in PCR?",
+    options: ["To separate the DNA strands", "To provide a starting point for DNA polymerase", "To glue the DNA together", "To label the DNA with color"],
+    correct: "To provide a starting point for DNA polymerase",
+    exp: "Primers 'anneal' to the target sequence so polymerase knows where to begin." [cite: 1102]
+},
+{
+    q: "Restriction enzymes are used in biotechnology to:",
+    options: ["Copy DNA", "Cut DNA at specific sequences", "Translate mRNA", "Build ribosomes"],
+    correct: "Cut DNA at specific sequences",
+    exp: "Restriction enzymes act as molecular scissors to prepare DNA for insertion into plasmids." [cite: 1106]
+},
+{
+    q: "A scientist wants to identify a suspect in a crime. Which technique is most useful?",
+    options: ["RNA processing", "DNA fingerprinting (using electrophoresis/sequencing)", "Alternative splicing", "Histone acetylation"],
+    correct: "DNA fingerprinting (using electrophoresis/sequencing)",
+    exp: "DNA analysis is used for forensic identification." [cite: 1109]
+},
+{
+    q: "In bacterial transformation, how do we usually select for the bacteria that took up the plasmid?",
+    options: ["By looking at them under a microscope", "Using an antibiotic resistance gene on the plasmid", "By waiting for them to turn into eukaryotes", "By measuring their size"],
+    correct: "Using an antibiotic resistance gene on the plasmid",
+    exp: "Only transformed bacteria will survive on media containing the antibiotic." [cite: 1103, 1108]
+},
+{
+    q: "What is the 'denaturing' step in PCR?",
+    options: ["Adding amino acids", "Heating to separate the two strands of DNA", "Cooling to allow primers to bind", "Using ligase to join fragments"],
+    correct: "Heating to separate the two strands of DNA",
+    exp: "High heat breaks the hydrogen bonds, mimicking the job of helicase." [cite: 1102]
+},
+{
+    q: "Phylogenetic analysis can be performed by comparing:",
+    options: ["The weight of organisms", "DNA sequences of various samples", "The number of ribosomes", "The size of the mitochondria"],
+    correct: "DNA sequences of various samples",
+    exp: "Sequencing and fragment analysis allow scientists to determine evolutionary relationships." [cite: 1108]
+},
+{
+    q: "Genetic engineering can be used to:",
+    options: ["Analyze DNA", "Manipulate DNA", "Both A and B", "Neither A nor B"],
+    correct: "Both A and B",
+    exp: "Genetic engineering techniques are used for both analysis and manipulation." [cite: 1100]
+},
+{
+    q: "Which technique would be used to create millions of copies of a fossil's DNA?",
+    options: ["Electrophoresis", "PCR", "Transformation", "Transcription"],
+    correct: "PCR",
+    exp: "PCR is the standard tool for amplifying small amounts of DNA." [cite: 1102]
+},
+{
+    q: "The use of biotechnology to determine the order of nucleotides is specifically called:",
+    options: ["Amplification", "Splicing", "Sequencing", "Cloning"],
+    correct: "Sequencing",
+    exp: "Sequencing is the specific process of 'reading' the nucleotide order." [cite: 1104]
+}
+    ]
   };    
 // 1. Map the database
     const questionsData = {
