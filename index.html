@@ -1282,7 +1282,470 @@ unit2: [
         correct: "Cyanobacteria",
         exp: "Cyanobacteria are photosynthetic prokaryotes that closely resemble modern chloroplasts."
     }
-   ]
+   ],
+ unit3: [
+     /* --- UNIT 3: CELLULAR ENERGETICS --- */
+// 3.1: Enzymes
+{
+    q: "How do enzymes increase the rate of a chemical reaction?",
+    options: ["By increasing the temperature of the reactants", "By lowering the activation energy", "By changing the ΔG of the reaction", "By increasing the concentration of products"],
+    correct: "By lowering the activation energy",
+    exp: "Enzymes act as catalysts by lowering the energy barrier (activation energy) required for a reaction to proceed."
+},
+{
+    q: "The location on an enzyme where the substrate binds is known as the:",
+    options: ["Allosteric site", "Active site", "Effector site", "Cofactor zone"],
+    correct: "Active site",
+    exp: "The active site is the specific region of the enzyme that has a shape complementary to the substrate."
+},
+{
+    q: "Which of the following describes the 'induced fit' model of enzyme action?",
+    options: ["The substrate changes shape to fit the enzyme", "The enzyme remains rigid like a lock and key", "The enzyme changes shape slightly to bind the substrate more firmly", "The enzyme and substrate bind through covalent bonds"],
+    correct: "The enzyme changes shape slightly to bind the substrate more firmly",
+    exp: "Induced fit describes the slight conformational change an enzyme undergoes to improve the fit with the substrate."
+},
+{
+    q: "Which statement is true regarding the enzyme-substrate complex?",
+    options: ["It is a permanent structure", "It increases the free energy of the products", "It lowers the activation energy of the reaction", "It prevents the reaction from being reversible"],
+    correct: "It lowers the activation energy of the reaction",
+    exp: "By holding substrates in a specific orientation, the complex reduces the energy needed for the reaction."
+},
+{
+    q: "If a reaction is exergonic, what role does the enzyme play?",
+    options: ["It makes the reaction endergonic", "It speeds up the rate at which equilibrium is reached", "It provides the necessary energy to start the reaction", "It changes the final energy level of the products"],
+    correct: "It speeds up the rate at which equilibrium is reached",
+    exp: "Enzymes speed up reactions but do not change the thermodynamics (starting or ending energy levels)."
+},
+{
+    q: "Enzymes are typically composed of which macromolecule?",
+    options: ["Lipids", "Carbohydrates", "Proteins", "Nucleic acids"],
+    correct: "Proteins",
+    exp: "Most enzymes are tertiary or quaternary structure proteins, though some RNA molecules (ribozymes) also have catalytic activity."
+},
+{
+    q: "What happens to an enzyme after it catalyzes a reaction?",
+    options: ["It is degraded by the cell", "It becomes part of the product", "It is released unchanged and can be reused", "It is converted into a different enzyme"],
+    correct: "It is released unchanged and can be reused",
+    exp: "Catalysts are not consumed in the reactions they facilitate."
+},
+{
+    q: "Which of the following is an example of a coenzyme?",
+    options: ["Iron", "Magnesium", "Vitamin B12", "Zinc"],
+    correct: "Vitamin B12",
+    exp: "Coenzymes are organic non-protein helpers (like vitamins); minerals like Zinc are typically called cofactors."
+},
+{
+    q: "Successive steps in a metabolic pathway are often catalyzed by:",
+    options: ["The same enzyme", "A series of different, specific enzymes", "Random collisions with ATP", "Hormones alone"],
+    correct: "A series of different, specific enzymes",
+    exp: "Metabolic pathways require a specific enzyme for every distinct chemical transition."
+},
+{
+    q: "Competitive inhibition can be overcome by:",
+    options: ["Decreasing the temperature", "Increasing the substrate concentration", "Increasing the inhibitor concentration", "Decreasing the pH"],
+    correct: "Increasing the substrate concentration",
+    exp: "Because competitive inhibitors vie for the active site, adding more substrate outcompetes the inhibitor."
+},
+{
+    q: "A non-competitive inhibitor binds to the:",
+    options: ["Active site", "Allosteric site", "Substrate", "Product"],
+    correct: "Allosteric site",
+    exp: "Non-competitive inhibitors bind elsewhere on the enzyme, changing its shape so the active site no longer functions."
+},
+{
+    q: "In feedback inhibition, the 'inhibitor' is usually the:",
+    options: ["First substrate in the pathway", "Enzyme itself", "Final product of the pathway", "ATP molecule"],
+    correct: "Final product of the pathway",
+    exp: "The end product often acts as an allosteric inhibitor to the first enzyme in the pathway to prevent overproduction."
+},
+{
+    q: "The ΔG of a reaction is -20 kcal/mol. If you add an enzyme, the ΔG will be:",
+    options: ["-40 kcal/mol", "0 kcal/mol", "-20 kcal/mol", "+20 kcal/mol"],
+    correct: "-20 kcal/mol",
+    exp: "Enzymes do not change the Gibbs free energy (ΔG) of a reaction."
+},
+{
+    q: "An enzyme that facilitates the breakdown of a polymer into monomers is performing:",
+    options: ["Dehydration synthesis", "Hydrolysis", "Transcription", "Phosphorylation"],
+    correct: "Hydrolysis",
+    exp: "Hydrolysis is the chemical breakdown of a compound due to reaction with water, often catalyzed by enzymes."
+},
+{
+    q: "What determines the specificity of an enzyme?",
+    options: ["The length of the polypeptide chain", "The 3D shape of the active site", "The number of peptide bonds", "The concentration of the substrate"],
+    correct: "The 3D shape of the active site",
+    exp: "The specific R-group interactions at the active site determine which substrate can bind."
+},
+
+// 3.2: Environmental Impacts
+{
+    q: "What occurs when an enzyme is denatured?",
+    options: ["Its primary structure is broken", "The substrate changes shape", "The tertiary structure unfolds, losing the active site", "The enzyme works faster"],
+    correct: "The tertiary structure unfolds, losing the active site",
+    exp: "Denaturation involves the loss of 3D shape, rendering the enzyme non-functional."
+},
+{
+    q: "How does a significant increase in temperature typically affect enzyme-catalyzed reactions?",
+    options: ["Rate increases indefinitely", "The enzyme denatures and the rate drops to zero", "The activation energy increases", "The substrate disappears"],
+    correct: "The enzyme denatures and the rate drops to zero",
+    exp: "High heat disrupts the hydrogen bonds and interactions maintaining the enzyme's shape."
+},
+{
+    q: "Most human enzymes have an optimal temperature around:",
+    options: ["0°C", "25°C", "37°C", "100°C"],
+    correct: "37°C",
+    exp: "37°C is standard human body temperature; enzymes have evolved to be most efficient at this point."
+},
+{
+    q: "A pH change from 7 to 2 would most likely affect an enzyme by:",
+    options: ["Increasing its Vmax", "Changing the ionization of R-groups in the active site", "Increasing the kinetic energy of the substrate", "Turning the enzyme into a lipid"],
+    correct: "Changing the ionization of R-groups in the active site",
+    exp: "pH affects the charge of amino acid side chains, disrupting the ionic bonds that hold the enzyme together."
+},
+{
+    q: "Pepsin, a digestive enzyme in the stomach, likely has an optimal pH of:",
+    options: ["2", "7", "10", "14"],
+    correct: "2",
+    exp: "The stomach is highly acidic; pepsin is adapted to function in those specific conditions."
+},
+{
+    q: "If an enzyme solution is saturated with substrate, the most effective way to obtain an even faster yield of products is to:",
+    options: ["Add more substrate", "Add more enzyme", "Add a non-competitive inhibitor", "Heat the solution to 90°C"],
+    correct: "Add more enzyme",
+    exp: "When saturated, all active sites are busy. Adding more enzyme provides more 'workstations' to process the substrate."
+},
+{
+    q: "How does a cold temperature affect enzyme activity (without denaturing it)?",
+    options: ["It breaks peptide bonds", "It decreases the frequency of collisions between enzyme and substrate", "It changes the primary structure", "It increases the activation energy"],
+    correct: "It decreases the frequency of collisions between enzyme and substrate",
+    exp: "Lower temperatures decrease kinetic energy, meaning molecules move slower and collide less often."
+},
+{
+    q: "Which of the following would NOT likely cause an enzyme to denature?",
+    options: ["Extreme high heat", "Extreme pH changes", "High salt concentration", "Moderate increase in substrate concentration"],
+    correct: "Moderate increase in substrate concentration",
+    exp: "Substrate concentration affects rate but does not physically dismantle the enzyme's structure."
+},
+{
+    q: "Thermostable enzymes found in bacteria living in hot springs have:",
+    options: ["No active sites", "Extra hydrogen and disulfide bonds for stability", "A primary structure made of lipids", "The ability to work without substrates"],
+    correct: "Extra hydrogen and disulfide bonds for stability",
+    exp: "Structural reinforcements prevent these enzymes from unfolding at temperatures that would kill other organisms."
+},
+{
+    q: "The 'optimal' range for an enzyme refers to:",
+    options: ["The only conditions where it works", "The conditions where the reaction rate is highest", "The conditions where it denatures", "The lowest temperature it can tolerate"],
+    correct: "The conditions where the reaction rate is highest",
+    exp: "Optimum refers to the peak efficiency of the enzyme's function."
+},
+{
+    q: "If you double the amount of enzyme in a reaction with unlimited substrate, the rate of product formation will:",
+    options: ["Stay the same", "Double", "Decrease by half", "Stop completely"],
+    correct: "Double",
+    exp: "With unlimited substrate, the rate is directly proportional to the enzyme concentration."
+},
+{
+    q: "Heavy metals like lead or mercury often act as:",
+    options: ["Cofactors", "Irreversible inhibitors", "Substrates", "Thermal stabilizers"],
+    correct: "Irreversible inhibitors",
+    exp: "These metals bind strongly to enzymes, permanently altering their shape and function."
+},
+{
+    q: "Salinity affects enzymes primarily by interfering with:",
+    options: ["Covalent bonds", "Ionic and hydrogen bonds", "The genetic code", "The plasma membrane"],
+    correct: "Ionic and hydrogen bonds",
+    exp: "Salt ions (like Na+ and Cl-) interact with charged R-groups, disrupting the folding of the protein."
+},
+{
+    q: "In a graph of reaction rate vs. pH, the curve usually looks like:",
+    options: ["A straight line going up", "A straight line going down", "A bell-shaped curve", "A staircase"],
+    correct: "A bell-shaped curve",
+    exp: "Rates are low at extreme pH values and peak at the optimal pH in the middle."
+},
+{
+    q: "Why does the rate of an enzyme reaction eventually level off as substrate concentration increases?",
+    options: ["The enzyme is used up", "The reaction reaches equilibrium", "All enzyme active sites are saturated", "The substrate denatures the enzyme"],
+    correct: "All enzyme active sites are saturated",
+    exp: "This is the 'point of saturation' where every enzyme is currently working as fast as possible."
+},
+
+// 3.3: Cellular Energy
+{
+    q: "The primary molecule used by cells to do work is:",
+    options: ["Glucose", "ATP", "DNA", "Phospholipids"],
+    correct: "ATP",
+    exp: "Adenosine triphosphate (ATP) is the universal energy currency of the cell."
+},
+{
+    q: "Energy is released from ATP when:",
+    options: ["A phosphate group is added", "A phosphate group is removed", "Adenine is removed", "Ribose is converted to glucose"],
+    correct: "A phosphate group is removed",
+    exp: "The bond between the second and third phosphate is high-energy; breaking it via hydrolysis releases energy."
+},
+{
+    q: "What is 'energy coupling'?",
+    options: ["Joining two mitochondria together", "Using an exergonic process to drive an endergoic one", "Using oxygen to create water", "The storage of energy in starch"],
+    correct: "Using an exergonic process to drive an endergoic one",
+    exp: "Cells use the energy released from ATP hydrolysis (exergonic) to power work like muscle contraction (endergonic)."
+},
+{
+    q: "Which of the following is NOT a type of cellular work powered by ATP?",
+    options: ["Mechanical work", "Transport work", "Chemical work", "Diffusion of oxygen into the cell"],
+    correct: "Diffusion of oxygen into the cell",
+    exp: "Simple diffusion is a passive process that requires no metabolic energy."
+},
+{
+    q: "The conversion of ADP to ATP is:",
+    options: ["Exergonic", "Endergonic", "Spontaneous", "A hydrolysis reaction"],
+    correct: "Endergonic",
+    exp: "Adding a phosphate requires an input of energy (from food or sunlight)."
+},
+{
+    q: "Which part of the ATP molecule is most responsible for its high energy?",
+    options: ["The nitrogenous base", "The five-carbon sugar", "The three negatively charged phosphate groups", "The hydrogen bonds"],
+    correct: "The three negatively charged phosphate groups",
+    exp: "The three negative charges repel each other like a compressed spring; the third phosphate is 'unstable' and ready to pop off."
+},
+{
+    q: "What is a phosphorylated intermediate?",
+    options: ["The enzyme that creates ATP", "A molecule that has received a phosphate group from ATP, making it more reactive", "The waste product of respiration", "A type of pigment in chloroplasts"],
+    correct: "A molecule that has received a phosphate group from ATP, making it more reactive",
+    exp: "Phosphorylation often 'energizes' a molecule so it can perform a specific task or change shape."
+},
+{
+    q: "The First Law of Thermodynamics states that:",
+    options: ["Energy is always lost as heat", "Energy cannot be created or destroyed, only transformed", "Entropy is always increasing", "All organisms require oxygen"],
+    correct: "Energy cannot be created or destroyed, only transformed",
+    exp: "This is the principle of conservation of energy."
+},
+{
+    q: "Why do living systems require a constant input of energy?",
+    options: ["To create matter", "To combat entropy and maintain order", "To stop chemical reactions", "To keep their temperature at 0°C"],
+    correct: "To combat entropy and maintain order",
+    exp: "Living things are highly ordered; without energy, they succumb to the Second Law of Thermodynamics (disorder/entropy)."
+},
+{
+    q: "Which of the following has the highest entropy?",
+    options: ["A starch molecule", "A glucose molecule", "Individual CO2 and H2O molecules", "An intact cell"],
+    correct: "Individual CO2 and H2O molecules",
+    exp: "Smaller, more disorganized particles represent a state of higher entropy (disorder) than large, organized molecules."
+},
+{
+    q: "Most of the energy lost during a transformation is released as:",
+    options: ["Light", "Heat", "Sound", "Electricity"],
+    correct: "Heat",
+    exp: "According to the Second Law of Thermodynamics, every energy transfer increases the entropy of the universe, usually as heat."
+},
+{
+    q: "In the ATP cycle, ATP is regenerated by adding a phosphate to ADP using energy from:",
+    options: ["Catabolism", "Anabolism", "Active transport", "Protein synthesis"],
+    correct: "Catabolism",
+    exp: "The breakdown of molecules (catabolism) provides the energy needed to recharge ATP."
+},
+{
+    q: "A spontaneous reaction is one that:",
+    options: ["Occurs very quickly", "Has a negative ΔG", "Requires a large input of ATP", "Increases the free energy of the system"],
+    correct: "Has a negative ΔG",
+    exp: "Spontaneous (exergonic) reactions release free energy; 'spontaneous' does not necessarily mean 'fast'."
+},
+{
+    q: "What is the ΔG of a reaction at equilibrium?",
+    options: ["Negative", "Positive", "Zero", "Infinite"],
+    correct: "Zero",
+    exp: "At equilibrium, there is no net change in free energy, and the system can do no work."
+},
+{
+    q: "Which molecule serves as a long-term energy storage rather than immediate use?",
+    options: ["ATP", "NADH", "Glycogen", "FADH2"],
+    correct: "Glycogen",
+    exp: "ATP is for immediate use; glycogen (and fats) are used for long-term storage."
+},
+
+// 3.4: Photosynthesis
+{
+    q: "What are the primary products of the Light-Dependent Reactions?",
+    options: ["Glucose and Oxygen", "ATP and NADPH", "CO2 and H2O", "ADP and NADP+"],
+    correct: "ATP and NADPH",
+    exp: "The light reactions capture solar energy and store it in ATP and NADPH to power the Calvin Cycle."
+},
+{
+    q: "Where exactly does the Calvin Cycle take place?",
+    options: ["Thylakoid membrane", "Stroma", "Mitochondrial matrix", "Cytoplasm"],
+    correct: "Stroma",
+    exp: "The Calvin Cycle (light-independent reactions) occurs in the fluid-filled stroma of the chloroplast."
+},
+{
+    q: "Which molecule is split during the light reactions to provide electrons?",
+    options: ["CO2", "C6H12O6", "H2O", "ATP"],
+    correct: "H2O",
+    exp: "Photolysis of water provides electrons to Photosystem II and releases Oxygen as a byproduct."
+},
+{
+    q: "The oxygen released during photosynthesis comes from:",
+    options: ["Carbon dioxide", "Water", "Glucose", "Chlorophyll"],
+    correct: "Water",
+    exp: "Experiments using isotopes proved that the oxygen gas released comes specifically from the splitting of H2O."
+},
+{
+    q: "What is the function of the pigment chlorophyll?",
+    options: ["To absorb CO2", "To absorb light energy", "To store glucose", "To create water"],
+    correct: "To absorb light energy",
+    exp: "Chlorophyll absorbs mainly blue and red wavelengths, reflecting green."
+},
+{
+    q: "During the light reactions, protons (H+) are pumped into the:",
+    options: ["Stroma", "Thylakoid space (lumen)", "Intermembrane space", "Cytosol"],
+    correct: "Thylakoid space (lumen)",
+    exp: "Pumping H+ into the thylakoid space creates a concentration gradient used to make ATP."
+},
+{
+    q: "The enzyme responsible for 'fixing' CO2 in the Calvin Cycle is:",
+    options: ["ATP Synthase", "Rubisco", "NADP+ Reductase", "Catalase"],
+    correct: "Rubisco",
+    exp: "Rubisco is the most abundant protein on Earth and catalyzes the first step of the Calvin Cycle."
+},
+{
+    q: "How many turns of the Calvin Cycle are required to produce one net molecule of G3P?",
+    options: ["1", "2", "3", "6"],
+    correct: "3",
+    exp: "Since each turn fixes one CO2, three turns are needed to produce one 3-carbon G3P molecule."
+},
+{
+    q: "Which of the following is the correct flow of electrons in the light reactions?",
+    options: ["H2O → PSII → Electron Transport Chain → PSI → NADPH", "PSI → PSII → H2O → NADPH", "NADPH → Calvin Cycle → PSI → PSII", "CO2 → H2O → Glucose"],
+    correct: "H2O → PSII → Electron Transport Chain → PSI → NADPH",
+    exp: "Electrons start from water, move through the two photosystems, and end up reducing NADP+ to NADPH."
+},
+{
+    q: "Cyclic electron flow in the light reactions produces:",
+    options: ["Only NADPH", "Only ATP", "Both ATP and NADPH", "Glucose"],
+    correct: "Only ATP",
+    exp: "Cyclic flow allows the plant to produce extra ATP without producing NADPH, balancing the needs of the Calvin Cycle."
+},
+{
+    q: "What happens to the G3P molecules produced in the Calvin Cycle?",
+    options: ["All are used to make glucose", "Most are recycled to regenerate RuBP", "They are exhaled as CO2", "They are used to split water"],
+    correct: "Most are recycled to regenerate RuBP",
+    exp: "Out of every 6 G3P produced, 5 must be recycled to keep the cycle going."
+},
+{
+    q: "Photorespiration occurs when Rubisco binds to:",
+    options: ["CO2 instead of O2", "O2 instead of CO2", "ATP instead of NADPH", "Glucose instead of Starch"],
+    correct: "O2 instead of CO2",
+    exp: "Photorespiration is wasteful because it consumes energy and releases CO2 without producing sugar."
+},
+{
+    q: "CAM plants conserve water by:",
+    options: ["Closing stomata at night", "Opening stomata only at night", "Doing photosynthesis without light", "Living only in the ocean"],
+    correct: "Opening stomata only at night",
+    exp: "CAM plants fix CO2 into organic acids at night and use it for the Calvin Cycle during the day."
+},
+{
+    q: "The direct source of energy for the ATP Synthase in chloroplasts is:",
+    options: ["Light", "The proton (H+) gradient", "Electrons from NADPH", "The breakdown of glucose"],
+    correct: "The proton (H+) gradient",
+    exp: "The flow of H+ ions through ATP synthase (chemiosmosis) powers the phosphorylation of ADP."
+},
+{
+    q: "Which wavelength of light is LEAST effective for photosynthesis in green plants?",
+    options: ["Blue", "Red", "Green", "Violet"],
+    correct: "Green",
+    exp: "Green light is reflected by chlorophyll, not absorbed, making it ineffective for driving the reactions."
+},
+
+// 3.5: Cellular Respiration
+{
+    q: "Which stage of cellular respiration occurs in the cytoplasm and is anaerobic?",
+    options: ["Glycolysis", "Krebs Cycle", "Oxidative Phosphorylation", "Link Reaction"],
+    correct: "Glycolysis",
+    exp: "Glycolysis breaks glucose into pyruvate in the cytosol and does not require oxygen."
+},
+{
+    q: "What is the net gain of ATP from glycolysis per molecule of glucose?",
+    options: ["1", "2", "4", "32"],
+    correct: "2",
+    exp: "Glycolysis uses 2 ATP and produces 4 ATP, resulting in a net gain of 2."
+},
+{
+    q: "In the presence of oxygen, pyruvate enters the mitochondria and is converted into:",
+    options: ["Lactic acid", "Ethanol", "Acetyl-CoA", "Oxaloacetate"],
+    correct: "Acetyl-CoA",
+    exp: "The 'link reaction' oxidizes pyruvate and attaches it to Coenzyme A."
+},
+{
+    q: "Which molecule acts as the final electron acceptor in the electron transport chain?",
+    options: ["CO2", "Water", "Oxygen", "NAD+"],
+    correct: "Oxygen",
+    exp: "Oxygen pulls electrons down the chain and combines with protons to form water."
+},
+{
+    q: "Where are the proteins of the electron transport chain located?",
+    options: ["Mitochondrial matrix", "Inner mitochondrial membrane", "Outer mitochondrial membrane", "Cytoplasm"],
+    correct: "Inner mitochondrial membrane",
+    exp: "The cristae (folds) of the inner membrane provide space for the ETC and ATP Synthase."
+},
+{
+    q: "The primary purpose of the Krebs Cycle (Citric Acid Cycle) is to:",
+    options: ["Produce a large amount of ATP", "Oxidize Acetyl-CoA and load electron carriers (NADH/FADH2)", "Split glucose", "Create oxygen"],
+    correct: "Oxidize Acetyl-CoA and load electron carriers (NADH/FADH2)",
+    exp: "While it makes 2 ATP, its main job is generating high-energy electrons for the ETC."
+},
+{
+    q: "How many CO2 molecules are released per glucose molecule during the entire process of aerobic respiration?",
+    options: ["2", "4", "6", "12"],
+    options: ["2", "4", "6", "12"],
+    correct: "6",
+    exp: "Glucose (C6H12O6) is completely oxidized, releasing 6 molecules of Carbon Dioxide."
+},
+{
+    q: "Fermentation allows glycolysis to continue by:",
+    options: ["Producing extra ATP", "Regenerating NAD+ from NADH", "Producing oxygen", "Moving pyruvate into the mitochondria"],
+    correct: "Regenerating NAD+ from NADH",
+    exp: "Without NAD+, glycolysis stops. Fermentation recycles NADH back to NAD+ so the cell can keep making 2 ATP."
+},
+{
+    q: "Which of the following produces the most ATP per glucose molecule?",
+    options: ["Glycolysis", "Krebs Cycle", "Oxidative Phosphorylation", "Alcohol Fermentation"],
+    correct: "Oxidative Phosphorylation",
+    exp: "This stage produces roughly 26-28 ATP, far more than the 2 produced by glycolysis or Krebs."
+},
+{
+    q: "The energy from the electrons moving down the ETC is used directly to:",
+    options: ["Make ATP", "Pump H+ ions into the intermembrane space", "Split glucose", "Combine CO2 and Water"],
+    correct: "Pump H+ ions into the intermembrane space",
+    exp: "The ETC builds a proton gradient; the gradient then powers ATP Synthase."
+},
+{
+    q: "If a hole were poked in the inner mitochondrial membrane, what would be the immediate effect?",
+    options: ["Glycolysis would stop", "The Krebs cycle would speed up", "ATP synthesis would decrease because the H+ gradient would collapse", "Oxygen would no longer be needed"],
+    correct: "ATP synthesis would decrease because the H+ gradient would collapse",
+    exp: "Chemiosmosis requires a membrane that can hold a concentration gradient."
+},
+{
+    q: "What are the two main types of fermentation?",
+    options: ["Aerobic and Anaerobic", "Lactic Acid and Alcoholic", "Glycolytic and Oxidative", "Light and Dark"],
+    correct: "Lactic Acid and Alcoholic",
+    exp: "Humans perform lactic acid fermentation; yeast performs alcoholic fermentation."
+},
+{
+    q: "FADH2 is produced during which stage?",
+    options: ["Glycolysis", "Link Reaction", "Krebs Cycle", "ETC"],
+    correct: "Krebs Cycle",
+    exp: "FADH2 is a specific electron carrier generated only in the Citric Acid Cycle."
+},
+{
+    q: "Which process is common to both aerobic respiration and fermentation?",
+    options: ["Krebs Cycle", "Electron Transport Chain", "Glycolysis", "Chemiosmosis"],
+    correct: "Glycolysis",
+    exp: "Glycolysis is the ancient, universal energy-releasing pathway used by nearly all organisms."
+},
+{
+    q: "Why is the inner mitochondrial membrane folded?",
+    options: ["To protect the DNA", "To increase surface area for more ETC and ATP Synthase complexes", "To store glucose", "To trap oxygen"],
+    correct: "To increase surface area for more ETC and ATP Synthase complexes",
+    exp: "Increased surface area allows for much higher rates of ATP production."
+}
+     ]
   };    
 // 1. Map the database
     const questionsData = {
