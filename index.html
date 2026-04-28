@@ -1745,7 +1745,742 @@ unit2: [
     correct: "To increase surface area for more ETC and ATP Synthase complexes",
     exp: "Increased surface area allows for much higher rates of ATP production."
 }
-     ]
+     ], 
+    unit4: [
+        /* --- UNIT 4: CELL COMMUNICATION AND CELL CYCLE --- */
+
+// 4.1: Cell Communication
+{
+    q: "Communication between cells in direct contact, such as through plasmodesmata, is called:",
+    options: ["Endocrine signaling", "Paracrine signaling", "Juxtacrine signaling", "Autocrine signaling"],
+    correct: "Juxtacrine signaling",
+    exp: "Juxtacrine signaling involves physical contact between cells, like gap junctions in animals or plasmodesmata in plants."
+},
+{
+    q: "A hormone traveling through the bloodstream to a distant target cell is an example of:",
+    options: ["Paracrine signaling", "Endocrine signaling", "Autocrine signaling", "Synaptic signaling"],
+    correct: "Endocrine signaling",
+    exp: "Endocrine signaling uses the circulatory system to transport ligands over long distances."
+},
+{
+    q: "Neurotransmitters crossing a synapse to a neighboring neuron represent which type of signaling?",
+    options: ["Endocrine", "Paracrine", "Autocrine", "Direct contact"],
+    correct: "Paracrine",
+    exp: "Paracrine signaling acts on nearby target cells; synaptic signaling is a specialized version of this."
+},
+{
+    q: "What is the primary function of a ligand in cell communication?",
+    options: ["To act as an enzyme in the cytoplasm", "To bind to a specific receptor and initiate a signal", "To provide energy for active transport", "To act as a second messenger"],
+    correct: "To bind to a specific receptor and initiate a signal",
+    exp: "A ligand is a signaling molecule that specifically binds to another molecule (receptor)."
+},
+{
+    q: "Which type of signaling involves a cell secreting a ligand that binds to receptors on its own surface?",
+    options: ["Autocrine", "Paracrine", "Endocrine", "Juxtacrine"],
+    correct: "Autocrine",
+    exp: "Autocrine signaling is 'self-signaling,' often used in immune cells and cancer cells."
+},
+{
+    q: "Quorum sensing in bacteria is an example of:",
+    options: ["Long-distance endocrine signaling", "Density-dependent cell communication", "Intracellular DNA repair", "Passive diffusion"],
+    correct: "Density-dependent cell communication",
+    exp: "Bacteria use quorum sensing to coordinate behavior based on the local population density."
+},
+{
+    q: "Morphogens diffusing through an embryo to create a concentration gradient is an example of:",
+    options: ["Endocrine signaling", "Paracrine signaling", "Autocrine signaling", "Synaptic signaling"],
+    correct: "Paracrine signaling",
+    exp: "Morphogens affect neighboring cells in a concentration-dependent manner during development."
+},
+{
+    q: "What determines if a cell will respond to a specific signaling molecule?",
+    options: ["The size of the cell", "The presence of a specific receptor for that ligand", "The amount of ATP in the cell", "The thickness of the cell wall"],
+    correct: "The presence of a specific receptor for that ligand",
+    exp: "Only 'target cells' with the matching receptor can 'hear' and respond to a specific signal."
+},
+{
+    q: "Small, non-polar ligands (like steroid hormones) typically bind to receptors located:",
+    options: ["On the plasma membrane", "In the extracellular matrix", "Inside the cytoplasm or nucleus", "On the ribosomes"],
+    correct: "Inside the cytoplasm or nucleus",
+    exp: "Non-polar molecules can diffuse through the lipid bilayer and bind to intracellular receptors."
+},
+{
+    q: "Large or polar ligands typically bind to receptors located:",
+    options: ["In the mitochondrial matrix", "Embedded in the plasma membrane", "Inside the nucleus", "In the lysosome"],
+    correct: "Embedded in the plasma membrane",
+    exp: "Polar molecules cannot cross the hydrophobic core of the membrane, so they bind to transmembrane receptors."
+},
+{
+    q: "The binding of a ligand to a receptor is most similar to:",
+    options: ["A battery in a remote", "A lock and key", "A car and a road", "A phone and a charger"],
+    correct: "A lock and key",
+    exp: "Ligand-receptor binding is highly specific based on the shape and chemical properties of the molecules."
+},
+{
+    q: "Which of the following is a membrane receptor that acts as a gate when the receptor changes shape?",
+    options: ["G-protein coupled receptor", "Ligand-gated ion channel", "Receptor tyrosine kinase", "Intracellular receptor"],
+    correct: "Ligand-gated ion channel",
+    exp: "Ligand-gated ion channels open or close in response to ligand binding, allowing specific ions to flow through."
+},
+{
+    q: "Which of the following would be considered a 'long-distance' signaling molecule?",
+    options: ["Insulin", "Histamine", "Neurotransmitter", "Growth factor"],
+    correct: "Insulin",
+    exp: "Insulin is a hormone secreted by the pancreas that travels through the blood to body cells."
+},
+{
+    q: "In a synapse, the gap between the two communicating cells is called the:",
+    options: ["Tight junction", "Synaptic cleft", "Plasmodesmata", "Desmosome"],
+    correct: "Synaptic cleft",
+    exp: "The synaptic cleft is the physical space across which neurotransmitters diffuse."
+},
+{
+    q: "When a yeast cell detects a mating factor from another yeast cell, it is an example of:",
+    options: ["Direct contact", "Paracrine signaling", "Pheromone signaling", "Endocrine signaling"],
+    correct: "Pheromone signaling",
+    exp: "Yeast use secreted chemical signals to identify potential mates of the opposite type."
+},
+{
+    q: "Cilia-mediated signaling in the airway is a form of sensing the environment through:",
+    options: ["Direct contact", "Hormones", "Fluid flow and pressure", "DNA transfer"],
+    correct: "Fluid flow and pressure",
+    exp: "Cells can use physical structures like cilia to sense and communicate mechanical changes."
+},
+{
+    q: "Signals that trigger a 'fight or flight' response involve which system?",
+    options: ["Endocrine system", "Digestive system", "Excretory system", "Integumentary system"],
+    correct: "Endocrine system",
+    exp: "The release of epinephrine (adrenaline) into the blood is a classic endocrine signal."
+},
+{
+    q: "Gap junctions in animal cells are most similar in function to:",
+    options: ["Stomata", "Plasmodesmata", "Golgi bodies", "Vesicles"],
+    correct: "Plasmodesmata",
+    exp: "Both allow direct cytoplasmic communication between adjacent cells."
+},
+{
+    q: "Why are receptors for lipid-soluble signaling molecules usually intracellular?",
+    options: ["They are cheaper for the cell to make", "Lipid-soluble molecules can cross the plasma membrane", "The membrane is too crowded for more receptors", "They protect the ligand from light"],
+    correct: "Lipid-soluble molecules can cross the plasma membrane",
+    exp: "Since the ligand can get inside the cell on its own, the receptor doesn't need to be on the surface."
+},
+{
+    q: "Signal molecules that are highly unstable or quickly degraded are usually involved in:",
+    options: ["Long-distance signaling", "Short-distance (local) signaling", "Global body changes", "Genetic inheritance"],
+    correct: "Short-distance (local) signaling",
+    exp: "Short-lived molecules ensure the signal stays localized and doesn't affect the entire organism."
+},
+
+// 4.2: Introduction to Signal Transduction
+{
+    q: "What are the three stages of cell signaling in order?",
+    options: ["Reception, Response, Transduction", "Transduction, Reception, Response", "Reception, Transduction, Response", "Response, Reception, Transduction"],
+    correct: "Reception, Transduction, Response",
+    exp: "Cells first receive the signal, then convert (transduce) that signal into a form the cell can understand, and finally respond."
+},
+{
+    q: "A conformational change in a receptor occurs during which stage?",
+    options: ["Reception", "Transduction", "Response", "Termination"],
+    correct: "Reception",
+    exp: "When a ligand binds, the receptor changes its shape, which 'activates' it to start the next step."
+},
+{
+    q: "Which of the following is a common second messenger?",
+    options: ["G-protein", "Cyclic AMP (cAMP)", "Adenylate cyclase", "Epinephrine"],
+    correct: "Cyclic AMP (cAMP)",
+    exp: "cAMP is a small, non-protein, water-soluble molecule that spreads a signal throughout the cytoplasm."
+},
+{
+    q: "What is the function of a phosphatase?",
+    options: ["To add a phosphate group to a protein", "To remove a phosphate group from a protein", "To create ATP", "To bind to a ligand"],
+    correct: "To remove a phosphate group from a protein",
+    exp: "Phosphatases 'turn off' pathways by removing the phosphate groups added by kinases."
+},
+{
+    q: "A G-protein is 'active' when it is bound to:",
+    options: ["GDP", "GTP", "ATP", "cAMP"],
+    correct: "GTP",
+    exp: "GTP (guanosine triphosphate) acts as an 'on' switch for G-proteins."
+},
+{
+    q: "What does a protein kinase do?",
+    options: ["Degrades proteins", "Transfers a phosphate group from ATP to a protein", "Transports proteins out of the cell", "Acts as a receptor"],
+    correct: "Transfers a phosphate group from ATP to a protein",
+    exp: "Kinases 'activate' other proteins by adding a phosphate group (phosphorylation)."
+},
+{
+    q: "Signal transduction often involves a 'cascade.' What is the primary benefit of this?",
+    options: ["It slows down the signal", "It prevents mutations", "It amplifies the signal", "It uses less energy"],
+    correct: "It amplifies the signal",
+    exp: "A single ligand can activate a receptor that activates many G-proteins, which activate many enzymes, leading to a massive response."
+},
+{
+    q: "Which enzyme converts ATP to cAMP?",
+    options: ["Phosphodiesterase", "Adenylate cyclase", "Protein Kinase A", "ATP Synthase"],
+    correct: "Adenylate cyclase",
+    exp: "Adenylate cyclase is often activated by a G-protein to produce the second messenger cAMP."
+},
+{
+    q: "The 'transduction' stage of cell signaling is most like:",
+    options: ["Answering a phone call", "Passing a baton in a relay race", "Reading a book", "Cooking a meal"],
+    correct: "Passing a baton in a relay race",
+    exp: "Transduction involves a series of molecular hand-offs from one protein to the next."
+},
+{
+    q: "Calcium ions (Ca2+) can act as second messengers because:",
+    options: ["The cell is full of them", "Their concentration in the cytosol is normally very low", "They are larger than ATP", "They are made of proteins"],
+    correct: "Their concentration in the cytosol is normally very low",
+    exp: "A small influx of Ca2+ creates a large percentage change in concentration, making it an effective signal."
+},
+{
+    q: "Where is calcium usually stored within the cell for signaling purposes?",
+    options: ["Nucleus", "Endoplasmic Reticulum", "Ribosomes", "Golgi"],
+    correct: "Endoplasmic Reticulum",
+    exp: "The ER (and mitochondria) act as reservoirs for calcium ions."
+},
+{
+    q: "Which of the following is NOT a transmembrane receptor?",
+    options: ["GPCR", "Ion Channel", "Estrogen Receptor", "Tyrosine Kinase"],
+    correct: "Estrogen Receptor",
+    exp: "Estrogen is a steroid; its receptor is intracellular because estrogen can cross the membrane."
+},
+{
+    q: "A signal transduction pathway that leads to a change in gene expression usually ends in the:",
+    options: ["Mitochondria", "Nucleus", "Lysosome", "Plasma membrane"],
+    correct: "Nucleus",
+    exp: "Transcription factors (the final step in many pathways) enter the nucleus to turn genes on or off."
+},
+{
+    q: "What happens to a G-protein to make it 'inactive'?",
+    options: ["It binds to another G-protein", "It hydrolyzes GTP to GDP", "It is destroyed by the cell", "It leaves the membrane"],
+    correct: "It hydrolyzes GTP to GDP",
+    exp: "G-proteins have an inherent GTPase activity that allows them to shut themselves off over time."
+},
+{
+    q: "Secondary messengers are typically:",
+    options: ["Large and hydrophobic", "Small and hydrophilic", "Large proteins", "Nucleic acids"],
+    correct: "Small and hydrophilic",
+    exp: "Being small and water-soluble allows them to diffuse quickly through the cytoplasm."
+},
+{
+    q: "The specific 'Response' of a cell depends on:",
+    options: ["The ligand only", "The receptor only", "The cell's specific collection of proteins and transduction machinery", "The temperature"],
+    correct: "The cell's specific collection of proteins and transduction machinery",
+    exp: "The same ligand (like epinephrine) can cause a heart cell to beat faster but a liver cell to break down glycogen."
+},
+{
+    q: "If a mutation prevents a G-protein from hydrolyzing GTP to GDP, what is the result?",
+    options: ["The pathway will never turn on", "The pathway will remain continuously active", "The cell will immediately die", "The ligand will bind more tightly"],
+    correct: "The pathway will remain continuously active",
+    exp: "If the G-protein can't turn itself 'off,' the signal keeps firing regardless of whether the ligand is present."
+},
+{
+    q: "Scaffolding proteins increase signaling efficiency by:",
+    options: ["Blocking secondary messengers", "Holding several pathway proteins together in a complex", "Destroying ligands", "Providing ATP"],
+    correct: "Holding several pathway proteins together in a complex",
+    exp: "Scaffolding proteins ensure that the right enzymes are in close proximity, speeding up the reaction cascade."
+},
+{
+    q: "Phosphodiesterase is an enzyme that:",
+    options: ["Creates cAMP", "Inactivates cAMP by converting it to AMP", "Phosphorylates glucose", "Opens ion channels"],
+    correct: "Inactivates cAMP by converting it to AMP",
+    exp: "This is a termination mechanism to ensure the signal doesn't last forever."
+},
+{
+    q: "Which molecule is often used to open calcium channels on the ER?",
+    options: ["cAMP", "IP3 (Inositol trisphosphate)", "ATP", "GTP"],
+    correct: "IP3 (Inositol trisphosphate)",
+    exp: "IP3 is a secondary messenger produced from membrane phospholipids that triggers calcium release."
+},
+
+// 4.3: Signal Transduction Pathways
+{
+    q: "Which of the following is a common cellular response to a signal transduction pathway?",
+    options: ["Opening of an ion channel", "Activation of a specific gene", "Alteration of enzyme activity", "All of the above"],
+    correct: "All of the above",
+    exp: "Signals can result in immediate physical changes, metabolic changes, or long-term genetic changes."
+},
+{
+    q: "Transcription factors are often the 'final' targets of signaling pathways. What do they do?",
+    options: ["They build proteins", "They regulate which genes are turned into mRNA", "They copy DNA", "They transport lipids"],
+    correct: "They regulate which genes are turned into mRNA",
+    exp: "Transcription factors bind to DNA to promote or inhibit the transcription of specific genes."
+},
+{
+    q: "A 'phosphorylation cascade' is a series of:",
+    options: ["Phosphates being destroyed", "Kinases activating other kinases", "Ligands binding to receptors", "Ions flowing through a channel"],
+    correct: "Kinases activating other kinases",
+    exp: "Each kinase adds a phosphate to the next kinase in the chain, magnifying the signal at each step."
+},
+{
+    q: "If a signaling pathway results in apoptosis, what is the cell doing?",
+    options: ["Growing rapidly", "Undergoing programmed cell death", "Dividing by meiosis", "Creating a cell wall"],
+    correct: "Undergoing programmed cell death",
+    exp: "Apoptosis is a tidy, regulated way for a cell to dismantle itself, often in response to damage or developmental signals."
+},
+{
+    q: "Epinephrine (Adrenaline) leads to the breakdown of glycogen in liver cells. What is the 'response' here?",
+    options: ["Reception of epinephrine", "Production of cAMP", "Activation of glycogen phosphorylase", "Binding of GTP"],
+    correct: "Activation of glycogen phosphorylase",
+    exp: "The response is the final physical outcome: the enzyme activity that releases glucose into the blood."
+},
+{
+    q: "In many pathways, the signal is 'reset' when:",
+    options: ["The ligand dissociates from the receptor", "The cell runs out of ATP", "The nucleus dissolves", "The mitochondria stop spinning"],
+    correct: "The ligand dissociates from the receptor",
+    exp: "When the concentration of ligand drops, it leaves the receptor, returning the receptor to its inactive shape."
+},
+{
+    q: "Vibrio cholerae causes disease by interfering with:",
+    options: ["Ribosome function", "G-protein regulation in intestinal cells", "DNA replication", "ATP Synthase"],
+    correct: "G-protein regulation in intestinal cells",
+    exp: "The cholera toxin locks a G-protein in the 'on' position, leading to massive water loss (diarrhea)."
+},
+{
+    q: "How can different types of cells respond differently to the very same ligand?",
+    options: ["They have different DNA", "They have different relay proteins and internal machinery", "They have different sized nuclei", "They don't; all cells respond the same"],
+    correct: "They have different relay proteins and internal machinery",
+    exp: "The 'wiring' inside the cell determines the outcome of the signal."
+},
+{
+    q: "Signal transduction can be 'branched.' This means:",
+    options: ["One ligand can trigger multiple different responses", "The signal only goes to one organelle", "The receptor is shaped like a tree", "The ligand splits into two pieces"],
+    correct: "One ligand can trigger multiple different responses",
+    exp: "One activated receptor might activate two different pathways simultaneously."
+},
+{
+    q: "The use of 'secondary messengers' allows a signal to:",
+    options: ["Stay outside the cell", "Spread rapidly throughout the cytoplasm", "Become a primary messenger", "Change the ligand's shape"],
+    correct: "Spread rapidly throughout the cytoplasm",
+    exp: "Small molecules like cAMP diffuse much faster than large proteins, spreading the message quickly."
+},
+{
+    q: "Which of the following describes the relationship between a receptor and a transduction pathway?",
+    options: ["The receptor is the end of the pathway", "The receptor initiates the pathway", "The pathway creates the receptor", "They are the same thing"],
+    correct: "The receptor initiates the pathway",
+    exp: "Reception is step 1; transduction is the series of steps that follow."
+},
+{
+    q: "If a toxin blocks the binding site of a receptor, the pathway will:",
+    options: ["Accelerate", "Fail to activate", "Use more ATP", "Move to a different cell"],
+    correct: "Fail to activate",
+    exp: "If the ligand can't bind, the 'reception' step never happens."
+},
+{
+    q: "Testosterone, a steroid, functions by:",
+    options: ["Opening ion channels", "Binding to an intracellular receptor that then acts as a transcription factor", "Activating adenylate cyclase", "Creating a phosphorylation cascade"],
+    correct: "Binding to an intracellular receptor that then acts as a transcription factor",
+    exp: "Steroid-receptor complexes often move into the nucleus to directly influence gene expression."
+},
+{
+    q: "Why is the signal transduction pathway necessary for polar ligands?",
+    options: ["To keep the ligand safe", "To pass the message across the hydrophobic membrane without the ligand entering", "To provide the ligand with energy", "To turn the ligand into a protein"],
+    correct: "To pass the message across the hydrophobic membrane without the ligand entering",
+    exp: "Transduction is the 'bridge' between the extracellular signal and the intracellular response."
+},
+{
+    q: "A mutation in a kinase that makes it unable to bind ATP would:",
+    options: ["Make the kinase faster", "Prevent the kinase from phosphorylating its target", "Allow the kinase to work without a signal", "Change the kinase into a phosphatase"],
+    correct: "Prevent the kinase from phosphorylating its target",
+    exp: "Kinases require ATP to provide the phosphate group they transfer to other proteins."
+},
+{
+    q: "The activation of a Receptor Tyrosine Kinase (RTK) is unique because it involves:",
+    options: ["Hydrolysis of GTP", "Dimerization and auto-phosphorylation", "Opening a calcium gate", "Simple diffusion"],
+    correct: "Dimerization and auto-phosphorylation",
+    exp: "Two RTK monomers must come together (dimerize) and add phosphates to each other's tails to become active."
+},
+{
+    q: "The response of a plant to light (phototropism) involves which signaling molecule?",
+    options: ["Auxin", "Insulin", "Epinephrine", "Testosterone"],
+    correct: "Auxin",
+    exp: "Auxin is a plant hormone that moves to the dark side of a stem, causing cell elongation."
+},
+{
+    q: "One major difference between GPCRs and RTKs is:",
+    options: ["GPCRs are on the membrane, RTKs are not", "RTKs can trigger multiple pathways at once; GPCRs usually trigger one", "GPCRs use ATP, RTKs use GTP", "RTKs are only found in bacteria"],
+    correct: "RTKs can trigger multiple pathways at once; GPCRs usually trigger one",
+    exp: "The multiple phosphorylated tyrosines on an RTK can serve as binding sites for many different relay proteins."
+},
+{
+    q: "The signal transduction pathway is essentially a molecular:",
+    options: ["Copy machine", "Translator", "Garbage disposal", "Solar panel"],
+    correct: "Translator",
+    exp: "It translates an extracellular chemical message into a specific intracellular action."
+},
+{
+    q: "Proteins that 'turn off' signaling by removing phosphate groups are called:",
+    options: ["Kinases", "Phosphatases", "Isomerases", "Hydrolases"],
+    correct: "Phosphatases",
+    exp: "Protein phosphatases are essential for terminating signals and recycling kinases."
+},
+
+// 4.4: Feedback
+{
+    q: "Which type of feedback loop moves a system further away from its set point?",
+    options: ["Negative feedback", "Positive feedback", "Equilibrium feedback", "Neutral feedback"],
+    correct: "Positive feedback",
+    exp: "Positive feedback amplifies a response, leading to an 'explosive' or 'completion' event."
+},
+{
+    q: "The regulation of blood glucose by insulin is an example of:",
+    options: ["Negative feedback", "Positive feedback", "Metabolic inhibition", "Linear signaling"],
+    correct: "Negative feedback",
+    exp: "Negative feedback works to bring a variable (like blood sugar) back to a target set point."
+},
+{
+    q: "Ethylene gas produced by ripening fruit causes nearby fruit to ripen. This is:",
+    options: ["Negative feedback", "Positive feedback", "Endocrine inhibition", "Direct contact"],
+    correct: "Positive feedback",
+    exp: "The more fruit ripens, the more gas is produced, which causes more ripening—an amplification loop."
+},
+{
+    q: "In negative feedback, the response of the system:",
+    options: ["Increases the stimulus", "Decreases the stimulus", "Has no effect on the stimulus", "Kills the cell"],
+    correct: "Decreases the stimulus",
+    exp: "Negative feedback works to counteract the original change."
+},
+{
+    q: "The process of labor and childbirth (contractions) is regulated by:",
+    options: ["Negative feedback", "Positive feedback", "Osmoregulation", "Thermoregulation"],
+    correct: "Positive feedback",
+    exp: "Contractions trigger the release of oxytocin, which causes more frequent and intense contractions until birth."
+},
+{
+    q: "Homeostasis in mammals is primarily maintained through:",
+    options: ["Positive feedback", "Negative feedback", "Random chance", "Apoptosis"],
+    correct: "Negative feedback",
+    exp: "Body temperature, pH, and ion levels are all kept in check by negative feedback loops."
+},
+{
+    q: "When a person is cold, they shiver. Shivering generates heat, which turns off the shivering. This is:",
+    options: ["Positive feedback", "Negative feedback", "Cellular respiration", "Active transport"],
+    correct: "Negative feedback",
+    exp: "The response (heat) removes the stimulus (cold)."
+},
+{
+    q: "What happens if a negative feedback loop fails?",
+    options: ["The organism stays the same", "The system moves toward an extreme and homeostasis is lost", "The system becomes more efficient", "Positive feedback takes over"],
+    correct: "The system moves toward an extreme and homeostasis is lost",
+    exp: "Failure of feedback loops leads to disease (like Diabetes) or death."
+},
+{
+    q: "Blood clotting is an example of:",
+    options: ["Positive feedback", "Negative feedback", "Simple diffusion", "Transcription"],
+    correct: "Positive feedback",
+    exp: "Once a vessel is damaged, chemicals released trigger platelet activation, which triggers more chemicals until the hole is plugged."
+},
+{
+    q: "If the body's set point for temperature is 37°C and the current temperature is 39°C, the body will:",
+    options: ["Shiver to create more heat", "Sweat to promote cooling", "Increase metabolic rate", "Stop all cell signaling"],
+    correct: "Sweat to promote cooling",
+    exp: "This is a negative feedback response to return the body to the 37°C set point."
+},
+{
+    q: "The 'control center' for many human homeostatic loops is the:",
+    options: ["Heart", "Hypothalamus", "Stomach", "Lungs"],
+    correct: "Hypothalamus",
+    exp: "The hypothalamus in the brain monitors variables like temperature and osmolarity."
+},
+{
+    q: "In a feedback loop, the 'effector' is the part that:",
+    options: ["Senses the change", "Carries out the response", "Decides what to do", "Signals the neighbor"],
+    correct: "Carries out the response",
+    exp: "For example, in thermoregulation, the sweat glands are the effectors."
+},
+{
+    q: "Why is positive feedback less common in biological systems than negative feedback?",
+    options: ["It is too expensive", "It is inherently unstable", "It requires too much oxygen", "It doesn't involve proteins"],
+    correct: "It is inherently unstable",
+    exp: "Because it drives systems to extremes, it is only used for processes that need to reach a definitive finish line (like birth or clotting)."
+},
+{
+    q: "Osmoregulation (maintaining water balance) is an example of:",
+    options: ["Negative feedback", "Positive feedback", "Direct contact", "Apoptosis"],
+    correct: "Negative feedback",
+    exp: "The body adjusts urine concentration to maintain consistent water levels."
+},
+{
+    q: "Type 1 Diabetes is a failure of feedback because:",
+    options: ["The body makes too much insulin", "The pancreas fails to produce the 'signal' (insulin) to lower blood sugar", "The cells are too small", "Blood sugar is already too low"],
+    correct: "The pancreas fails to produce the 'signal' (insulin) to lower blood sugar",
+    exp: "Without the signal, the negative feedback loop that lowers glucose cannot function."
+},
+{
+    q: "A thermostat in a house is a mechanical analogy for:",
+    options: ["Positive feedback", "Negative feedback", "Cell growth", "Energy production"],
+    correct: "Negative feedback",
+    exp: "It turns on the heat when it's cold and turns it off once the set point is reached."
+},
+{
+    q: "Which hormone is released to raise blood glucose levels when they are too low?",
+    options: ["Insulin", "Glucagon", "Estrogen", "Melatonin"],
+    correct: "Glucagon",
+    exp: "Glucagon (from the pancreas) signals the liver to release glucose; it is the partner to insulin in the feedback loop."
+},
+{
+    q: "When a system is in a 'steady state,' it means:",
+    options: ["It is dead", "It is at equilibrium with no energy", "It is maintaining a constant state through active feedback", "It is growing exponentially"],
+    correct: "It is maintaining a constant state through active feedback",
+    exp: "Biological systems are rarely at true chemical equilibrium; they use energy to maintain a steady state."
+},
+{
+    q: "A 'sensor' in a feedback loop is responsible for:",
+    options: ["Executing the work", "Detecting the stimulus", "Storing the glucose", "Filtering the blood"],
+    correct: "Detecting the stimulus",
+    exp: "Sensors (receptors) monitor the environment for deviations from the set point."
+},
+{
+    q: "If a plant is under water stress, it produces ABA to close its stomata. This is:",
+    options: ["Negative feedback", "Positive feedback", "Reproduction", "Mutagenesis"],
+    correct: "Negative feedback",
+    exp: "The response (closing stomata) prevents further water loss, counteracting the stress."
+},
+
+// 4.5: The Cell Cycle
+{
+    q: "In which phase of the cell cycle is DNA replicated?",
+    options: ["G1 phase", "S phase", "G2 phase", "M phase"],
+    correct: "S phase",
+    exp: "The 'S' stands for Synthesis; this is when the cell creates a copy of its genome."
+},
+{
+    q: "What are the three sub-phases of Interphase?",
+    options: ["G1, S, G2", "Prophase, Metaphase, Anaphase", "G1, M, G2", "S1, S2, S3"],
+    correct: "G1, S, G2",
+    exp: "Interphase accounts for about 90% of the cell cycle and includes growth and DNA replication."
+},
+{
+    q: "During which phase do the sister chromatids separate?",
+    options: ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    correct: "Anaphase",
+    exp: "In Anaphase, the centromeres split and the chromatids are pulled to opposite poles."
+},
+{
+    q: "What is the result of Mitosis?",
+    options: ["Two genetically identical diploid daughter cells", "Four genetically different haploid cells", "One large cell with two nuclei", "Two cells with half the original DNA"],
+    correct: "Two genetically identical diploid daughter cells",
+    exp: "Mitosis is used for growth, repair, and asexual reproduction, producing 'clones' of the parent cell."
+},
+{
+    q: "In plant cells, cytokinesis involves the formation of a:",
+    options: ["Cleavage furrow", "Cell plate", "Contractile ring", "Nuclear envelope"],
+    correct: "Cell plate",
+    exp: "Because plants have a rigid cell wall, they build a new wall (cell plate) from the inside out."
+},
+{
+    q: "A cell that is no longer dividing or has left the cell cycle is in:",
+    options: ["G1 phase", "G0 phase", "S phase", "Apoptosis phase"],
+    correct: "G0 phase",
+    exp: "G0 is a non-dividing state; most human nerve and muscle cells are in G0."
+},
+{
+    q: "The structure that holds two sister chromatids together is the:",
+    options: ["Centriole", "Centromere", "Centrosome", "Chromatin"],
+    correct: "Centromere",
+    exp: "The centromere is the specialized DNA region where the two identical copies of a chromosome are joined."
+},
+{
+    q: "During Metaphase, chromosomes align at the:",
+    options: ["Nuclear pores", "Metaphase plate (equator)", "Opposite poles", "Nucleolus"],
+    correct: "Metaphase plate (equator)",
+    exp: "Alignment at the center ensures that each daughter cell will receive exactly one copy of each chromosome."
+},
+{
+    q: "Spindle fibers are composed of:",
+    options: ["Microfilaments", "Microtubules", "Intermediate filaments", "Collagen"],
+    correct: "Microtubules",
+    exp: "Microtubules are dynamic protein tubes that move chromosomes during division."
+},
+{
+    q: "Which of the following occurs during Prophase?",
+    options: ["DNA replicates", "Chromosomes condense and the nuclear envelope breaks down", "Sister chromatids separate", "The cell plate forms"],
+    correct: "Chromosomes condense and the nuclear envelope breaks down",
+    exp: "Prophase is the 'preparation' phase for division."
+},
+{
+    q: "If a cell has 24 chromosomes in G1, how many sister chromatids will it have in G2?",
+    options: ["12", "24", "48", "96"],
+    correct: "48",
+    exp: "After S phase, every chromosome has been duplicated into two sister chromatids. 24 x 2 = 48."
+},
+{
+    q: "The division of the cytoplasm is called:",
+    options: ["Mitosis", "Meiosis", "Cytokinesis", "Karyokinesis"],
+    correct: "Cytokinesis",
+    exp: "Mitosis is the division of the nucleus; cytokinesis is the division of the rest of the cell."
+},
+{
+    q: "A cleavage furrow forms in:",
+    options: ["Plant cells", "Animal cells", "Bacterial cells", "Fungal cells"],
+    correct: "Animal cells",
+    exp: "Animal cells use a contractile ring of actin to 'pinch' the cell in two."
+},
+{
+    q: "The majority of a cell's life is spent in:",
+    options: ["Prophase", "Interphase", "Metaphase", "Anaphase"],
+    correct: "Interphase",
+    exp: "Interphase is when the cell performs its normal functions and prepares for division."
+},
+{
+    q: "What is the function of the kinetochore?",
+    options: ["To replicate DNA", "To serve as an attachment point for spindle microtubules", "To dissolve the nucleus", "To synthesize ATP"],
+    correct: "To serve as an attachment point for spindle microtubules",
+    exp: "Kinetochores are protein structures on the centromeres where spindle fibers grab the chromosomes."
+},
+{
+    q: "Telophase is essentially the opposite of:",
+    options: ["Anaphase", "Metaphase", "Prophase", "S phase"],
+    correct: "Prophase",
+    exp: "In Telophase, chromosomes de-condense and nuclear envelopes reform, reversing the steps of Prophase."
+},
+{
+    q: "Prokaryotic cells (bacteria) divide by a process called:",
+    options: ["Mitosis", "Binary fission", "Budding", "Fragmentation"],
+    correct: "Binary fission",
+    exp: "Binary fission is simpler than mitosis because bacteria have only one circular chromosome and no nucleus."
+},
+{
+    q: "If a parent cell has 10 chromosomes and undergoes mitosis, the daughter cells will each have:",
+    options: ["5 chromosomes", "10 chromosomes", "20 chromosomes", "40 chromosomes"],
+    correct: "10 chromosomes",
+    exp: "Mitosis maintains the chromosome number."
+},
+{
+    q: "The centrosome is responsible for:",
+    options: ["Copying DNA", "Organizing the spindle microtubules", "Pinching the cell membrane", "Creating the cell plate"],
+    correct: "Organizing the spindle microtubules",
+    exp: "Centrosomes act as the 'poles' or command centers for chromosome movement."
+},
+{
+    q: "What happens during G2 phase?",
+    options: ["DNA is synthesized", "The cell grows and produces proteins/organelles needed for division", "The cell dies", "Chromosomes align in the middle"],
+    correct: "The cell grows and produces proteins/organelles needed for division",
+    exp: "G2 is the final check and preparation phase before the M phase begins."
+},
+
+// 4.6: Regulation of the Cell Cycle
+{
+    q: "The 'master' molecules that control the cell cycle are:",
+    options: ["Glucose and Oxygen", "Cyclins and Cyclin-Dependent Kinases (CDKs)", "ATP and ADP", "Phospholipids and Cholesterol"],
+    correct: "Cyclins and Cyclin-Dependent Kinases (CDKs)",
+    exp: "The concentration of cyclins fluctuates, activating CDKs at specific times to push the cell into the next phase."
+},
+{
+    q: "Cancer is best described as:",
+    options: ["The death of cells", "A viral infection", "Unregulated, uncontrolled cell division", "A failure of the digestive system"],
+    correct: "Unregulated, uncontrolled cell division",
+    exp: "Cancer occurs when cells ignore the checkpoints and signals that normally stop division."
+},
+{
+    q: "What happens at the G1 checkpoint?",
+    options: ["The cell checks if DNA is replicated", "The cell checks for cell size, nutrients, and DNA damage", "The cell checks if spindles are attached", "The cell divides"],
+    correct: "The cell checks for cell size, nutrients, and DNA damage",
+    exp: "If a cell fails the G1 checkpoint, it may enter G0 or attempt to repair its DNA."
+},
+{
+    q: "The 'M' checkpoint ensures that:",
+    options: ["DNA is not mutated", "The cell is big enough", "All kinetochores are attached to spindle fibers", "The nuclear envelope is gone"],
+    correct: "All kinetochores are attached to spindle fibers",
+    exp: "This prevents unequal distribution of chromosomes (nondisjunction) in the daughter cells."
+},
+{
+    q: "Proto-oncogenes are genes that:",
+    options: ["Cause cancer immediately", "Normally stimulate cell growth and division", "Normally inhibit cell division", "Repair DNA"],
+    correct: "Normally stimulate cell growth and division",
+    exp: "Think of proto-oncogenes as the 'gas pedal.' If they mutate into 'oncogenes,' the pedal gets stuck down."
+},
+{
+    q: "Tumor suppressor genes (like p53) are genes that:",
+    options: ["Stimulate division", "Normally inhibit cell division or repair DNA", "Cause cell death in all cases", "Increase the mutation rate"],
+    correct: "Normally inhibit cell division or repair DNA",
+    exp: "Tumor suppressors are the 'brakes.' If the brakes fail, the cell can divide uncontrollably."
+},
+{
+    q: "What is the role of p53 in the cell cycle?",
+    options: ["It replicates DNA", "It acts as a transcription factor that can stop the cycle or trigger apoptosis if DNA is damaged", "It builds the cell wall", "It attaches spindles to centromeres"],
+    correct: "It acts as a transcription factor that can stop the cycle or trigger apoptosis if DNA is damaged",
+    exp: "p53 is known as the 'guardian of the genome.' Half of all human cancers involve a mutated p53 gene."
+},
+{
+    q: "A CDK (Cyclin-Dependent Kinase) is only active when:",
+    options: ["It is phosphorylated", "It is bound to its specific cyclin", "The cell is in G0", "It is inside the mitochondria"],
+    correct: "It is bound to its specific cyclin",
+    exp: "Cyclins 'turn on' CDKs; without the cyclin, the CDK is inactive."
+},
+{
+    q: "Apoptosis can be triggered by:",
+    options: ["Irreparable DNA damage", "Extracellular death-signaling ligands", "Lack of growth factors", "All of the above"],
+    correct: "All of the above",
+    exp: "Cells are 'programmed' to die if they become a threat to the organism or are no longer needed."
+},
+{
+    q: "Malignant tumors differ from benign tumors in that:",
+    options: ["They are smaller", "They stay in one place", "They have the ability to spread to other tissues (metastasize)", "They divide slower"],
+    correct: "They have the ability to spread to other tissues (metastasize)",
+    exp: "Metastasis is the hallmark of 'cancerous' malignant tumors."
+},
+{
+    q: "Density-dependent inhibition refers to:",
+    options: ["Cells stopping division when they run out of ATP", "Crowded cells stopping division because of lack of growth factors", "Cells dividing faster when they are close together", "The weight of the cell"],
+    correct: "Crowded cells stopping division because of lack of growth factors",
+    exp: "Most normal animal cells stop dividing once they form a single layer (confluent monolayer)."
+},
+{
+    q: "Anchorage dependence means:",
+    options: ["Cells must be attached to a substratum (like the ECM) to divide", "Cells must be floating to divide", "The nucleus must be anchored to the Golgi", "Chromosomes must be anchored to the membrane"],
+    correct: "Cells must be attached to a substratum (like the ECM) to divide",
+    exp: "Cancer cells often lose this requirement, allowing them to survive and divide while floating in the blood or lymph."
+},
+{
+    q: "MPF (Maturation-Promoting Factor) is a cyclin-CDK complex that pushes the cell into:",
+    options: ["S phase", "M phase", "G1 phase", "G0 phase"],
+    correct: "M phase",
+    exp: "MPF triggers the transition from G2 to Mitosis."
+},
+{
+    q: "What happens to the cyclin after the CDK has performed its job?",
+    options: ["It is reused immediately", "It is degraded by enzymes", "It is converted to ATP", "It leaves the cell"],
+    correct: "It is degraded by enzymes",
+    exp: "The degradation of cyclin 'turns off' the CDK, ensuring the cell doesn't just keep dividing."
+},
+{
+    q: "The G2 checkpoint primarily checks for:",
+    options: ["Successful DNA replication", "Attachment of spindles", "Cell size only", "Nutrient levels"],
+    correct: "Successful DNA replication",
+    exp: "The cell will not enter Mitosis if the DNA is incomplete or damaged."
+},
+{
+    q: "Caspases are enzymes involved in:",
+    options: ["Photosynthesis", "Apoptosis", "DNA replication", "Muscle contraction"],
+    correct: "Apoptosis",
+    exp: "Caspases are the 'executioner' enzymes that chop up proteins and DNA during programmed cell death."
+},
+{
+    q: "Growth factors are:",
+    options: ["Lipids that provide energy", "Proteins released by certain cells that stimulate other cells to divide", "Small molecules that stop division", "Vitamins"],
+    correct: "Proteins released by certain cells that stimulate other cells to divide",
+    exp: "Growth factors are external signals that 'give permission' for the cell to pass the G1 checkpoint."
+},
+{
+    q: "The HeLa cell line is famous because:",
+    options: ["They are the first plant cells cloned", "They are 'immortal' cancer cells that have been dividing in labs since 1951", "They only divide once a year", "They have no DNA"],
+    correct: "They are 'immortal' cancer cells that have been dividing in labs since 1951",
+    exp: "HeLa cells (from Henrietta Lacks) were the first human cells successfully grown in permanent culture."
+},
+{
+    q: "A mutation in a tumor suppressor gene is usually:",
+    options: ["Dominant (one copy is enough to cause trouble)", "Recessive (both copies must be broken to lose control)", "Beneficial to the cell", "Lethal immediately"],
+    correct: "Recessive (both copies must be broken to lose control)",
+    exp: "Tumor suppressors are like brakes; you can usually stop a car with one working brake, but if both fail, the car goes out of control."
+},
+{
+    q: "The process of a normal cell becoming a cancer cell is called:",
+    options: ["Translation", "Transformation", "Transcription", "Transduction"],
+    correct: "Transformation",
+    exp: "Transformation involves the accumulation of mutations that allow for uncontrolled growth."
+}
+ ]
   };    
 // 1. Map the database
     const questionsData = {
