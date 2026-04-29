@@ -229,20 +229,41 @@
 function cleanBiologyText(text) {
     if (!text || typeof text !== 'string') return text;
     
-    return text
-        // 1. Handle Subscripts: Convert _{12} or _2 to ₁₂ or ₂
-        .replace(/\_\{?(\d+)\}?/g, (match, num) => {
-            const subs = { '0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉' };
-            return num.split('').map(n => subs[n] || n).join('');
-        })
-        // 2. Handle Superscripts: Convert ^{2} or ^2 to ²
-        .replace(/\^\{?(\d+)\}?/g, (match, num) => {
-            const supers = { '0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹' };
-            return num.split('').map(n => supers[n] || n).join('');
-        })
-        // 3. Remove all dollar signs everywhere
-        .replace(/\$/g, '')
-        .trim();
+    // 1. Dictionary of common AP Bio symbols
+    const symbolMap = {
+        '\\mu': 'µ',        // Micro (micrometers)
+        '\\Delta': 'Δ',     // Change (Delta G)
+        '\\rarr': '→',      // Reaction arrow
+        '\\rightarrow': '→',
+        '\\degree': '°',    // Temperature
+        '\\alpha': 'α',
+        '\\beta': 'β'
+    };
+
+    let cleaned = text;
+
+    // 2. Replace the backslash symbols FIRST
+    for (let key in symbolMap) {
+        // We use split/join to replace all occurrences
+        cleaned = cleaned.split(key).join(symbolMap[key]);
+    }
+
+    // 3. Handle Subscripts: _{12} or _2 -> ₁₂ or ₂
+    cleaned = cleaned.replace(/\_\{?(\d+)\}?/g, (match, num) => {
+        const subs = { '0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉' };
+        return num.split('').map(n => subs[n] || n).join('');
+    });
+
+    // 4. Handle Superscripts: ^{2} or ^2 -> ²
+    cleaned = cleaned.replace(/\^\{?(\d+)\}?/g, (match, num) => {
+        const supers = { '0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹' };
+        return num.split('').map(n => supers[n] || n).join('');
+    });
+
+    // 5. Nuke any remaining dollar signs
+    cleaned = cleaned.replace(/\$/g, '');
+
+    return cleaned.trim();
 }
 
 // 2. The "Processor" - Call this when you start a unit
