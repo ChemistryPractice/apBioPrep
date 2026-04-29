@@ -224,6 +224,33 @@
     </div>
 </main>
 <script>
+
+    // 1. The "Cleaner" - Run this on your data to fix formulas and remove $ signs
+function cleanBiologyText(text) {
+    if (typeof text !== 'string') return text;
+
+    return text
+        // Fixes chemical formulas: Converts $C_6H_{12}O_6$ or $H2O$ to Unicode subscripts
+        .replace(/\$([A-Z][a-z]?)\_?\{?(\d+)\}?\$/g, (match, element, num) => {
+            const subs = { '0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉' };
+            const subNum = num.split('').map(n => subs[n] || n).join('');
+            return element + subNum;
+        })
+        // Removes any remaining stray dollar signs
+        .replace(/\$/g, '');
+}
+
+// 2. The "Processor" - Call this when you start a unit
+function prepareQuestions(questionsArray) {
+    return questionsArray.map(item => ({
+        ...item,
+        q: cleanBiologyText(item.q),
+        options: item.options.map(opt => cleanBiologyText(opt)),
+        correct: cleanBiologyText(item.correct),
+        exp: cleanBiologyText(item.exp)
+    }));
+}
+    
     const database = { 
         unit1: [
     // --- Topic 1.1: Structure of Water and Hydrogen Bonding ---
