@@ -227,17 +227,22 @@
 
     // 1. The "Cleaner" - Run this on your data to fix formulas and remove $ signs
 function cleanBiologyText(text) {
-    if (typeof text !== 'string') return text;
-
+    if (!text || typeof text !== 'string') return text;
+    
     return text
-        // Fixes chemical formulas: Converts $C_6H_{12}O_6$ or $H2O$ to Unicode subscripts
-        .replace(/\$([A-Z][a-z]?)\_?\{?(\d+)\}?\$/g, (match, element, num) => {
+        // 1. Handle Subscripts: Convert _{12} or _2 to ₁₂ or ₂
+        .replace(/\_\{?(\d+)\}?/g, (match, num) => {
             const subs = { '0':'₀','1':'₁','2':'₂','3':'₃','4':'₄','5':'₅','6':'₆','7':'₇','8':'₈','9':'₉' };
-            const subNum = num.split('').map(n => subs[n] || n).join('');
-            return element + subNum;
+            return num.split('').map(n => subs[n] || n).join('');
         })
-        // Removes any remaining stray dollar signs
-        .replace(/\$/g, '');
+        // 2. Handle Superscripts: Convert ^{2} or ^2 to ²
+        .replace(/\^\{?(\d+)\}?/g, (match, num) => {
+            const supers = { '0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹' };
+            return num.split('').map(n => supers[n] || n).join('');
+        })
+        // 3. Remove all dollar signs everywhere
+        .replace(/\$/g, '')
+        .trim();
 }
 
 // 2. The "Processor" - Call this when you start a unit
