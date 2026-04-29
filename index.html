@@ -5664,7 +5664,874 @@ unit2: [
     correct: "Abiogenesis",
     exp: "Abiogenesis is the natural process by which life has arisen from non-living matter."
 }
-  ]
+  ], 
+
+        unit8: [
+            Of course! A needy puppy is the best possible excuse for a delay—I hope they got all the attention they needed. I have the CED for Unit 8 (Ecology) ready to go.
+
+As requested, I’ve stripped out all internal citations and formatted everything to be code-safe. I’ve also ensured that any mathematical terms (like growth rates or exponents) use standard text (like `^2` or `dN/dt`) rather than raw dollar signs to avoid any conflicts with your code or MathJax.
+
+Here is the first block of **Unit 8: Ecology**, covering **Topics 8.1 through 8.4** (80 questions).
+
+```javascript
+/* --- UNIT 8: ECOLOGY (PART 1: 8.1 - 8.4) --- */
+
+// 8.1: Responses to the Environment
+{
+    q: "A male stickleback fish attacks anything red that enters its territory, even a red-bottomed piece of wood. This is an example of:",
+    options: ["Innate behavior (Fixed Action Pattern)", "Operant conditioning", "Classical conditioning", "Trial and error learning"],
+    correct: "Innate behavior (Fixed Action Pattern)",
+    exp: "A fixed action pattern is a sequence of unlearned acts directly linked to a simple stimulus (the red color)."
+},
+{
+    q: "Which of the following is an example of a physiological response to an environmental change?",
+    options: ["A lizard moving into the shade", "A human shivering in the cold", "A bird migrating south for winter", "An elk fighting for a mate"],
+    correct: "A human shivering in the cold",
+    exp: "Shivering is an internal physiological mechanism used to generate heat and maintain homeostasis."
+},
+{
+    q: "Pheromones are primarily used for which type of communication?",
+    options: ["Auditory", "Visual", "Chemical", "Tactile"],
+    correct: "Chemical",
+    exp: "Pheromones are chemical substances emitted by organisms to communicate with others of the same species."
+},
+{
+    q: "How does phototropism benefit a plant?",
+    options: ["It helps the plant conserve water", "It allows the plant to maximize light capture for photosynthesis", "It protects the plant from herbivores", "It increases the rate of cellular respiration"],
+    correct: "It allows the plant to maximize light capture for photosynthesis",
+    exp: "Growing toward a light source ensures the leaves receive the energy needed for carbon fixation."
+},
+{
+    q: "Which type of behavior is characterized by a sensitive period during which a long-lasting behavioral response is established?",
+    options: ["Habituation", "Imprinting", "Spatial learning", "Cognition"],
+    correct: "Imprinting",
+    exp: "Imprinting occurs early in development and creates a permanent bond or behavior (like ducklings following their mother)."
+},
+{
+    q: "In bees, the 'waggle dance' is used to communicate:",
+    options: ["The presence of a predator", "The location and distance of a food source", "Which bee is the new queen", "The temperature of the hive"],
+    correct: "The location and distance of a food source",
+    exp: "The dance uses specific angles and durations to provide coordinates to other foragers."
+},
+{
+    q: "An organism that maintains its body temperature through internal metabolic processes is called a(n):",
+    options: ["Ectotherm", "Endotherm", "Poikilotherm", "Mesotherm"],
+    correct: "Endotherm",
+    exp: "Endotherms use metabolic energy to regulate a constant body temperature."
+},
+{
+    q: "A kinesis is a change in animal behavior that involves:",
+    options: ["A directional movement toward a stimulus", "A non-directional change in activity level in response to a stimulus", "The loss of a response to a repeated stimulus", "Learning through observation"],
+    correct: "A non-directional change in activity level in response to a stimulus",
+    exp: "Kinesis is a random, speed-based response (like sowbugs moving faster in dry areas)."
+},
+{
+    q: "Which of the following is an example of altruistic behavior?",
+    options: ["A lion hunting a zebra", "A worker bee defending the hive at the cost of its life", "A bird eating a worm", "A tree growing taller than its neighbors"],
+    correct: "A worker bee defending the hive at the cost of its life",
+    exp: "Altruism occurs when an individual's behavior benefits others while reducing its own fitness."
+},
+{
+    q: "What is photoperiodism?",
+    options: ["The ability of plants to move toward light", "The physiological response to the relative lengths of night and day", "The process of splitting water in photosynthesis", "The death of a plant due to too much sun"],
+    correct: "The physiological response to the relative lengths of night and day",
+    exp: "Photoperiodism controls seasonal events like flowering based on the duration of darkness."
+},
+{
+    q: "Which of the following describes 'habituation'?",
+    options: ["Learning to associate a color with food", "A decrease in response to a repeated, unimportant stimulus", "The instinct to build a nest", "Communication via electrical signals"],
+    correct: "A decrease in response to a repeated, unimportant stimulus",
+    exp: "Habituation allows animals to ignore irrelevant stimuli, like birds eventually ignoring a scarecrow."
+},
+{
+    q: "The migration of salmon back to their home stream is primarily guided by:",
+    options: ["The position of the sun", "Magnetic fields", "Olfactory (scent) cues", "Visual landmarks"],
+    correct: "Olfactory (scent) cues",
+    exp: "Salmon 'imprint' on the unique chemical signature of their home waters."
+},
+{
+    q: "Endothermic animals generally require ________ food than ectothermic animals of the same size.",
+    options: ["More", "Less", "The same amount of", "No"],
+    correct: "More",
+    exp: "Maintaining a high internal temperature is metabolically expensive, requiring more caloric intake."
+},
+{
+    q: "Which of the following is a tactile communication signal?",
+    options: ["A bird's song", "A wolf's scent mark", "A primate grooming another", "A firefly's flash"],
+    correct: "A primate grooming another",
+    exp: "Tactile communication involves physical touch."
+},
+{
+    q: "How do plants like the 'Sensitive Plant' (Mimosa pudica) respond to touch?",
+    options: ["By growing faster", "By folding their leaves rapidly via changes in turgor pressure", "By releasing toxic gases", "By changing color to red"],
+    correct: "By folding their leaves rapidly via changes in turgor pressure",
+    exp: "Rapid thigmonastic movements are caused by water moving out of cell vacuoles in response to touch."
+},
+{
+    q: "Circadian rhythms are internal clocks with a cycle of approximately:",
+    options: ["1 hour", "12 hours", "24 hours", "1 month"],
+    correct: "24 hours",
+    exp: "Circadian rhythms regulate daily cycles of activity, sleep, and metabolism."
+},
+{
+    q: "A cat runs to the kitchen when it hears the sound of a can opener. This is an example of:",
+    options: ["Classical conditioning", "Innate behavior", "Habituation", "Fixed Action Pattern"],
+    correct: "Classical conditioning",
+    exp: "The cat has associated a neutral stimulus (can opener sound) with a reward (food)."
+},
+{
+    q: "Which of the following is an example of a behavioral response to thermoregulation?",
+    options: ["Sweating", "Panting", "Basking in the sun", "Vasodilation"],
+    correct: "Basking in the sun",
+    exp: "Basking is a behavior used (especially by ectotherms) to absorb external heat."
+},
+{
+    q: "In a 'threat display' between two rival males, the goal is usually to:",
+    options: ["Kill the opponent", "Establish dominance without physical injury", "Attract a predator", "Signal for help from the group"],
+    correct: "Establish dominance without physical injury",
+    exp: "Agonistic behaviors allow animals to settle disputes over resources while minimizing the risk of harm."
+},
+{
+    q: "What is the primary evolutionary advantage of cooperative behavior in a group?",
+    options: ["It increases individual fitness by sharing the workload and protection", "It makes the group easier for predators to find", "It eliminates competition for resources", "It stops the process of natural selection"],
+    correct: "It increases individual fitness by sharing the workload and protection",
+    exp: "Working together (hunting, guarding) often provides a net survival benefit to all individuals involved."
+},
+
+// 8.2: Energy Flow Through Ecosystems
+{
+    q: "What is the primary source of energy for most ecosystems on Earth?",
+    options: ["The Earth's core", "Sunlight", "Deep sea vents", "Decomposition"],
+    correct: "Sunlight",
+    exp: "Photosynthetic organisms capture solar energy and convert it into chemical energy."
+},
+{
+    q: "According to the 10% rule, if there are 10,000 Joules of energy at the producer level, how much is available to the secondary consumers?",
+    options: ["1,000 J", "500 J", "100 J", "10 J"],
+    correct: "100 J",
+    exp: "Producers (10,000) -> Primary (1,000) -> Secondary (100). Only 10% is passed to each subsequent level."
+},
+{
+    q: "Which of the following is an autotroph?",
+    options: ["A mushroom", "A cyanobacterium", "A grasshopper", "A wolf"],
+    correct: "A cyanobacterium",
+    exp: "Cyanobacteria perform photosynthesis to produce their own organic molecules."
+},
+{
+    q: "In an energy pyramid, which level always contains the most biomass?",
+    options: ["Primary consumers", "Secondary consumers", "Tertiary consumers", "Producers"],
+    correct: "Producers",
+    exp: "Because energy is lost at each level, the base of the pyramid must be largest to support the levels above."
+},
+{
+    q: "What happens to the 90% of energy that is NOT transferred to the next trophic level?",
+    options: ["It is destroyed", "It is stored in the soil", "It is lost as heat or used for metabolic processes", "It is used to create new elements"],
+    correct: "It is lost as heat or used for metabolic processes",
+    exp: "Second Law of Thermodynamics: energy transfer is inefficient and results in the release of heat."
+},
+{
+    q: "Net Primary Productivity (NPP) is defined as:",
+    options: ["Total solar energy captured", "Gross Primary Productivity minus the energy used by producers for respiration", "The amount of energy consumed by herbivores", "The total biomass of the entire ecosystem"],
+    correct: "Gross Primary Productivity minus the energy used by producers for respiration",
+    exp: "NPP represents the energy available to the next trophic level (consumers)."
+},
+{
+    q: "Which of the following organisms would have the highest metabolic rate per unit of body mass?",
+    options: ["An elephant", "A human", "A mouse", "A crocodile"],
+    correct: "A mouse",
+    exp: "Smaller endotherms have a higher surface-area-to-volume ratio and must maintain a higher metabolic rate to keep their body temperature stable."
+},
+{
+    q: "Detritivores are important to ecosystems because they:",
+    options: ["Capture sunlight for the community", "Recycle nutrients back into the soil", "Control predator populations", "Fix nitrogen from the atmosphere"],
+    correct: "Recycle nutrients back into the soil",
+    exp: "By breaking down dead organic matter, detritivores make essential elements available for producers again."
+},
+{
+    q: "Ectotherms generally have ________ energy requirements than endotherms of the same size.",
+    options: ["Lower", "Higher", "The same", "Infinitely higher"],
+    correct: "Lower",
+    exp: "Because they don't use metabolism to generate heat, ectotherms can survive on much less food."
+},
+{
+    q: "A secondary consumer eats:",
+    options: ["Plants", "Primary consumers", "Tertiary consumers", "Only dead matter"],
+    correct: "Primary consumers",
+    exp: "Secondary consumers are carnivores that eat herbivores (primary consumers)."
+},
+{
+    q: "If an ecosystem's Net Primary Productivity (NPP) drops significantly, what is the most likely result?",
+    options: ["Consumer populations will increase", "The number of trophic levels the ecosystem can support will decrease", "The producers will become more efficient", "Decomposition will stop"],
+    correct: "The number of trophic levels the ecosystem can support will decrease",
+    exp: "Less energy at the base means less energy to sustain high-level consumers."
+},
+{
+    q: "Organisms that capture energy from small inorganic molecules like hydrogen sulfide are called:",
+    options: ["Photoautotrophs", "Chemoautotrophs", "Heterotrophs", "Detritivores"],
+    correct: "Chemoautotrophs",
+    exp: "Chemosynthesis occurs in environments without light, such as deep-sea hydrothermal vents."
+},
+{
+    q: "Why are food chains usually limited to 4 or 5 trophic levels?",
+    options: ["There are not enough species in the world", "The predators at the top become too large", "Energy transfer is so inefficient that there isn't enough left to support more levels", "The animals get tired"],
+    correct: "Energy transfer is so inefficient that there isn't enough left to support more levels",
+    exp: "The 10% rule means that by the 5th level, very little of the original solar energy remains."
+},
+{
+    q: "Which of the following is an example of an endothermic strategy for cold weather?",
+    options: ["Growing thicker fur", "Shifting metabolic rate higher to produce internal heat", "Migrating to a warmer climate", "All of the above"],
+    correct: "All of the above",
+    exp: "Endotherms use a combination of physiological, structural, and behavioral adaptations."
+},
+{
+    q: "Trophic cascades occur when:",
+    options: ["A producer dies", "A change at the top of the food web affects the populations of lower trophic levels", "Energy flows upward only", "Decomposition happens too fast"],
+    correct: "A change at the top of the food web affects the populations of lower trophic levels",
+    exp: "Removing a top predator can lead to an explosion of herbivores, which then overgraze the producers."
+},
+{
+    q: "In a biomass pyramid for a terrestrial ecosystem, which level is typically the smallest?",
+    options: ["Producers", "Primary consumers", "Secondary consumers", "Tertiary consumers"],
+    correct: "Tertiary consumers",
+    exp: "Biomass usually mirrors the energy pyramid, with the least amount at the top."
+},
+{
+    q: "Biological systems with ________ energy availability usually show ________ levels of biodiversity.",
+    options: ["High; high", "Low; high", "High; low", "Variable; zero"],
+    correct: "High; high",
+    exp: "More energy (like in tropical rainforests) allows for more complex food webs and more species."
+},
+{
+    q: "The rate at which light energy is converted to chemical energy by autotrophs is:",
+    options: ["Net Primary Productivity", "Gross Primary Productivity", "Metabolic Rate", "Secondary Productivity"],
+    correct: "Gross Primary Productivity",
+    exp: "GPP is the total 'paycheck' before the plant 'pays its bills' (respiration)."
+},
+{
+    q: "Which of the following reproductive strategies is often linked to an environment with limited energy?",
+    options: ["Producing thousands of small offspring with no parental care", "Producing few offspring with significant energy investment in each", "Reproducing every day", "Stopping reproduction entirely"],
+    correct: "Producing few offspring with significant energy investment in each",
+    exp: "Investing heavily in a few offspring increases their chance of survival when resources are scarce."
+},
+{
+    q: "Heterotrophs obtain their energy by:",
+    options: ["Capturing sunlight", "Fixing carbon dioxide", "Consuming organic compounds produced by other organisms", "Synthesizing ATP from water and rocks"],
+    correct: "Consuming organic compounds produced by other organisms",
+    exp: "Heterotrophs 'eat' their energy rather than making it."
+},
+
+// 8.3: Population Ecology
+{
+    q: "A population shows a constant death rate throughout its life span. This is represented by which survivorship curve?",
+    options: ["Type I", "Type II", "Type III", "Linear"],
+    correct: "Type II",
+    exp: "Type II curves (like in many birds or rodents) show a roughly equal probability of dying at any age."
+},
+{
+    q: "In the equation dN/dt = rN, what does 'r' represent?",
+    options: ["The total population size", "The carrying capacity", "The per capita rate of increase", "The change in time"],
+    correct: "The per capita rate of increase",
+    exp: "The variable 'r' is the birth rate minus the death rate."
+},
+{
+    q: "Exponential growth is most likely to occur in which situation?",
+    options: ["A population reaching its carrying capacity", "A species introduced into a new environment with abundant resources", "A population with high competition for food", "A population undergoing a mass extinction"],
+    correct: "A species introduced into a new environment with abundant resources",
+    exp: "Under ideal conditions with no limiting factors, populations grow exponentially (J-curve)."
+},
+{
+    q: "What does a Type III survivorship curve indicate?",
+    options: ["High survival early in life, with most deaths occurring in old age", "Constant death rate throughout life", "Very high death rates for the young, followed by high survival for the few that reach adulthood", "No deaths at all"],
+    correct: "Very high death rates for the young, followed by high survival for the few that reach adulthood",
+    exp: "Common in organisms that produce many offspring but provide little care (e.g., oysters, many insects)."
+},
+{
+    q: "The number of individuals per unit area or volume is the population's:",
+    options: ["Range", "Dispersion", "Density", "Size"],
+    correct: "Density",
+    exp: "Density is the measurement of individuals in a specific space."
+},
+{
+    q: "Which dispersion pattern is most common in nature and often results from resources being patchy?",
+    options: ["Uniform", "Random", "Clumped", "Linear"],
+    correct: "Clumped",
+    exp: "Clumping occurs where resources are favorable or for social behavior/protection."
+},
+{
+    q: "Which of the following is characteristic of K-selected species?",
+    options: ["Many small offspring", "Little to no parental care", "Late maturity and few, large offspring", "Short life spans"],
+    correct: "Late maturity and few, large offspring",
+    exp: "K-selected species (like humans or elephants) are adapted to stable environments near carrying capacity."
+},
+{
+    q: "The study of the vital statistics of a population and how they change over time is called:",
+    options: ["Taxonomy", "Demography", "Biogeography", "Phylogeny"],
+    correct: "Demography",
+    exp: "Demography focuses on birth rates, death rates, and age structures."
+},
+{
+    q: "A 'J-shaped' growth curve is representative of:",
+    options: ["Logistic growth", "Exponential growth", "Stabilizing growth", "Negative growth"],
+    correct: "Exponential growth",
+    exp: "The curve shows rapid, accelerating growth over time."
+},
+{
+    q: "If the birth rate (B) is 20 and the death rate (D) is 15 in a population of 1000, what is the per capita growth rate (r)?",
+    options: ["0.005", "0.05", "0.5", "5"],
+    correct: "0.005",
+    exp: "r = (B - D) / N. So, (20 - 15) / 1000 = 5 / 1000 = 0.005."
+},
+{
+    q: "Which type of survivorship curve is typical of large mammals like humans?",
+    options: ["Type I", "Type II", "Type III", "Type IV"],
+    correct: "Type I",
+    exp: "Type I shows high survival during early/middle life and a drop-off in old age."
+},
+{
+    q: "What limits the exponential growth of a population in the real world?",
+    options: ["Infinite resources", "Resource depletion and environmental resistance", "A lack of predators", "An increase in mutation rates"],
+    correct: "Resource depletion and environmental resistance",
+    exp: "Populations eventually run out of space, food, or water, leading to a leveling off."
+},
+{
+    q: "In an age-structure pyramid, a very wide base indicates:",
+    options: ["A stable population", "A rapidly growing population", "A shrinking population", "A population with no offspring"],
+    correct: "A rapidly growing population",
+    exp: "A wide base means there is a high proportion of young individuals who will soon reproduce."
+},
+{
+    q: "Species that reproduce once and then die (like Pacific salmon) are called:",
+    options: ["Semelparous", "Iteroparous", "K-selected", "Asexual"],
+    correct: "Semelparous",
+    exp: "Semelparity ('one shot' reproduction) is often an adaptation to unpredictable environments."
+},
+{
+    q: "Species that have multiple reproductive cycles over their lifetime are:",
+    options: ["Semelparous", "Iteroparous", "r-selected", "Unfit"],
+    correct: "Iteroparous",
+    exp: "Iteroparity is common in stable environments where survival is more likely."
+},
+{
+    q: "Uniform dispersion patterns usually result from:",
+    options: ["Random wind patterns", "Territoriality and intraspecific competition", "Social grouping for protection", "Uniformity of soil"],
+    correct: "Territoriality and intraspecific competition",
+    exp: "Animals defending a territory or plants releasing chemicals (allelopathy) create even spacing."
+},
+{
+    q: "If N = 500 and r = 0.1, what is the change in population (dN/dt) using the exponential model?",
+    options: ["5", "50", "500", "0.5"],
+    correct: "50",
+    exp: "dN/dt = rN. 0.1 * 500 = 50."
+},
+{
+    q: "Which of the following is an r-selected trait?",
+    options: ["Long life span", "Extensive parental care", "Rapid development and early reproduction", "Small brood size"],
+    correct: "Rapid development and early reproduction",
+    exp: "r-selected species (like weeds or bacteria) maximize the rate of increase."
+},
+{
+    q: "A 'cohort' in a life table refers to:",
+    options: ["A group of different species", "A group of individuals of the same age", "The total number of deaths", "A type of habitat"],
+    correct: "A group of individuals of the same age",
+    exp: "Scientists follow a cohort from birth to death to build survivorship curves."
+},
+{
+    q: "Zero population growth occurs when:",
+    options: ["The birth rate equals the death rate", "The birth rate is higher than the death rate", "The population size is zero", "Everyone is K-selected"],
+    correct: "The birth rate equals the death rate",
+    exp: "When r = 0, the population size remains constant."
+},
+
+// 8.4: Effect of Density of Populations
+{
+    q: "What is 'carrying capacity' (K)?",
+    options: ["The maximum number of offspring a female can produce", "The maximum population size that a particular environment can sustain", "The total weight of all organisms in an area", "The speed at which a population grows"],
+    correct: "The maximum population size that a particular environment can sustain",
+    exp: "K is determined by limiting factors like food, space, and water."
+},
+{
+    q: "Which of the following is a density-dependent limiting factor?",
+    options: ["A forest fire", "A volcanic eruption", "Competition for food", "An unusually cold winter"],
+    correct: "Competition for food",
+    exp: "Density-dependent factors have a greater impact as the population density increases."
+},
+{
+    q: "A 'density-independent' factor is one that:",
+    options: ["Affects only small populations", "Affects a population regardless of its density", "Helps a population grow faster", "Is caused by biological interactions"],
+    correct: "Affects a population regardless of its density",
+    exp: "Weather, climate, and natural disasters are typical density-independent factors."
+},
+{
+    q: "The 'S-shaped' curve is associated with which growth model?",
+    options: ["Exponential growth", "Logistic growth", "Linear growth", "Recursive growth"],
+    correct: "Logistic growth",
+    exp: "Logistic growth starts exponentially but slows as the population approaches carrying capacity."
+},
+{
+    q: "In the logistic growth equation dN/dt = rN((K-N)/K), what happens as N approaches K?",
+    options: ["The growth rate increases", "The growth rate approaches zero", "The population becomes infinite", "K increases"],
+    correct: "The growth rate approaches zero",
+    exp: "As N gets closer to K, the term (K-N)/K becomes very small, slowing the growth."
+},
+{
+    q: "If N is very small compared to K, the logistic growth model behaves like:",
+    options: ["A declining population", "Exponential growth", "Linear growth", "A stable population"],
+    correct: "Exponential growth",
+    exp: "When N is small, (K-N)/K is nearly 1, so the equation simplifies to dN/dt = rN."
+},
+{
+    q: "Which of the following would likely cause a population to overshoot its carrying capacity?",
+    options: ["A time lag in the response to resource depletion", "An increase in predators", "A sudden decrease in birth rate", "A very stable environment"],
+    correct: "A time lag in the response to resource depletion",
+    exp: "If organisms continue to reproduce before the effects of food shortage are 'felt,' the population may temporarily exceed K before crashing."
+},
+{
+    q: "An infectious disease that spreads more easily in crowded conditions is a ________ factor.",
+    options: ["Density-dependent", "Density-independent", "Abiotic", "Genetic"],
+    correct: "Density-dependent",
+    exp: "High density increases the rate of contact and transmission of pathogens."
+},
+{
+    q: "What happens if N > K in the logistic growth equation?",
+    options: ["The population stays the same", "The growth rate (dN/dt) becomes negative, and the population decreases", "K increases to match N", "r increases"],
+    correct: "The growth rate (dN/dt) becomes negative, and the population decreases",
+    exp: "When the population exceeds K, the (K-N) term is negative, indicating a population decline."
+},
+{
+    q: "Which of the following is an example of an abiotic limiting factor?",
+    options: ["Predation", "Parasitism", "Water availability", "Disease"],
+    correct: "Water availability",
+    exp: "Abiotic factors are non-living components of the ecosystem."
+},
+{
+    q: "The 'Allee effect' occurs when:",
+    options: ["A population is too large", "Individuals have a harder time surviving or reproducing if the population size is too small", "Carrying capacity is infinite", "Predators die out"],
+    correct: "Individuals have a harder time surviving or reproducing if the population size is too small",
+    exp: "Small populations may struggle with finding mates or group defense."
+},
+{
+    q: "Density-dependent regulation can lead to:",
+    options: ["Infinite growth", "Population cycles (oscillations)", "Total extinction of all species", "Random mutation"],
+    correct: "Population cycles (oscillations)",
+    exp: "Interactions like predator-prey relationships often cause populations to rise and fall in cycles."
+},
+{
+    q: "Which of the following is a density-independent factor?",
+    options: ["Territoriality", "Toxic waste accumulation", "A sudden earthquake", "Intraspecific competition"],
+    correct: "A sudden earthquake",
+    exp: "An earthquake kills individuals regardless of how many there are in the area."
+},
+{
+    q: "If a population's K value is 1000 and the current N is 900, the growth rate will be:",
+    options: ["Very fast", "Slowing down", "Negative", "Accelerating"],
+    correct: "Slowing down",
+    exp: "As N gets close to K, resource competition increases and growth slows."
+},
+{
+    q: "Which factor can increase the carrying capacity of an environment?",
+    options: ["A decrease in food", "An increase in space or resources", "An increase in predators", "A decrease in temperature"],
+    correct: "An increase in space or resources",
+    exp: "K is not fixed; it can change if the environment's ability to support life changes."
+},
+{
+    q: "Internal factors like stress-induced hormonal changes that decrease birth rates at high densities are:",
+    options: ["Density-independent", "Density-dependent", "Abiotic", "External"],
+    correct: "Density-dependent",
+    exp: "Physiological 'crowding' effects are a form of density-dependent regulation."
+},
+{
+    q: "The 'boom and bust' cycle of the snowshoe hare and lynx is primarily driven by:",
+    options: ["Abiotic factors only", "Density-dependent interactions between predator and prey", "The weather", "Changes in the sun's brightness"],
+    correct: "Density-dependent interactions between predator and prey",
+    exp: "The lynx population follows the hare population with a slight time lag."
+},
+{
+    q: "Toxic waste buildup is usually a density-________ factor in bacterial cultures.",
+    options: ["Dependent", "Independent", "Biotic", "Infinite"],
+    correct: "Dependent",
+    exp: "The more bacteria there are, the faster toxins accumulate, eventually stopping growth."
+},
+{
+    q: "In a stable population at carrying capacity, the birth rate is approximately ________ the death rate.",
+    options: ["Twice", "Half", "Equal to", "Higher than"],
+    correct: "Equal to",
+    exp: "At K, dN/dt is zero, meaning births and deaths are balanced."
+},
+{
+    q: "The human population has grown exponentially for centuries. This suggests that:",
+    options: ["Humans have no carrying capacity", "Technology has repeatedly increased the human carrying capacity", "The logistic model does not apply to humans", "Resources are infinite"],
+    correct: "Technology has repeatedly increased the human carrying capacity",
+    exp: "Advances in agriculture, medicine, and engineering have allowed the human population to expand beyond previous limits."
+}, 
+/* --- UNIT 8: ECOLOGY (PART 2: 8.5 - 8.7) --- */
+
+// 8.5: Community Ecology
+{
+    q: "A relationship where one organism benefits while the other is neither helped nor harmed is called:",
+    options: ["Parasitism", "Mutualism", "Commensalism", "Competition"],
+    correct: "Commensalism",
+    exp: "Commensalism is a (+/0) interaction, such as barnacles attaching to a whale."
+},
+{
+    q: "The sum of a species' use of the biotic and abiotic resources in its environment is called its:",
+    options: ["Habitat", "Ecological niche", "Trophic level", "Community"],
+    correct: "Ecological niche",
+    exp: "A niche is an organism's 'role' or 'profession' in the ecosystem."
+},
+{
+    q: "What is the result of the 'Competitive Exclusion Principle'?",
+    options: ["Two species can occupy the exact same niche indefinitely", "One species will use resources more efficiently and eliminate the local competitor", "Both species will evolve to be identical", "Predators will eat both species"],
+    correct: "One species will use resources more efficiently and eliminate the local competitor",
+    exp: "Gause's principle states that two species competing for the same limiting resources cannot coexist in the same place."
+},
+{
+    q: "Resource partitioning is best described as:",
+    options: ["Species competing until one goes extinct", "The division of environmental resources by coexisting species to reduce competition", "Predators sharing a kill", "Plants growing in the same soil"],
+    correct: "The division of environmental resources by coexisting species to reduce competition",
+    exp: "By using different parts of a tree or hunting at different times, species can coexist in the same habitat."
+},
+{
+    q: "Which of the following is a (+/+) interaction?",
+    options: ["Predation", "Mutualism", "Commensalism", "Parasitism"],
+    correct: "Mutualism",
+    exp: "In mutualism, both species benefit (e.g., bees and flowers)."
+},
+{
+    q: "Species richness refers to:",
+    options: ["The total number of individuals in a community", "The number of different species in a community", "The relative abundance of each species", "The health of the soil"],
+    correct: "The number of different species in a community",
+    exp: "Richness is simply the count of how many unique species are present."
+},
+{
+    q: "Simpson's Diversity Index is used to measure:",
+    options: ["The speed of evolution", "The density of a population", "The biodiversity of a community based on richness and evenness", "The amount of energy in a food web"],
+    correct: "The biodiversity of a community based on richness and evenness",
+    exp: "A higher index value typically indicates a more diverse and stable community."
+},
+{
+    q: "Cryptic coloration (camouflage) is an adaptation primarily used for:",
+    options: ["Attracting a mate", "Conserving water", "Avoiding detection by predators or prey", "Absorbing more sunlight"],
+    correct: "Avoiding detection by predators or prey",
+    exp: "Camouflage helps an organism blend into its background to survive."
+},
+{
+    q: "A harmless fly that evolves to look like a stinging wasp is an example of:",
+    options: ["Mullerian mimicry", "Batesian mimicry", "Mutualism", "Parasitism"],
+    correct: "Batesian mimicry",
+    exp: "In Batesian mimicry, a palatable or harmless species mimics an unpalatable or harmful one."
+},
+{
+    q: "What is 'aposematic coloration'?",
+    options: ["Bright warning coloration often seen in poisonous animals", "Dull colors used for hiding", "Seasonal changes in fur color", "The color of plant leaves in autumn"],
+    correct: "Bright warning coloration often seen in poisonous animals",
+    exp: "Bright colors (like those on poison dart frogs) warn predators to stay away."
+},
+{
+    q: "In a 'Mullerian mimicry' scenario:",
+    options: ["One harmless species mimics a harmful one", "Two or more unpalatable species resemble each other", "Plants look like rocks", "An animal changes color to match its surroundings"],
+    correct: "Two or more unpalatable species resemble each other",
+    exp: "This provides safety in numbers; predators learn more quickly to avoid any organism with that appearance."
+},
+{
+    q: "Which of the following is an example of 'herbivory'?",
+    options: ["A lion eating a zebra", "A cow eating grass", "A tick drinking blood", "A bird eating a worm"],
+    correct: "A cow eating grass",
+    exp: "Herbivory is a (+/-) interaction where an organism eats parts of a plant or alga."
+},
+{
+    q: "An endoparasite lives:",
+    options: ["On the external surface of a host", "Inside the body of a host", "In the soil near a host", "In a mutualistic relationship"],
+    correct: "Inside the body of a host",
+    exp: "Tapeworms are examples of endoparasites."
+},
+{
+    q: "What is the 'fundamental niche' of a species?",
+    options: ["The niche the species actually occupies in nature", "The niche the species could potentially occupy without competition", "The location where the species hibernates", "The top of the food chain"],
+    correct: "The niche the species could potentially occupy without competition",
+    exp: "Competition usually restricts a species to a smaller 'realized niche'."
+},
+{
+    q: "Character displacement is evidence of:",
+    options: ["Past competition between two species", "Current mutualism", "A lack of evolution", "The extinction of a predator"],
+    correct: "Past competition between two species",
+    exp: "Traits tend to diverge more in sympatric populations (living together) than in allopatric populations to reduce competition."
+},
+{
+    q: "Which of the following describes 'species evenness'?",
+    options: ["The total number of species", "How close in numbers each species in an environment is", "The physical size of the animals", "The number of trees vs. animals"],
+    correct: "How close in numbers each species in an environment is",
+    exp: "A community where one species makes up 99% of the individuals has low evenness."
+},
+{
+    q: "Pathogens are best described as:",
+    options: ["Disease-causing microorganisms", "Beneficial bacteria", "Decomposers", "Primary producers"],
+    correct: "Disease-causing microorganisms",
+    exp: "Pathogens (viruses, bacteria, fungi) act as a type of parasite."
+},
+{
+    q: "How does a 'keystone species' differ from a 'dominant species'?",
+    options: ["Keystone species are the most abundant", "Keystone species have a disproportionately large effect on their community relative to their abundance", "Dominant species are always predators", "There is no difference"],
+    correct: "Keystone species have a disproportionately large effect on their community relative to their abundance",
+    exp: "A sea otter is a keystone species; it isn't the most numerous, but it maintains the entire kelp forest ecosystem."
+},
+{
+    q: "Ectoparasites, such as ticks and lice, feed on:",
+    options: ["The internal organs of the host", "The external surface of the host", "The host's food", "Dead skin only"],
+    correct: "The external surface of the host",
+    exp: "Ecto- means 'outside'."
+},
+{
+    q: "Commensalism is often hard to document in nature because:",
+    options: ["It is very rare", "One species is likely being slightly helped or harmed, making it mutualism or parasitism", "It only happens in the ocean", "All organisms are competitors"],
+    correct: "One species is likely being slightly helped or harmed, making it mutualism or parasitism",
+    exp: "Truly 'neutral' effects on one participant are difficult to prove."
+},
+
+// 8.6: Biodiversity
+{
+    q: "Why is high genetic diversity within a population important for an ecosystem?",
+    options: ["It makes all individuals look identical", "It increases the likelihood that some individuals will survive environmental changes", "It prevents mutations from occurring", "It allows the population to grow to infinite size"],
+    correct: "It increases the likelihood that some individuals will survive environmental changes",
+    exp: "Genetic variation provides the raw material for adaptation and resilience."
+},
+{
+    q: "Which of the following is one of the three levels of biodiversity?",
+    options: ["Genetic diversity", "Species diversity", "Ecosystem diversity", "All of the above"],
+    correct: "All of the above",
+    exp: "Biodiversity encompasses the variety of genes, species, and habitats on Earth."
+},
+{
+    q: "How does biodiversity relate to ecosystem 'resilience'?",
+    options: ["Higher biodiversity makes an ecosystem more vulnerable to change", "Higher biodiversity helps an ecosystem recover faster from disturbances", "Biodiversity has no impact on recovery", "Resilience only depends on the weather"],
+    correct: "Higher biodiversity helps an ecosystem recover faster from disturbances",
+    exp: "Redundancy in roles (multiple species performing similar functions) helps maintain stability."
+},
+{
+    q: "What is an 'ecosystem service'?",
+    options: ["A job performed by a park ranger", "The benefits humans receive from natural ecosystems (e.g., pollination, water purification)", "The process of a predator eating a prey", "A type of artificial selection"],
+    correct: "The benefits humans receive from natural ecosystems (e.g., pollination, water purification)",
+    exp: "Biodiversity is essential for providing services that sustain human life."
+},
+{
+    q: "The removal of a keystone species usually leads to:",
+    options: ["An increase in biodiversity", "A decrease in biodiversity and potential ecosystem collapse", "No change in the community", "The immediate evolution of a new species"],
+    correct: "A decrease in biodiversity and potential ecosystem collapse",
+    exp: "Keystone species hold the ecosystem together; their absence causes a 'trophic cascade'."
+},
+{
+    q: "Which of the following is a primary threat to biodiversity (the 'H' in HIPPO)?",
+    options: ["Habitat loss", "High rainfall", "Hibernation", "Herbivory"],
+    correct: "Habitat loss",
+    exp: "Habitat destruction is the single greatest threat to biodiversity globally."
+},
+{
+    q: "An 'umbrella species' is one that:",
+    options: ["Lives only in the rain", "When protected, also protects many other species in the same habitat", "Is at the bottom of the food chain", "Is a type of fungus"],
+    correct: "When protected, also protects many other species in the same habitat",
+    exp: "Large-range species like tigers or pandas serve as 'umbrellas' for their entire ecosystems."
+},
+{
+    q: "What is the 'extinction vortex'?",
+    options: ["A type of storm", "A downward spiral where low population size and inbreeding lead to even lower fitness and further decline", "The moment an asteroid hits", "A method of counting species"],
+    correct: "A downward spiral where low population size and inbreeding lead to even lower fitness and further decline",
+    exp: "Small populations lose the genetic variation needed to adapt, making them even smaller."
+},
+{
+    q: "The variety of different habitats, communities, and ecological processes in the biosphere is:",
+    options: ["Genetic diversity", "Ecosystem diversity", "Species diversity", "Population density"],
+    correct: "Ecosystem diversity",
+    exp: "This is the 'highest' level of biodiversity."
+},
+{
+    q: "Which region of the Earth typically has the highest levels of biodiversity?",
+    options: ["The poles", "The deserts", "The tropics (near the equator)", "The deep ocean only"],
+    correct: "The tropics (near the equator)",
+    exp: "Abundant solar energy and water support high productivity and complex niches."
+},
+{
+    q: "Why are small, isolated populations at higher risk of losing biodiversity?",
+    options: ["They have too many mutations", "They are more susceptible to genetic drift and inbreeding", "They are too large for their habitat", "They have too many predators"],
+    correct: "They are more susceptible to genetic drift and inbreeding",
+    exp: "Small gene pools lose variation quickly through random chance."
+},
+{
+    q: "What is a 'biodiversity hotspot'?",
+    options: ["A place where the temperature is very high", "A relatively small area with an exceptional concentration of endemic species and a large number of endangered species", "The center of a city", "A volcanic island"],
+    correct: "A relatively small area with an exceptional concentration of endemic species and a large number of endangered species",
+    exp: "These areas are priorities for conservation efforts."
+},
+{
+    q: "Monoculture (planting only one type of crop) reduces biodiversity and:",
+    options: ["Increases the risk of widespread crop failure due to disease", "Makes the soil richer", "Increases the number of pollinators", "Decreases the need for pesticides"],
+    correct: "Increases the risk of widespread crop failure due to disease",
+    exp: "Lack of genetic variation means a single pathogen can wipe out the entire population."
+},
+{
+    q: "The 'Minimum Viable Population' (MVP) is the:",
+    options: ["Smallest population size at which a species can sustain its numbers and survive", "Number of animals in a zoo", "Maximum number of individuals an area can support", "Number of individuals that die each year"],
+    correct: "Smallest population size at which a species can sustain its numbers and survive",
+    exp: "Conservationists use MVP to determine if a species is likely to go extinct."
+},
+{
+    q: "Genetic diversity allows a population to respond to:",
+    options: ["New diseases", "Climate change", "Invasive species", "All of the above"],
+    correct: "All of the above",
+    exp: "Variation is the basis for natural selection in any changing environment."
+},
+{
+    q: "A 'foundation species' (like coral or kelp) affects the community by:",
+    options: ["Eating all the other species", "Providing the physical structure of the habitat", "Acting as a top predator", "Having very low biomass"],
+    correct: "Providing the physical structure of the habitat",
+    exp: "Foundation species create the environment that other species rely on."
+},
+{
+    q: "Insects like bees and butterflies provide an ecosystem service called:",
+    options: ["Decomposition", "Pollination", "Nitrogen fixation", "Cellular respiration"],
+    correct: "Pollination",
+    exp: "Pollination is essential for the reproduction of most flowering plants, including many food crops."
+},
+{
+    q: "Overexploitation refers to:",
+    options: ["Using a resource sustainably", "The human harvesting of wild organisms at rates exceeding the ability of populations to rebound", "A predator eating too much prey", "Planting too many trees"],
+    correct: "The human harvesting of wild organisms at rates exceeding the ability of populations to rebound",
+    exp: "Overfishing and poaching are forms of overexploitation."
+},
+{
+    q: "How does the 'Species-Area Curve' relate to biodiversity?",
+    options: ["It shows that larger geographic areas tend to have more species", "It shows that small areas are more diverse", "Area has no effect on species count", "It measures the size of the animals"],
+    correct: "It shows that larger geographic areas tend to have more species",
+    exp: "Larger areas offer more diverse habitats and niches."
+},
+{
+    q: "Which of the following is a result of habitat fragmentation?",
+    options: ["Increased genetic flow between populations", "Smaller, more isolated patches of habitat with more 'edge' effects", "An increase in biodiversity", "Better protection for predators"],
+    correct: "Smaller, more isolated patches of habitat with more 'edge' effects",
+    exp: "Fragmented habitats support fewer species and make migration difficult."
+},
+
+// 8.7: Disruptions to Ecosystems
+{
+    q: "An 'invasive species' is defined as a species that:",
+    options: ["Is native to the area", "Is non-native and causes environmental or economic harm", "Is at the top of the food chain", "Is becoming extinct"],
+    correct: "Is non-native and causes environmental or economic harm",
+    exp: "Invasive species often lack natural predators in their new environment, allowing them to outcompete native species."
+},
+{
+    q: "Why do invasive species often undergo exponential growth?",
+    options: ["They have no limiting factors", "They lack natural predators and pathogens in the new environment", "They are smarter than native species", "They reproduce asexually only"],
+    correct: "They lack natural predators and pathogens in the new environment",
+    exp: "The absence of 'environmental resistance' allows for rapid population expansion."
+},
+{
+    q: "Which of the following is a human-induced disruption to ecosystems?",
+    options: ["Introduction of invasive species", "Habitat destruction", "Global climate change", "All of the above"],
+    correct: "All of the above",
+    exp: "Human activities are currently the leading cause of ecosystem disruption."
+},
+{
+    q: "What is 'biological magnification'?",
+    options: ["Using a microscope to see cells", "The increase in concentration of toxic substances at higher trophic levels", "The growth of a population over time", "The process of photosynthesis"],
+    correct: "The increase in concentration of toxic substances at higher trophic levels",
+    exp: "Toxins (like mercury or DDT) accumulate in the tissues of organisms and become more concentrated as they move up the food chain."
+},
+{
+    q: "The 'Greenhouse Effect' is a natural process that:",
+    options: ["Is always bad for the Earth", "Warms the Earth's surface by trapping heat in the atmosphere", "Causes acid rain", "Eliminates the ozone layer"],
+    correct: "Warms the Earth's surface by trapping heat in the atmosphere",
+    exp: "While necessary for life, the intensification of this effect by human CO2 emissions is causing global warming."
+},
+{
+    q: "Eutrophication in a lake is primarily caused by:",
+    options: ["A lack of sunlight", "Nutrient runoff (like nitrogen and phosphorus) leading to excessive algae growth", "Overfishing", "Introduction of predatory fish"],
+    correct: "Nutrient runoff (like nitrogen and phosphorus) leading to excessive algae growth",
+    exp: "Algal blooms eventually die and decompose, depleting the water of oxygen and killing fish."
+},
+{
+    q: "Which of the following is an example of a geological disruption to an ecosystem?",
+    options: ["A volcanic eruption", "Overgrazing by cattle", "The introduction of the Cane Toad", "An oil spill"],
+    correct: "A volcanic eruption",
+    exp: "Geological events are natural physical changes to the Earth's surface."
+},
+{
+    q: "Climate change can disrupt the 'timing' of biological events, such as flowering or migration. This is called:",
+    options: ["Phenological mismatch", "Genetic drift", "Competitive exclusion", "Mutualism"],
+    correct: "Phenological mismatch",
+    exp: "If birds migrate before their food source (insects) emerges, the population can crash."
+},
+{
+    q: "How does acid precipitation (acid rain) affect ecosystems?",
+    options: ["It makes the water too hot", "It lowers the pH of soil and water, damaging plant tissues and aquatic life", "It increases biodiversity", "It stops the nitrogen cycle"],
+    correct: "It lowers the pH of soil and water, damaging plant tissues and aquatic life",
+    exp: "Acid rain leaches nutrients from the soil and releases toxic metals like aluminum."
+},
+{
+    q: "The ozone layer is important because it:",
+    options: ["Traps heat for the greenhouse effect", "Protects Earth from harmful ultraviolet (UV) radiation", "Provides oxygen for animals to breathe", "Prevents meteorites from hitting Earth"],
+    correct: "Protects Earth from harmful ultraviolet (UV) radiation",
+    exp: "Ozone (O3) in the upper atmosphere filters out DNA-damaging UV rays."
+},
+{
+    q: "Which invasive species has devastated the Everglades ecosystem in Florida?",
+    options: ["Honeybees", "Burmese pythons", "Zebra mussels", "Kudzu"],
+    correct: "Burmese pythons",
+    exp: "These large constrictors have decimated populations of native mammals and birds."
+},
+{
+    q: "The 'Kudzu' vine, known as 'the vine that ate the South,' is an example of:",
+    options: ["A keystone species", "An invasive plant outcompeting native vegetation for light", "A primary producer in the ocean", "A mutualistic fungi"],
+    correct: "An invasive plant outcompeting native vegetation for light",
+    exp: "Kudzu grows rapidly over trees and structures, killing the plants underneath by blocking sunlight."
+},
+{
+    q: "What is 'primary succession'?",
+    options: ["The regrowth of a forest after a fire", "The colonization of a new area that has never had soil (like bare rock)", "The process of a predator eating prey", "The death of a climax community"],
+    correct: "The colonization of a new area that has never had soil (like bare rock)",
+    exp: "Primary succession starts from 'scratch' (e.g., after a lava flow or retreating glacier)."
+},
+{
+    q: "Secondary succession occurs when:",
+    options: ["A new island forms", "An existing community is cleared by a disturbance (like a fire) but the soil remains", "Life first evolves on Earth", "Humans plant a garden"],
+    correct: "An existing community is cleared by a disturbance (like a fire) but the soil remains",
+    exp: "Because soil is already present, secondary succession is much faster than primary."
+},
+{
+    q: "Which organisms are typically the 'pioneer species' in primary succession?",
+    options: ["Trees", "Shrubs", "Lichens and mosses", "Mammals"],
+    correct: "Lichens and mosses",
+    exp: "These organisms can grow on bare rock and help break it down into soil."
+},
+{
+    q: "The 'climax community' refers to:",
+    options: ["The very first species to arrive", "A stable, mature community that undergoes little change in species composition", "The community right after a disaster", "A group of invasive species"],
+    correct: "A stable, mature community that undergoes little change in species composition",
+    exp: "This is the final stage of ecological succession."
+},
+{
+    q: "What is 'habitat fragmentation'?",
+    options: ["The creation of new habitats", "The breaking up of large, continuous habitats into smaller, isolated patches", "The process of making soil", "A type of volcanic eruption"],
+    correct: "The breaking up of large, continuous habitats into smaller, isolated patches",
+    exp: "Fragmentation often leads to a loss of biodiversity due to isolated populations."
+},
+{
+    q: "How does rising ocean temperature affect coral reefs?",
+    options: ["It makes them grow faster", "It causes coral bleaching (the loss of mutualistic algae)", "It has no effect", "It turns the coral into rock"],
+    correct: "It causes coral bleaching (the loss of mutualistic algae)",
+    exp: "High temperatures stress the coral, causing them to expel the algae they need for food."
+},
+{
+    q: "Salinization is a disruption often caused by:",
+    options: ["Too much rain", "Irrigation in dry climates leading to salt buildup in soil", "Overfishing", "Planting too many trees"],
+    correct: "Irrigation in dry climates leading to salt buildup in soil",
+    exp: "Excess salt prevents plants from taking up water through osmosis."
+},
+{
+    q: "Large-scale disruptions, such as the 'dust bowl,' are often the result of:",
+    options: ["Natural weather cycles combined with poor land management", "A single rainstorm", "Too many earthworms", "The evolution of new grasses"],
+    correct: "Natural weather cycles combined with poor land management",
+    exp: "A combination of drought and over-farming led to massive soil erosion in the 1930s."
+}
+]
+
   };    
 // 1. Map the database
     const questionsData = {
